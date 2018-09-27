@@ -1,4 +1,4 @@
-var keywords = {
+var translations = {
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
@@ -25,13 +25,52 @@ var keywords = {
     "replace": "ctrl+r",
     "print": "ctrl+p",
     "get": "git",
-    "home": "127.0.0.1"
+    "got": "git",
+    "home": "127.0.0.1",
+    "house": "127.0.0.1",
+    "local": "127.0.0.1",
+    "localhost": "127.0.0.1",
+    "fuck": "fork",
+    "hello": "ping",
+    "hi": "ping",
+    "command": "cmd",
+    "forget": "ctrl+z",
+    "world": "0.0.0.0/0",
+    "need": "require",
+    "want": "require",
+    "name": "alias",
+    "address": "url",
+    "five": "5",
+    "six": "6",
+    "pie": "π",
+    "function": "fn",
+    "kill": "ctrl+c",
+    "stop": "abort",
+    "refresh": "f5",
+    "slow": "O(n^n)",
+    "fast": "O(1)",
+    "leet": "1337",
+    "hacker": "haxor",
+    "geek": "g33k",
+    "plus": "+",
+    "minus": "-",
+    "and": "&&",
+    "or": "||",
+    "binary": "01",
+    "call": "ping",
+    "me": "self",
+    "owner": "admin",
+    "god": "root",
+    "please": "sudo",
+    "at": "@",
+    "fix": "debug",
+    "shit": "dump"
 }
 
 function geeksay(text) {
     lowerCaseText = text.toLowerCase();
-    if (keywords.hasOwnProperty(lowerCaseText)) {
-        return keywords[lowerCaseText];
+    if (translations.hasOwnProperty(lowerCaseText)) {
+        return translations[lowerCaseText];
     } else {
         return text;
     }
