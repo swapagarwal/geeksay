@@ -68,7 +68,7 @@ var translations = {
 }
 
 function isNumeric(num){
-    return !isNaN(num)
+   return !isNaN(parseInt(num));
 }
 
 function geeksay(text) {
