@@ -67,11 +67,20 @@ var translations = {
     "shit": "dump"
 }
 
+function isNumeric(num){
+    return !isNaN(num)
+}
+
 function geeksay(text) {
-    lowerCaseText = text.toLowerCase();
-    if (translations.hasOwnProperty(lowerCaseText)) {
-        return translations[lowerCaseText];
-    } else {
-        return text;
+    if(isNumeric(text)) {
+        return (text >>> 0).toString(2);
+    }
+    else {
+        lowerCaseText = text.toLowerCase();
+        if (translations.hasOwnProperty(lowerCaseText)) {
+            return translations[lowerCaseText];
+        } else {
+            return text;
+        }
     }
 }
