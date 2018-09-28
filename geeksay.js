@@ -2,6 +2,7 @@ var translations = {
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
+    "rule": "ctrl",
     "escape": "esc",
     "black": "#000",
     "white": "#fff",
@@ -36,12 +37,9 @@ var translations = {
     "command": "cmd",
     "forget": "ctrl+z",
     "world": "0.0.0.0/0",
-    "need": "require",
     "want": "require",
     "name": "alias",
     "address": "url",
-    "five": "5",
-    "six": "6",
     "pie": "π",
     "function": "fn",
     "kill": "ctrl+c",
@@ -64,7 +62,18 @@ var translations = {
     "please": "sudo",
     "at": "@",
     "fix": "debug",
-    "shit": "dump"
+    "shit": "dump",
+    "poop": "dump",
+    "delete": "del",
+    "force": "ma",
+    "coffee": "covfefe",
+    "number": "#",
+    "image": "img",
+    "photo": "img",
+    "pic": "img",
+    "picture": "img",
+    "snap": "img",
+    "snapshot": "img"
 }
 
 function isNumeric(num){
@@ -83,4 +92,10 @@ function geeksay(text) {
             return text;
         }
     }
+}
+
+function getRandomTranslation() {
+    var keys = Object.keys(translations);
+    var randomKey = keys[Math.floor(Math.random() * keys.length)];
+    return "Random Translation: " + randomKey + " -> " + translations[randomKey];
 }

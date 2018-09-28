@@ -85,7 +85,7 @@
     vertical-align: middle;
     font-size: 14px;
     margin: 20px;
-    width: 180px;
+    width: 120px;
   }
   #footer {
     margin-top: 100px;
@@ -141,7 +141,12 @@ sometimes, i just need a break</textarea>
     </div>
     <br>
     <div align="center">
-        <a id="help" href="https://docs.google.com/spreadsheets/d/166ExyRTa6PmtRfONKsaICiaUDTLgATCVQ0K5fMtJuW8/edit?usp=sharing" target="_blank">Add more translations (e.g. forget -> ctrl+z)!</a>
+        <a id="help" href="https://docs.google.com/spreadsheets/d/166ExyRTa6PmtRfONKsaICiaUDTLgATCVQ0K5fMtJuW8/edit?usp=sharing" target="_blank">Have a suggestion?</a>
+    </div>
+    <div align="center">
+        <p style="display:inline-block" id="random"></p>
+        &nbsp;
+        <button onclick="refresh()" id="refresh">One more!</button>
     </div>
   </div>
 
@@ -156,6 +161,7 @@ sometimes, i just need a break</textarea>
     if (isMobile) {
         document.getElementById("help").setAttribute('href', 'https://goo.gl/forms/LcJkSgghhm68Ajvc2');
     }
+    document.getElementById("random").innerText = getRandomTranslation();
   </script>
 
   <script>
@@ -225,6 +231,9 @@ sometimes, i just need a break</textarea>
         }
       }
       return value;
+    }
+    function refresh() {
+        document.getElementById("random").innerText = getRandomTranslation();
     }
   </script>
 </body>
