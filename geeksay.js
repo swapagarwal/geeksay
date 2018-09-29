@@ -34,6 +34,7 @@ var translations = {
     "fuck": "fork",
     "hello": "ping",
     "hi": "ping",
+    "hey": "ping",
     "command": "cmd",
     "forget": "ctrl+z",
     "world": "0.0.0.0/0",
@@ -63,6 +64,7 @@ var translations = {
     "at": "@",
     "fix": "debug",
     "shit": "dump",
+    "bullshit": "dump",
     "poop": "dump",
     "delete": "del",
     "force": "ma",
@@ -73,8 +75,45 @@ var translations = {
     "pic": "img",
     "picture": "img",
     "snap": "img",
-    "snapshot": "img"
+    "snapshot": "img",
+    "bye": "exit",
+    "noob": "n00b",
+    "life": "42",
+    "universe": "42",
+    "everything": "42",
+    "lifetime": "runtime",
+    "sleep": "shutdown"
 }
+
+var quotes = [
+    "Hello World",
+    "Bye World",
+    "Forget that ever happened",
+    "Home is where the heart is",
+    "Home is where ideas come to life",
+    "Home is where the wifi connects automatically",
+    "fuck that shit",
+    "go hard or go home",
+    "I will call you",
+    "I want the world to know me",
+    "I am the owner",
+    "I am God",
+    "please make me a sandwich",
+    "coffee is life",
+    "what's your name",
+    "I will find you and I will fix you!",
+    "geek alert",
+    "geek inside",
+    "copy that!",
+    "get out of home",
+    "not everything is black and white",
+    "to be or not to be, that is the question",
+    "i was 5 and he was 6",
+    "he wore black and i wore white",
+    "bang bang my baby shot me down",
+    "Today is the first day of the rest of your lifetime",
+    "i need to sleep"
+]
 
 function isNumeric(num){
     return !isNaN(parseInt(num));
@@ -98,4 +137,8 @@ function getRandomTranslation() {
     var keys = Object.keys(translations);
     var randomKey = keys[Math.floor(Math.random() * keys.length)];
     return "Random Translation: " + randomKey + " -> " + translations[randomKey];
+}
+
+function getRandomQuote() {
+    return quotes[Math.floor(Math.random() * quotes.length)];
 }
