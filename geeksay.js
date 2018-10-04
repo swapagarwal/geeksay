@@ -82,7 +82,13 @@ var translations = {
     "universe": "42",
     "everything": "42",
     "lifetime": "runtime",
-    "sleep": "shutdown"
+    "sleep": "hibernate",
+    "end": "shutdown",
+    "together": "<div>",
+    "special": "#id",
+    "crap": "crop",
+    "say": "echo",
+    "strong": "<strong>"
 }
 
 var quotes = [
@@ -112,7 +118,16 @@ var quotes = [
     "he wore black and i wore white",
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
-    "i need to sleep"
+    "i need to sleep",
+    "i am going home",
+    "lets be together",
+    "you are special",
+    "oh crap",
+    "i am not fat, i am bold",
+    "i am bold and strong",
+    "lets end this",
+    "God is real",
+    "say hi"
 ]
 
 function isNumeric(num){
