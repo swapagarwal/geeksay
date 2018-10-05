@@ -112,7 +112,17 @@ var quotes = [
     "he wore black and i wore white",
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
-    "i need to sleep"
+    "i need to sleep",
+    "Shall we play a game?".
+    "End Of Line.",
+    "These aren't the droids you're looking for.",
+    "No one messes around with a nerd’s computer and escapes unscathed.",
+    "Age of the geek, baby!",
+    "I’m not anti-social; I’m just not user friendly."
+    "When life gives you questions, Google has answers",
+    "With great power there must also come — great responsibility.",
+    "If I’m not back in five minutes, just wait longer.".
+    "Greetings, programs!"
 ]
 
 function isNumeric(num){
