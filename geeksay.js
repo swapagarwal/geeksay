@@ -1,3 +1,5 @@
+"use strict";
+
 var translations = {
     "save": "ctrl+s",
     "break": "<br>",
@@ -116,7 +118,7 @@ var quotes = [
 ]
 
 function isNumeric(num){
-    return !isNaN(parseInt(num));
+    return !Number.isNaN(parseInt(num));
 }
 
 function geeksay(text) {
@@ -124,7 +126,7 @@ function geeksay(text) {
         return (text >>> 0).toString(2);
     }
     else {
-        lowerCaseText = text.toLowerCase();
+        var lowerCaseText = text.toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
             return translations[lowerCaseText];
         } else {
