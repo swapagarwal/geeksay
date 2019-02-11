@@ -83,7 +83,7 @@ var translations = {
     "everything": "42",
     "lifetime": "runtime",
     "sleep": "shutdown",
-    "hamburger" : "hamberder",
+    "hamburger": "hamberder",
 }
 
 var quotes = [
