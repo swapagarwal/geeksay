@@ -22,7 +22,6 @@ var translations = {
     "undo": "ctrl+z",
     "redo": "ctrl+y",
     "search": "ctrl+f",
-    "find": "ctrl+f",
     "replace": "ctrl+r",
     "print": "ctrl+p",
     "get": "git",
