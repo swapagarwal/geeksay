@@ -82,7 +82,25 @@ var translations = {
     "universe": "42",
     "everything": "42",
     "lifetime": "runtime",
-    "sleep": "shutdown"
+    "sleep": "shutdown",
+    "explore":"win+e",
+    "up":"PgUp",
+    "down":"PgDn",
+    "reference":"<ref>",
+    "any":"*",
+    "all":"ctrl+a",
+    "piece":"bit",
+    "repeat":"spam",
+    "asshole":"troll",
+    "bug":"feature",
+    "screen":"GUI",
+    "knowledge":"wiki",
+    "power":"PSU",
+    "prank":"bazinga",
+    "bigger":">",
+    "smaller":"<",
+    "box":"<div>",
+    "question":"query"
 }
 
 var quotes = [
@@ -112,7 +130,12 @@ var quotes = [
     "he wore black and i wore white",
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
-    "i need to sleep"
+    "i need to sleep",
+    "piece by piece",
+    "knowledge is power",
+    "just move to the Internet, its great here",
+    "With great power there must also come – great responsibility",
+    "life's like a box of chocolates, you never know what you're gonna get"
 ]
 
 function isNumeric(num){
