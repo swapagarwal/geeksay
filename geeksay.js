@@ -1,4 +1,4 @@
-var translations = {
+﻿var translations = {
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
@@ -82,7 +82,9 @@ var translations = {
     "universe": "42",
     "everything": "42",
     "lifetime": "runtime",
-    "sleep": "shutdown"
+    "sleep": "shutdown",
+    "equals" : "==",
+    "equal" : "=="
 }
 
 var quotes = [
