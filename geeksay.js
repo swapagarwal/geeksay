@@ -82,7 +82,23 @@ var translations = {
     "universe": "42",
     "everything": "42",
     "lifetime": "runtime",
-    "sleep": "shutdown"
+    "sleep": "shutdown",
+    "equal": "=",
+    "equals": "=",
+    "header": "<head>",
+    "head": "<head>",
+    "run": "win+r",
+    "explore": "win+e",
+    "explorer": "win+e",
+    "switch": "alt+tab",
+    "change": "alt+tab",
+    "search": "ctrl+f",
+    "point": "*",
+    "pointer": "*",
+    "bold": "ctrl+b",
+    "alternate": "alt",
+    "add": "import",
+    "added": "imported"
 }
 
 var quotes = [
