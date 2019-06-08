@@ -82,7 +82,23 @@ var translations = {
     "universe": "42",
     "everything": "42",
     "lifetime": "runtime",
-    "sleep": "shutdown"
+    "sleep": "shutdown",
+    "user": "idiot",
+    "first": "alpha",
+    "second": "beta",
+    "body": "<body>",
+    "head": "<head>",
+    "restart": "ctrl+alt+del",
+    "death": "BSOD",
+    "resolution": "1920x1080",
+    "back": "alt+⬅️",
+    "forward": "alt+➡️",
+    "baby": "n00b",
+    "wait": "load",
+    "waiting": "loading",
+    "comment": "/* */",
+    "forbidden": "403",
+    "unauthorized": "401"
 }
 
 var quotes = [
@@ -112,7 +128,8 @@ var quotes = [
     "he wore black and i wore white",
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
-    "i need to sleep"
+    "i need to sleep",
+    "I eat paste"	
 ]
 
 function isNumeric(num){
