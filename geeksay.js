@@ -98,7 +98,9 @@ var translations = {
     "bold": "ctrl+b",
     "alternate": "alt",
     "add": "import",
-    "added": "imported"
+    "added": "imported",
+    "fox": "firefox",
+    "permission": "access key"
 }
 
 var quotes = [
@@ -128,7 +130,8 @@ var quotes = [
     "he wore black and i wore white",
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
-    "i need to sleep"
+    "i need to sleep",
+    "find me a coffee house"
 ]
 
 function isNumeric(num){
