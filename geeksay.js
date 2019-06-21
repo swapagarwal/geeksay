@@ -88,6 +88,7 @@ var translations = {
 var quotes = [
     "Hello World",
     "Bye World",
+    "Buy the ticket, take the ride",
     "Forget that ever happened",
     "Home is where the heart is",
     "Home is where ideas come to life",
