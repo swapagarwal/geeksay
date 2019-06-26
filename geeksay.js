@@ -82,7 +82,8 @@ var translations = {
     "universe": "42",
     "everything": "42",
     "lifetime": "runtime",
-    "sleep": "shutdown"
+    "sleep": "shutdown",
+    "gift": "trojan"
 }
 
 var quotes = [
@@ -112,7 +113,8 @@ var quotes = [
     "he wore black and i wore white",
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
-    "i need to sleep"
+    "i need to sleep",
+    "Surprise! I brought you a gift!"
 ]
 
 function isNumeric(num){
