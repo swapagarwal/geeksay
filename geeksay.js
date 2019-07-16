@@ -112,7 +112,20 @@ var quotes = [
     "he wore black and i wore white",
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
-    "i need to sleep"
+    "i need to sleep",
+    "Bazzinga",
+    "Beem me up Scotty", 
+    "It's a trap!",
+    "I'm sorry, Dave. I'm afraid I can't do that",
+    "If I'm not back in five minutes, just wait longer",
+    "Ray, if someone asks you if you're a god, you say YES",
+    "I find your lack of faith disturbing",
+    "Goonies never say die",
+    "Nothing shocks me–I'm a scientist",
+    "If we knew what it was we were doing, it would not be called research, would it?",
+    "Oooh, ahhh, that's how it always starts. Then later there's running and screaming",
+    "If they take my stapler then I'll set the building on fire",
+    "Good. Bad. I'm the guy with the gun",
 ]
 
 function isNumeric(num){
