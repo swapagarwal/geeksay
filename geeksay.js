@@ -82,7 +82,13 @@ var translations = {
     "universe": "42",
     "everything": "42",
     "lifetime": "runtime",
-    "sleep": "shutdown"
+    "sleep": "shutdown",
+    "snake": "Python",
+    "number": "int",
+    "I": "self",
+    "am": "=",
+    "is": "=",
+    "are": "=",
 }
 
 var quotes = [
