@@ -92,7 +92,7 @@ var quotes = [
     "Home is where the heart is",
     "Home is where ideas come to life",
     "Home is where the wifi connects automatically",
-    "fuck that shit",
+
     "go hard or go home",
     "I will call you",
     "I want the world to know me",
@@ -133,7 +133,10 @@ function geeksay(text) {
     }
 }
 
-function getRandomTranslation() {
+function getRandomTranslation(withSweares) {
+    if ( withSwares == True ) {
+       quotes.push('fuck that shit');
+    }
     var keys = Object.keys(translations);
     var randomKey = keys[Math.floor(Math.random() * keys.length)];
     return "Random Translation: " + randomKey + " -> " + translations[randomKey];
