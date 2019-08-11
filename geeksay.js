@@ -133,7 +133,7 @@ function geeksay(text) {
     }
 }
 
-function getRandomTranslation(withSwares) {
+function getRandomTranslation(withSweares) {
     if ( withSwares == True ) {
        quotes.push('fuck that shit');
     }
