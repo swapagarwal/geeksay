@@ -82,7 +82,11 @@ var translations = {
     "universe": "42",
     "everything": "42",
     "lifetime": "runtime",
-    "sleep": "shutdown"
+    "sleep": "shutdown",
+    "OK": "200",
+    "hell": "DOS",
+    "unauthorized": "401",
+    "too early": "425"
 }
 
 var quotes = [
@@ -94,6 +98,10 @@ var quotes = [
     "Home is where the wifi connects automatically",
     "fuck that shit",
     "go hard or go home",
+    "it's too early to go to the airport",
+    "OK",
+    "this is hell",
+    "that is unauthorized",
     "I will call you",
     "I want the world to know me",
     "I am the owner",
