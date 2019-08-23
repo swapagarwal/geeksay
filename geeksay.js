@@ -26,6 +26,7 @@ var translations = {
     "replace": "ctrl+r",
     "print": "ctrl+p",
     "get": "git",
+    "underline":"ctrl+U",
     "got": "git",
     "home": "127.0.0.1",
     "house": "127.0.0.1",
@@ -69,6 +70,7 @@ var translations = {
     "delete": "del",
     "force": "ma",
     "coffee": "covfefe",
+    "select": "ctrl+A",
     "number": "#",
     "image": "img",
     "photo": "img",
@@ -79,6 +81,7 @@ var translations = {
     "bye": "exit",
     "noob": "n00b",
     "life": "42",
+    "italic":"ctrl+I",
     "universe": "42",
     "everything": "42",
     "lifetime": "runtime",
@@ -97,6 +100,7 @@ var quotes = [
     "I will call you",
     "I want the world to know me",
     "I am the owner",
+    "Programming is thinking not typing",
     "I am God",
     "please make me a sandwich",
     "coffee is life",
@@ -111,7 +115,9 @@ var quotes = [
     "i was 5 and he was 6",
     "he wore black and i wore white",
     "bang bang my baby shot me down",
+    "1st rule of programming :- if it works don't touch it !!",
     "Today is the first day of the rest of your lifetime",
+    "You are the {CSS} to my <HTML>",
     "i need to sleep"
 ]
 
