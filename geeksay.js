@@ -97,6 +97,7 @@ var quotes = [
     "I will call you",
     "I want the world to know me",
     "I am the owner",
+    "Programming is thinking not typing",
     "I am God",
     "please make me a sandwich",
     "coffee is life",
