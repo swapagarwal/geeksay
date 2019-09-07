@@ -82,7 +82,15 @@ var translations = {
     "universe": "42",
     "everything": "42",
     "lifetime": "runtime",
-    "sleep": "shutdown"
+    "sleep": "shutdown",
+    "grey": "#808080",
+    "fifty": "50",
+    "zero": "0",
+    "semicolon": ";",
+    "statement": "{}",
+    "comment": "/* */",
+    "code": "{}",
+    "bug": "🐛"
 }
 
 var quotes = [
@@ -112,7 +120,12 @@ var quotes = [
     "he wore black and i wore white",
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
-    "i need to sleep"
+    "i need to sleep",
+    "Fifty sades of grey",
+    "Programmers always start from zero",
+    "You are semicolon to my statement",
+    "Real programmers don't comment their code",
+    "while there's code there's bug"
 ]
 
 function isNumeric(num){
