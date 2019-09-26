@@ -83,6 +83,7 @@ var translations = {
     "everything": "42",
     "lifetime": "runtime",
     "sleep": "shutdown"
+    "count from 1 to 10" : "for (int i=1;i<=10;i++)"
 }
 
 var quotes = [
@@ -113,6 +114,7 @@ var quotes = [
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
     "i need to sleep"
+    "count from 1 to 10"
 ]
 
 function isNumeric(num){
