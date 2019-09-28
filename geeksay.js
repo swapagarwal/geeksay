@@ -92,12 +92,10 @@ var quotes = [
     "Home is where the heart is",
     "Home is where ideas come to life",
     "Home is where the wifi connects automatically",
-    "fuck that shit",
     "go hard or go home",
     "I will call you",
     "I want the world to know me",
     "I am the owner",
-    "I am God",
     "please make me a sandwich",
     "coffee is life",
     "what's your name",
@@ -112,7 +110,10 @@ var quotes = [
     "he wore black and i wore white",
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
-    "i need to sleep"
+    "I am only here because the server is down",
+    "I speak fluent movie quotes",
+    "Come to the dark side, we have π",
+    "Think like a proton, always positive"
 ]
 
 function isNumeric(num){
