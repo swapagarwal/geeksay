@@ -1,4 +1,4 @@
-var translations = {
+const translations = {
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
@@ -85,7 +85,7 @@ var translations = {
     "sleep": "shutdown"
 }
 
-var quotes = [
+const quotes = [
     "Hello World",
     "Bye World",
     "Forget that ever happened",
@@ -112,7 +112,11 @@ var quotes = [
     "he wore black and i wore white",
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
-    "i need to sleep"
+    "i need to sleep",
+		"I rebel; therefore I exist.",
+		"Have you tried turning it off and on again?",
+		"Are the voices I hear me?",
+		"programming is boring, but computers are my friend"
 ]
 
 function isNumeric(num){
@@ -134,8 +138,8 @@ function geeksay(text) {
 }
 
 function getRandomTranslation() {
-    var keys = Object.keys(translations);
-    var randomKey = keys[Math.floor(Math.random() * keys.length)];
+    const keys = Object.keys(translations);
+    const randomKey = keys[Math.floor(Math.random() * keys.length)];
     return "Random Translation: " + randomKey + " -> " + translations[randomKey];
 }
 
