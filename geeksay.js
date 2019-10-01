@@ -115,6 +115,7 @@ var quotes = [
     "Today is the first day of the rest of your lifetime",
     "i need to sleep"
     "count from 1 to 10"
+    "What the dump !"
 ]
 
 function isNumeric(num){
