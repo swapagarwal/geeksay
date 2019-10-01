@@ -85,6 +85,7 @@ var translations = {
     "sleep": "shutdown",
     "alternate": "alt",
     "alternative": "alt",
+    "alternatives": "alt",
     "block": "{}",
     "code": "</>",
     "integer" : "int",
@@ -97,7 +98,7 @@ var translations = {
     "directory": "dir",
     "folder": "dir",
     "modify": "mod",
-    "random": "rad",
+    "random": "rand",
     "mathematics": "math",
 }
 
