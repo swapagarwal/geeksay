@@ -1,4 +1,4 @@
-var translations = {
+const translations = {
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
@@ -103,7 +103,7 @@ var translations = {
     "like": "<3",
 }
 
-var quotes = [
+const quotes = [
     "Hello World", // ping 0.0.0.0/0
     "Bye World", // exit 0.0.0.0/0
     "Forget that ever happened", // ctrl+z that ever happened
@@ -158,8 +158,8 @@ function geeksay(text) {
 }
 
 function getRandomTranslation() {
-    var keys = Object.keys(translations);
-    var randomKey = keys[Math.floor(Math.random() * keys.length)];
+    const keys = Object.keys(translations);
+    const randomKey = keys[Math.floor(Math.random() * keys.length)];
     return "Random Translation: " + randomKey + " -> " + translations[randomKey];
 }
 
