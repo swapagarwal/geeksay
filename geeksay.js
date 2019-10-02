@@ -83,6 +83,8 @@ var translations = {
     "everything": "42",
     "lifetime": "runtime",
     "sleep": "shutdown",
+    "marry": "merge",
+    "propose": "commit",
     "not found": "404",
     "link": "url",
     "forbidden": "403",
