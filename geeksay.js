@@ -82,7 +82,8 @@ var translations = {
     "universe": "42",
     "everything": "42",
     "lifetime": "runtime",
-    "sleep": "shutdown"
+    "sleep": "shutdown",
+    "refresh": "ctrl+r"
 }
 
 var quotes = [
