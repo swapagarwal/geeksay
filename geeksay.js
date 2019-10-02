@@ -153,8 +153,9 @@ function geeksay(text) {
     }
     else {
         lowerCaseText = text.toLowerCase();
-        if (translations.hasOwnProperty(lowerCaseText)) {
-            return translations[lowerCaseText];
+        lowerCaseNoPunctuationText = lowerCaseText.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")
+        if (translations.hasOwnProperty(lowerCaseNoPunctuationText)) {
+            return translations[lowerCaseNoPunctuationText];
         } else {
             return text;
         }
