@@ -83,6 +83,9 @@ var translations = {
     "everything": "42",
     "lifetime": "runtime",
     "sleep": "shutdown"
+		"by the way": "btw",
+		"fuck the world": "ftw",
+		"laugh out loud": "lol"
 }
 
 var quotes = [
