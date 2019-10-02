@@ -84,7 +84,23 @@ var translations = {
     "lifetime": "runtime",
     "sleep": "shutdown",
     "marry": "merge",
-    "propose": "commit"
+    "propose": "commit",
+    "not found": "404",
+    "link": "url",
+    "forbidden": "403",
+    "send" : "push",
+    "alternate": "alt",
+    "alternative": "alt",
+    "inspect": "ctrl+shift+i",
+    "equal": "=",
+    "remove": "rm",
+    "move": "mv",
+    "plus": "+",
+    "random": "rand",
+    "mathematics": "math",
+    "heart": "<3",
+    "love": "<3",
+    "like": "<3"
 }
 
 var quotes = [
@@ -114,7 +130,13 @@ var quotes = [
     "he wore black and i wore white",
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
-    "i need to sleep"
+    "i need to sleep",
+    "There are 10 types of people in the world: those who understand binary and those who don't",
+    "I love my life",
+    "I love my house",
+    "heart break",
+    "I like to fix shit",
+    "eat sleep code repeat"
 ]
 
 function isNumeric(num){
