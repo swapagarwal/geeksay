@@ -83,9 +83,6 @@ var translations = {
     "everything": "42",
     "lifetime": "runtime",
     "sleep": "shutdown",
-    "restart": "power cycle",
-    "house": "domain",
-    "home": "domain",
     "marry": "merge",
     "propose": "commit"
 }
