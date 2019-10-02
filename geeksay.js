@@ -83,6 +83,9 @@ const translations = {
     "everything": "42",
     "lifetime": "runtime",
     "sleep": "shutdown",
+    "red": "#ff0000",
+    "green": "#00ff00",
+    "blue": "#0000ff",
     "marry": "merge",
     "propose": "commit",
     "not found": "404",
@@ -137,6 +140,7 @@ const quotes = [
     "heart break", // <3 <br>
     "I like to fix shit", // I <3 to debug dump
     "eat sleep code repeat", // eat shutdown code repeat
+    "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
 ]
 
 function isNumeric(num){
