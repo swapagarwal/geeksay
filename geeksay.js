@@ -100,43 +100,43 @@ var translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
-    "like": "<3"
+    "like": "<3",
 }
 
 var quotes = [
-    "Hello World",
-    "Bye World",
-    "Forget that ever happened",
-    "Home is where the heart is",
-    "Home is where ideas come to life",
-    "Home is where the wifi connects automatically",
-    "fuck that shit",
-    "go hard or go home",
-    "I will call you",
-    "I want the world to know me",
-    "I am the owner",
-    "I am God",
-    "please make me a sandwich",
-    "coffee is life",
-    "what's your name",
-    "I will find you and I will fix you!",
-    "geek alert",
-    "geek inside",
-    "copy that!",
-    "get out of home",
-    "not everything is black and white",
-    "to be or not to be, that is the question",
-    "i was 5 and he was 6",
-    "he wore black and i wore white",
-    "bang bang my baby shot me down",
-    "Today is the first day of the rest of your lifetime",
-    "i need to sleep",
-    "There are 10 types of people in the world: those who understand binary and those who don't",
-    "I love my life",
-    "I love my house",
-    "heart break",
-    "I like to fix shit",
-    "eat sleep code repeat"
+    "Hello World", // ping 0.0.0.0/0
+    "Bye World", // exit 0.0.0.0/0
+    "Forget that ever happened", // ctrl+z that ever happened
+    "Home is where the heart is", // 127.0.0.1 is where the heart is
+    "Home is where ideas come to life", // 127.0.0.1 is where ideas come to 42
+    "Home is where the wifi connects automatically", // 127.0.0.1 is where the wifi connects automatically
+    "fuck that shit", // fork that dump
+    "go hard or go home", // go hard || go 127.0.0.1
+    "I will call you", // I will ping you
+    "I want the world to know me", // I require the 0.0.0.0/0 to know self
+    "I am the owner", // I am the admin
+    "I am God", // I am root
+    "please make me a sandwich", // sudo make self a sandwich
+    "coffee is life", // covfefe is 42
+    "what's your name", // what's your alias
+    "I will find you and I will fix you!", // I will ctrl+f you && I will debug you!
+    "geek alert", // g33k alert
+    "geek inside", // g33k inside
+    "copy that!", // ctrl+c that!
+    "get out of home", // git out of 127.0.0.1
+    "not everything is black and white", // ! 42 is #000 && #fff
+    "to be or not to be, that is the question", // to be || ! to be, that is the question
+    "i was 5 and he was 6", // i was 101 && he was 110
+    "he wore black and i wore white", // he wore #000 && i wore #fff
+    "bang bang my baby shot me down", // ! ! my baby shot self down
+    "Today is the first day of the rest of your lifetime", // Today is the first day of the rest of your runtime
+    "i need to sleep", // i need to shutdown
+    "There are ten types of people in the world: those who understand binary and those who don't", // There are ten types of people in the world: those who understand 01 && those who don't
+    "I love my life", // I <3 my 42
+    "I love my house", // I <3 my 127.0.0.1
+    "heart break", // <3 <br>
+    "I like to fix shit", // I <3 to debug dump
+    "eat sleep code repeat", // eat shutdown code repeat
 ]
 
 function isNumeric(num){
