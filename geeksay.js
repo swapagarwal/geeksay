@@ -76,7 +76,7 @@ const translations = {
     "picture": "img",
     "snap": "img",
     "snapshot": "img",
-    "bye": "exit",
+    "bye": "exit()",
     "noob": "n00b",
     "life": "42",
     "universe": "42",
@@ -104,6 +104,10 @@ const translations = {
     "heart": "<3",
     "love": "<3",
     "like": "<3",
+    "pause": "delay(me)",
+    "geeky": "g33ky",
+    "game": "g@m3",
+    "multiply": "x",
 }
 
 const quotes = [
