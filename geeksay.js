@@ -83,6 +83,7 @@ var translations = {
     "everything": "42",
     "lifetime": "runtime",
     "sleep": "shutdown",
+    "send" : "push",
     "alternate": "alt",
     "alternative": "alt",
     "inspect": "ctrl+shift+i",
