@@ -82,7 +82,16 @@ var translations = {
     "universe": "42",
     "everything": "42",
     "lifetime": "runtime",
-    "sleep": "shutdown"
+    "sleep": "shutdown",
+    "help": "f1",
+    "bomb": "bug",
+    "bar": "foo",
+    "hell": "vim",
+    "kung fu": "javascript",
+    "beers": "bugs",
+    "programs", "ladies and gentlemen",
+    "2": "10",
+    "christmas": "octal halloween"
 }
 
 var quotes = [
@@ -113,24 +122,15 @@ var quotes = [
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
     "i need to sleep",
-    "Try not. Do, or do not. There is no try.",
-    "I'm sorry, Dave. I'm afraid I can't do that.",
+    "I am not your help button",
     "Some days, you just can't get rid of a bomb",
-    "Greetings, programs!",
-    "I find your lack of faith disturbing.",
-    "I am not your F1 button",
-    "There are 10 types of people in the word; those who understand binary, and those who don’t.",
-    "Sudo make me a sandwich.",
-    "I'm stuck in vim",
-    "Be nice to nerds. Chances are you’ll end up working for one.",
+    "Two programmers walk into a bar",
+    "I'm stuck in hell",
     "I know Kung Fu.",
-    "Your mother was a hamster and your father smelt of elderberries.",
-    "Debugging feels like being the detective in a crime movie where you are also the murderer.",
-    "99 littles bugs in the code. 99 bugs in the code. Patch one down, compile it around. 117 bugs in the code...",
-    "There are 10 kinds of people in this world: Those who understand binary, those who don't, and those who weren't expecting a base 3 joke.",
-    "Two programmers walk into a foo.",
-    "Halloween is the birthday of Octal Jesus!",
-    "//This line doesn't actually do anything, but the code stops working when I delete it."
+    "99 littles beers in the code. 99 beers in the code. Patch one down, compile it around. 117 beers in the code...",
+    "Greetings, programs!",
+    "There are 2 types of people in the word; those who understand binary, and those who don’t.",
+    "Merry Christmas!",
 ]
 
 function isNumeric(num){
