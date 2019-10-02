@@ -112,7 +112,8 @@ var quotes = [
     "he wore black and i wore white",
     "bang bang my baby shot me down",
     "Today is the first day of the rest of your lifetime",
-    "i need to sleep"
+    "i need to sleep",
+    "an apple does not fall far from the tree"
 ]
 
 function isNumeric(num){
