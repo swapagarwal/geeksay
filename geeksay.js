@@ -136,7 +136,8 @@ var quotes = [
     "I love my house",
     "heart break",
     "I like to fix shit",
-    "eat sleep code repeat"
+    "eat sleep code repeat",
+    "No deploy on friday"
 ]
 
 function isNumeric(num){
