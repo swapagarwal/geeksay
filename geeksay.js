@@ -83,6 +83,9 @@ var translations = {
     "everything": "42",
     "lifetime": "runtime",
     "sleep": "shutdown",
+    "not found": "404",
+    "link": "url",
+    "forbidden": "403",
     "send" : "push",
     "alternate": "alt",
     "alternative": "alt",
@@ -130,7 +133,8 @@ var quotes = [
     "I love my life",
     "I love my house",
     "heart break",
-    "I like to fix shit"
+    "I like to fix shit",
+    "eat sleep code repeat"
 ]
 
 function isNumeric(num){
