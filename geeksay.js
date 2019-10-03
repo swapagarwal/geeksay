@@ -104,6 +104,8 @@ const translations = {
     "heart": "<3",
     "love": "<3",
     "like": "<3",
+    "increment":"++",
+    "decrement":"--"
 }
 
 const quotes = [
@@ -142,6 +144,7 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
+    "Change is the only constant", // const change
 ]
 
 function isNumeric(num){
