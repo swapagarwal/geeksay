@@ -91,7 +91,7 @@ const translations = {
     "not found": "404",
     "link": "url",
     "forbidden": "403",
-    "send" : "push",
+    "send": "push",
     "alternate": "alt",
     "alternative": "alt",
     "inspect": "ctrl+shift+i",
@@ -142,17 +142,17 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
+    "I love mathematics" // I <3 math
 ]
 
-function isNumeric(num){
+function isNumeric(num) {
     return !isNaN(parseInt(num));
 }
 
 function geeksay(text) {
-    if(isNumeric(text)) {
+    if (isNumeric(text)) {
         return (text >>> 0).toString(2);
-    }
-    else {
+    } else {
         lowerCaseText = text.toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
             return translations[lowerCaseText];
