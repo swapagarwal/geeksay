@@ -118,9 +118,9 @@ var quotes = [
     "hold my beer",
     "it's not a bug, it's a new feature",
     "I'm wired in",
-    "I'm in"
     "No deploy Friday",
-    "Talk is cheap, show me the code"
+    "Talk is cheap, show me the code",
+    "Fix it!"
 
 ]
 
