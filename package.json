@@ -1,0 +1,25 @@
+{
+  "name": "geeksay",
+  "version": "1.0.0",
+  "description": "🤓 geeks will ctrl+s the world!",
+  "main": "geeksay.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swapagarwal/geeksay.git"
+  },
+  "keywords": [
+    "translate",
+    "layman",
+    "geek",
+    "api"
+  ],
+  "author": "Swapnil Agarwal <hi+npm@swapnil.net> (http://swapnil.net)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swapagarwal/geeksay/issues"
+  },
+  "homepage": "https://github.com/swapagarwal/geeksay#readme"
+}
