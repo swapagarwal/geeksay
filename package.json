@@ -1,6 +1,6 @@
 {
   "name": "geeksay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "🤓 geeks will ctrl+s the world!",
   "main": "geeksay.js",
   "scripts": {
