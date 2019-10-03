@@ -104,6 +104,36 @@ const translations = {
     "heart": "<3",
     "love": "<3",
     "like": "<3",
+
+    // Spanish words
+    "rojo": "#ff0000",
+    "rojas": "#ff0000",
+    "azul": "#0000ff",
+    "azules": "#0000ff",
+    "verde": "#00ff00",
+    "salvar": "ctrl+g",
+    "guardar": "ctrl+g",
+    "corazon": "<3",
+    "amor": "<3",
+    "igual": "=",
+    "mas": "+",
+    "numero": "#",
+    "buscar": "ctrl+b",
+    "busca": "ctrl+b",
+    "ayuda": "f1",
+    "menos": "-",
+    "mundo": "0.0.0.0/0",
+    "blanco": "#000",
+    "negro": "#fff",
+    "rompe": "<br>",
+    "romper": "<br>",
+    "rompas": "<br>",
+    "no": "!",
+    "deshacer": "ctrl+z",
+    "copiado": "ctrl+c",
+    "copies": "ctrl+c",
+    "pegar": "ctrl+v",
+    "pegues": "ctrl+v",
 }
 
 const quotes = [
@@ -142,6 +172,11 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
+
+    // Spanish quotes
+    "No me pegues", // ! me ctrl-v
+    "las rosas son rojas, las violetas azules", // las rosas son ##ff0000, las violetas ##0000ff
+    "Me rompiste el corazon", // Me <br> el <3
 ]
 
 function isNumeric(num){
