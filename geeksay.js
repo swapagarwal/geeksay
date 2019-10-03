@@ -83,6 +83,7 @@ const translations = {
     "everything": "42",
     "lifetime": "runtime",
     "sleep": "shutdown",
+    "deep purple":"#990033",
     "red": "#ff0000",
     "green": "#00ff00",
     "blue": "#0000ff",
