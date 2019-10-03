@@ -172,4 +172,4 @@ function getRandomQuote() {
     return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
-exports.geeksay = geeksay;
+module.exports = geeksay;

@@ -1,6 +1,6 @@
 {
   "name": "geeksay",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "🤓 geeks will ctrl+s the world!",
   "main": "geeksay.js",
   "bin": "./cli.js",
