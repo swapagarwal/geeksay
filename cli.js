@@ -1,13 +1,9 @@
 #!/usr/bin/env node
 
-var module = require("./geeksay");
+const geeksay = require("./geeksay");
 
 const [,, ...words] = process.argv;
 
-var translation = [];
-
-for (var i = 0; i < words.length; i++) {
-  translation.push(module.geeksay(words[i]));
-}
+const translation = words.map(w => geeksay(w));
 
 console.log(translation.join(' '));
