@@ -149,17 +149,19 @@ function isNumeric(num){
 }
 
 function geeksay(text) {
-    if(isNumeric(text)) {
-        return (text >>> 0).toString(2);
-    }
-    else {
-        lowerCaseText = text.toLowerCase();
-        if (translations.hasOwnProperty(lowerCaseText)) {
-            return translations[lowerCaseText];
-        } else {
-            return text;
-        }
-    }
+	text = text.trim().split(" ");
+	for(int i=0; i< text.length; i++) {
+	    if(isNumeric(text[i])) {
+	        text[i] = (text[i] >>> 0).toString(2);
+	    }
+	    else {
+	        lowerCaseText = text[i].toLowerCase();
+	        if (translations.hasOwnProperty(lowerCaseText)) {
+	            text[i] = translations[lowerCaseText];
+	        }
+	    }
+	}
+	return text.join(' ');
 }
 
 function getRandomTranslation() {
