@@ -152,12 +152,24 @@ function geeksay(text) {
         return (text >>> 0).toString(2);
     }
     else {
+        specialCharactersPeriod = '.'
+        specialCharactersComma = ','
         lowerCaseText = text.toLowerCase();
-        lowerCaseNoPunctuationText = lowerCaseText.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")
-        if (translations.hasOwnProperty(lowerCaseNoPunctuationText)) {
-            return translations[lowerCaseNoPunctuationText];
+        // lowerCaseNoPunctuationText = lowerCaseText.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")
+        if (lowerCaseText.indexOf(',') > -1){
+            cleanLowerCase = lowerCaseText.replace(specialCharactersComma, '');
+            return translations[cleanLowerCase] + specialCharactersComma;
+        } 
+        if (lowerCaseText.indexOf('.') > -1) {
+            cleanLowerCase = lowerCaseText.replace(specialCharactersPeriod, '');
+            return translations[cleanLowerCase] + specialCharactersPeriod;
+
         } else {
-            return text;
+            if (translations.hasOwnProperty(lowerCaseText)) {
+                return translations[lowerCaseText];
+            } else {
+                return text;
+            }
         }
     }
 }
