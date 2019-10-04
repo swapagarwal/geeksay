@@ -155,7 +155,6 @@ function geeksay(text) {
         specialCharactersPeriod = '.'
         specialCharactersComma = ','
         lowerCaseText = text.toLowerCase();
-        // lowerCaseNoPunctuationText = lowerCaseText.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"")
         if (lowerCaseText.indexOf(',') > -1){
             cleanLowerCase = lowerCaseText.replace(specialCharactersComma, '');
             return translations[cleanLowerCase] + specialCharactersComma;
