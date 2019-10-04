@@ -150,12 +150,12 @@ function isNumeric(num){
 
 function geeksay(text) {
 	text = text.trim().split(" ");
-	for(int i=0; i< text.length; i++) {
+	for(var i=0; i< text.length; i++) {
 	    if(isNumeric(text[i])) {
 	        text[i] = (text[i] >>> 0).toString(2);
 	    }
 	    else {
-	        lowerCaseText = text[i].toLowerCase();
+	        var lowerCaseText = text[i].toLowerCase();
 	        if (translations.hasOwnProperty(lowerCaseText)) {
 	            text[i] = translations[lowerCaseText];
 	        }
