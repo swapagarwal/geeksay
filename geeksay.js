@@ -142,6 +142,7 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
+    "Too fast to live, too young to die", // Too O(1) to live, too young to die
 ]
 
 function isNumeric(num){
