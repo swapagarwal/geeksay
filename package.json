@@ -1,9 +1,11 @@
 {
   "name": "geeksay",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "🤓 geeks will ctrl+s the world!",
   "main": "geeksay.js",
-  "bin": "./cli.js",
+  "bin": {
+    "geeksay": "./cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
