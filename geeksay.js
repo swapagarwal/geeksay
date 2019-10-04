@@ -149,6 +149,12 @@ function isNumeric(num){
 }
 
 function geeksay(text) {
+    const input =  Array.isArray(text) ? text : String(text).split(' ');
+
+    return input.map(geeksayWord).join(' ');
+}
+
+function geeksayWord(text) {
     if(isNumeric(text)) {
         return (text >>> 0).toString(2);
     }
