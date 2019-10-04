@@ -150,7 +150,7 @@ function isNumeric(num){
 
 function geeksay(text) {
 	text = text.trim().split(" ");
-	for(var i=0; i< text.length; i++) {
+	for(var i = 0; i < text.length; i++) {
 	    if(isNumeric(text[i])) {
 	        text[i] = (text[i] >>> 0).toString(2);
 	    }
@@ -161,7 +161,7 @@ function geeksay(text) {
 	        }
 	    }
 	}
-	return text.join(' ');
+	return text.join(" ");
 }
 
 function getRandomTranslation() {
