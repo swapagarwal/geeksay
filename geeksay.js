@@ -144,24 +144,24 @@ const quotes = [
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
 ]
 
-function isNumeric(num){
+function isNumeric(num) {
     return !isNaN(parseInt(num));
 }
 
 function geeksay(text) {
-	text = text.trim().split(" ");
-	for(var i = 0; i < text.length; i++) {
-	    if(isNumeric(text[i])) {
-	        text[i] = (text[i] >>> 0).toString(2);
-	    }
-	    else {
-	        var lowerCaseText = text[i].toLowerCase();
-	        if (translations.hasOwnProperty(lowerCaseText)) {
-	            text[i] = translations[lowerCaseText];
-	        }
-	    }
-	}
-	return text.join(" ");
+    text = text.trim().split(" ");
+    for(var i = 0; i < text.length; i++) {
+        if(isNumeric(text[i])) {
+            text[i] = (text[i] >>> 0).toString(2);
+        }
+        else {
+            var lowerCaseText = text[i].toLowerCase();
+            if (translations.hasOwnProperty(lowerCaseText)) {
+                text[i] = translations[lowerCaseText];
+            }
+        }
+    }
+    return text.join(" ");
 }
 
 function getRandomTranslation() {
