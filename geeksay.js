@@ -104,7 +104,10 @@ const translations = {
     "heart": "<3",
     "love": "<3",
     "like": "<3",
+    "smile":":)",
+    "grin":":\\"
 }
+const punctuation =[',','!','.','\''];
 
 const quotes = [
     "Hello World", // ping 0.0.0.0/0
@@ -152,6 +155,26 @@ function geeksay(text) {
     const input =  Array.isArray(text) ? text : String(text).split(' ');
 
     return input.map(geeksayWord).join(' ');
+}
+
+function trimPunctuation(word){
+    start=0,end=word.length;
+    for(i=0;i<word.length;i++){
+        if(punctuation.includes(word[i])){
+            start++;
+        }
+        else
+            break;
+    }
+    for(i=word.length-1;i>=0;i--){
+        if(punctuation.includes(word[i])){
+            end--;
+        }
+        else
+            break;
+    } 
+    var trimWord=word.slice(start,end);
+    return trimWord;
 }
 
 function geeksayWord(text) {
