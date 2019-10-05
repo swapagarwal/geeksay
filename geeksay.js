@@ -48,6 +48,7 @@ const translations = {
     "refresh": "f5",
     "slow": "O(n^n)",
     "fast": "O(1)",
+    "minute": "epoch",
     "leet": "1337",
     "hacker": "haxor",
     "geek": "g33k",
@@ -142,6 +143,7 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
+    "This is your life and it's ending one minute at a time" // This is your 42 && it's ending one epoch @ a time
 ]
 
 function isNumeric(num){
