@@ -182,15 +182,26 @@ function geeksay(text) {
 }
 
 function geeksayWord(text) {
-    if (isNumeric(text)) {
-        return (text >>> 0).toString(2);
+    const pattern = new RegExp(/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/);
+    let specialChar = '';
+    let cleanedText = '';
+
+    if (pattern.test(text[text.length - 1])) {
+        specialChar = text[text.length - 1];
+        cleanedText = text.substring(0, text.length -1);
+    } else {
+        cleanedText = text;
+    }
+
+    if(isNumeric(cleanedText)) {
+        return (cleanedText >>> 0).toString(2) + specialChar;
     }
     else {
-        lowerCaseText = text.toLowerCase();
+        lowerCaseText = cleanedText.toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
-            return translations[lowerCaseText];
+            return translations[lowerCaseText] + specialChar;
         } else {
-            return text;
+            return cleanedText + specialChar;
         }
     }
 }
