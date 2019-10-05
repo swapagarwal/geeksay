@@ -149,7 +149,7 @@ function isNumeric(num){
 }
 
 function geeksay(text) {
-    const input =  Array.isArray(text) ? text : String(text).split(' ');
+    const input = Array.isArray(text) ? text : String(text).split(' ');
 
     return input.map(geeksayWord).join(' ');
 }
@@ -159,13 +159,18 @@ function geeksayWord(text) {
         return (text >>> 0).toString(2);
     }
     else {
-        lowerCaseText = text.toLowerCase();
+        lowerCaseText = removeSymbols(text).toLowerCase();
+
         if (translations.hasOwnProperty(lowerCaseText)) {
-            return translations[lowerCaseText];
+            return text.replace(lowerCaseText, translations[lowerCaseText]);
         } else {
             return text;
         }
     }
+}
+
+function removeSymbols(word) {
+    return word.replace(/[^a-zA-Z0-9]+/, '');
 }
 
 function getRandomTranslation() {
