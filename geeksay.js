@@ -37,6 +37,9 @@ const translations = {
     "hey": "ping",
     "command": "cmd",
     "forget": "ctrl+z",
+    "back": "ctrl+z",
+    "forward": "ctrl+y",
+    "future": "ctrl+y",
     "world": "0.0.0.0/0",
     "want": "require",
     "name": "alias",
@@ -142,6 +145,7 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
+    "We have to go back to the future"
 ]
 
 function isNumeric(num){
