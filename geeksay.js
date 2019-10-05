@@ -104,6 +104,8 @@ const translations = {
     "heart": "<3",
     "love": "<3",
     "like": "<3",
+    "tomorrow":"(today + 1)",
+    "yesterday": "(today - 1)"
 }
 
 const quotes = [
@@ -112,6 +114,7 @@ const quotes = [
     "Forget that ever happened", // ctrl+z that ever happened
     "Home is where the heart is", // 127.0.0.1 is where the heart is
     "Home is where ideas come to life", // 127.0.0.1 is where ideas come to 42
+    "Home is wherever I'm with you", //127.0.0.1 is wherever I'm with you
     "Home is where the wifi connects automatically", // 127.0.0.1 is where the wifi connects automatically
     "fuck that shit", // fork that dump
     "go hard or go home", // go hard || go 127.0.0.1
@@ -142,6 +145,8 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
+    "Don't let for tomorrow what you can do today.", // Don't let for (today + 1) what you can do today.
+    "Don't let for tomorrow what doesn't need to be done.", //Don't let for (today + 1) what doesn't need to be done.
 ]
 
 function isNumeric(num){
