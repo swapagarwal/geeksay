@@ -159,8 +159,10 @@ function geeksayWord(text) {
     let specialChar = '';
 
     if (pattern.test(text[text.length - 1])) {
-        specialChar = text[text.length - 1];
-        text = text.substring(0, text.length -1);
+        while (pattern.test(text[text.length - 1])) {
+            specialChar = text[text.length - 1] + specialChar;
+            text = text.substring(0, text.length -1);
+        }
     }
 
     if(isNumeric(text)) {
