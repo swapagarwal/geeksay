@@ -108,7 +108,10 @@ const translations = {
     "ask": "prompt",
     "nonexistent": "NullPointerException",
     "ok": "200",
-    "gone": "410"
+    "gone": "410",
+    "dead": "ctrl alt deleted",
+    "info": "data",
+    "storage": "localStorage"
 }
 
 const quotes = [
