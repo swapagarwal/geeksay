@@ -42,6 +42,8 @@ const translations = {
     "red": "#ff0000",
     "green": "#00ff00",
     "blue": "#0000ff",
+    "lime": "#bada55",
+    "badass": "#bada55",
 
     // html & http
     "not found": "404",
