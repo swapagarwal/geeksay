@@ -98,7 +98,6 @@ const translations = {
     "equal": "=",
     "remove": "rm",
     "move": "mv",
-    "plus": "+",
     "random": "rand",
     "mathematics": "math",
     "heart": "<3",
