@@ -104,6 +104,11 @@ const translations = {
     "heart": "<3",
     "love": "<3",
     "like": "<3",
+    "need": "require",
+    "ask": "prompt",
+    "nonexistent": "NullPointerException",
+    "ok": "200",
+    "gone": "410"
 }
 
 const quotes = [
@@ -133,7 +138,7 @@ const quotes = [
     "he wore black and i wore white", // he wore #000 && i wore #fff
     "bang bang my baby shot me down", // ! ! my baby shot self down
     "Today is the first day of the rest of your lifetime", // Today is the first day of the rest of your runtime
-    "i need to sleep", // i need to shutdown
+    "i need to sleep", // i require to shutdown
     "There are ten types of people in the world: those who understand binary and those who don't", // There are ten types of people in the world: those who understand 01 && those who don't
     "I love my life", // I <3 my 42
     "I love my house", // I <3 my 127.0.0.1
