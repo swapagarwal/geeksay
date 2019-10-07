@@ -13,7 +13,7 @@
 </head>
 <style>
   body {
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-weight: 300;
     background: #fff;
     color: #535353;
@@ -198,7 +198,8 @@
         animation: octocat-wave 560ms ease-in-out
       }
     }
-
+  </style>
+  <style>
     /*Styles for switch by mmble*/
     label {
       cursor: pointer;
@@ -220,7 +221,6 @@
 
     .dayBtn {
       background: #e8e8e8;
-      /*border: 3px solid hsl(207, 75%, 65%);*/
       opacity: 1;
       z-index: 1;
       transition: opacity .2s ease-out;
@@ -228,7 +228,6 @@
 
     .nightBtn {
       background: hsl(60, 5%, 25%);
-      /*border: 3px solid #151513;*/
       opacity: 0;
       z-index: 0;
       transition: opacity .2s cubic-bezier(1, 0, 1, 0);
@@ -241,7 +240,6 @@
       border-radius: 34px;
       z-index: 2;
       background: white;
-      /*border: 3px solid gray;*/
       box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
       position: absolute;
       transition: transform .2s ease-out;
@@ -260,18 +258,47 @@
       transition: none;
     }
 
-    label>input:checked {}
+    #switchModeButton {
+      width: 60px;
+      height: 35px;
+      margin: 16px 8px;
+    }
+
+    /*change style*/
+    body.darkTheme,
+    textarea.darkTheme {
+      background: #000;
+      color: #ababab;
+    }
+
+    button.darkTheme {
+      background: #d51555;
+      color: black;
+    }
+
+    #output.darkTheme {
+      border: 3px solid #54FE55;
+    }
   </style>
-  <label style="">
+  <label style="justify-content: center;">
     <h2>Switch to the DARK SIDE: </h2>
-    <input type="checkbox" checked /></input>
+    <input type="checkbox" id="switchMode" /></input>
     <div id="switchModeButton">
       <span class="switchDot"></span>
       <span class="dayBtn btnBlock"></span>
       <span class="nightBtn btnBlock"></span>
-      <span class="btnBlock" style="box-shadow: 0 2px 8px rgba(0, 0, 0, .1);"></span>
+      <span class="btnBlock" style="/*box-shadow: 0 2px 8px rgba(0, 0, 0, .1);*/"></span>
     </div>
   </label>
+
+  <script>
+    document.getElementById("switchMode").onclick = function () {
+      document.querySelector('body').classList.toggle('darkTheme')
+      document.querySelector('textarea').classList.toggle('darkTheme')
+      document.querySelector('button').classList.toggle('darkTheme')
+      document.getElementById('output').classList.toggle('darkTheme')
+    }
+  </script>
   <div class="container">
     <h1>From layman 👶&nbsp;&nbsp;&nbsp;<button style="margin-left: 0px" onclick="randomQuote()"
         id="randomQuoteButton">Random Quote</button></h1>
