@@ -142,7 +142,7 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
-    "We don’t use the expression IRL. We say AFK - Away from keyboard. We think the internet is for real." //TPB AFK
+    "We don’t use the expression IRL. We say AFK - Away from keyboard. We think the internet is for real" //TPB AFK
 ]
 
 function isNumeric(num){
