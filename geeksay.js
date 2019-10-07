@@ -112,7 +112,8 @@ const translations = {
     "finish": "compile",
     "minus": "-",
     "find": "ctrl + f",
-    "code": "tip-tap"
+    "code": "tip-tap",
+    "all":"*"
 }
 
 const quotes = [
