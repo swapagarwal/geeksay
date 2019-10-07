@@ -145,6 +145,7 @@ const quotes = [
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
     "There is no place like home", // There is no place like 127.0.0.1
     "get good", // git gud
+    "i hope you get good", // i hope you git gud
     
 ]
 
