@@ -104,6 +104,14 @@ const translations = {
     "heart": "<3",
     "love": "<3",
     "like": "<3",
+    "live": "function",
+    "wake": "reboot",
+    "order": "command",
+    "language": "javascript",
+    "hacker": "h4ck3r",
+    "finish": "compile",
+    "minus": "-",
+    "find": "ctrl + f"
 }
 
 const quotes = [
