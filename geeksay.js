@@ -1,6 +1,10 @@
 const translations = {
+    ",": "&&",
     "save": "ctrl+s",
     "break": "<br>",
+    "I came": "cd",
+    "I saw": "ls -alt",
+    "I conquered": "rm -rf",
     "control": "ctrl",
     "rule": "ctrl",
     "escape": "esc",
