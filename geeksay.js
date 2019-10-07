@@ -150,7 +150,6 @@ function isNumeric(num){
 
 function geeksay(text) {
     const input = Array.isArray(text) ? text : String(text).split(' ');
-
     return input.map(geeksayWord).join(' ');
 }
 
@@ -160,12 +159,10 @@ function geeksayWord(text) {
     }
     else {
         lowerCaseText = removeSymbols(text).toLowerCase();
-
         if (translations.hasOwnProperty(lowerCaseText)) {
-            return text.replace(lowerCaseText, translations[lowerCaseText]);
-        } else {
-            return text;
+            text = text.replace(lowerCaseText, translations[lowerCaseText]);
         }
+        return text;
     }
 }
 
