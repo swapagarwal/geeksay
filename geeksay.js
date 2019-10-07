@@ -103,7 +103,6 @@ const translations = {
     "back":"ctrl+z",
     "send":"POST",
     "receive":"GET",
-    "receive":"pull",
     "duplicate":"clone",
     "heart": "<3",
     "love": "<3",
