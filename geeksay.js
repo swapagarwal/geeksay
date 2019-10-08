@@ -83,8 +83,15 @@ const translations = {
     "everything": "42",
     "lifetime": "runtime",
     "sleep": "shutdown",
+    "black": "#000000",
+    "silver": "#c0c0c0",
+    "gray": "#808080",
+    "grey": "#808080",
+    "white": "#ffffff",
     "red": "#ff0000",
-    "green": "#00ff00",
+    "purple": "#800080",
+    "green": "#008000",
+    "yellow": "#ffff00",
     "blue": "#0000ff",
     "marry": "merge",
     "propose": "commit",
@@ -141,7 +148,7 @@ const quotes = [
     "I like to fix shit", // I <3 to debug dump
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
-    "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
+    "The greatest trick the devil ever pulled was convincing the world he didn't exist" // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
 ]
 
 function isNumeric(num){
