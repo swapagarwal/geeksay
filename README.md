@@ -42,8 +42,8 @@ $ geeksay to be or not to be, that is the question // to be || ! to be, that is 
 ### npx
 
 ```
-$ npx i was 5 and he was 6 // i was 101 && he was 110
-$ npx sometimes i just need a break // sometimes i just need a <br>
+$ npx geeksay i was 5 and he was 6 // i was 101 && he was 110
+$ npx geeksay sometimes i just need a break // sometimes i just need a <br>
 ```
 
 ## Demo
