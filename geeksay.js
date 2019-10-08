@@ -139,6 +139,7 @@ const quotes = [
     "I love my house", // I <3 my 127.0.0.1
     "heart break", // <3 <br>
     "I like to fix shit", // I <3 to debug dump
+    "I feel so blue", // I feel so #0000ff 
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
