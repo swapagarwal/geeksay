@@ -104,6 +104,7 @@ const translations = {
     "heart": "<3",
     "love": "<3",
     "like": "<3",
+    "at": "@"
 }
 
 const quotes = [
@@ -140,9 +141,11 @@ const quotes = [
     "heart break", // <3 <br>
     "I like to fix shit", // I <3 to debug dump
     "eat sleep code repeat", // eat shutdown code repeat
-    "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
+    "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff master
+    "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
+    "I function better at home", // I fn better @ 127.0.0.1
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
-    "home sweet home", // 127.0.0.1 sweet 127.0.0.1
+    "home sweet home", // 127.0.0.1 sweet 127.0.0.1 
 ]
 
 function isNumeric(num){
