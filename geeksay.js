@@ -145,28 +145,24 @@ const quotes = [
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
 ]
 
-function isNumeric(num){
+function isNumeric(num) {
     return !isNaN(parseInt(num));
 }
 
 function geeksay(text) {
-    const input =  Array.isArray(text) ? text : String(text).split(' ');
-
-    return input.map(geeksayWord).join(' ');
-}
-
-function geeksayWord(text) {
-    if(isNumeric(text)) {
-        return (text >>> 0).toString(2);
-    }
-    else {
-        lowerCaseText = text.toLowerCase();
-        if (translations.hasOwnProperty(lowerCaseText)) {
-            return translations[lowerCaseText];
-        } else {
-            return text;
+    text = text.trim().split(" ");
+    for(var i = 0; i < text.length; i++) {
+        if(isNumeric(text[i])) {
+            text[i] = (text[i] >>> 0).toString(2);
+        }
+        else {
+            var lowerCaseText = text[i].toLowerCase();
+            if (translations.hasOwnProperty(lowerCaseText)) {
+                text[i] = translations[lowerCaseText];
+            }
         }
     }
+    return text.join(" ");
 }
 
 function getRandomTranslation() {
