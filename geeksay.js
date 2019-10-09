@@ -91,7 +91,7 @@ const translations = {
     "not found": "404",
     "link": "url",
     "forbidden": "403",
-    "send" : "push",
+    "send": "push",
     "alternate": "alt",
     "alternative": "alt",
     "inspect": "ctrl+shift+i",
@@ -144,26 +144,41 @@ const quotes = [
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
 ]
 
-function isNumeric(num){
+function isNumeric(num) {
     return !isNaN(parseInt(num));
 }
 
 function geeksay(text) {
-    const input =  Array.isArray(text) ? text : String(text).split(' ');
+    const input = Array.isArray(text) ? text : String(text).split(' ');
 
     return input.map(geeksayWord).join(' ');
 }
 
 function geeksayWord(text) {
-    if(isNumeric(text)) {
+    if (isNumeric(text)) {
         return (text >>> 0).toString(2);
     }
     else {
         lowerCaseText = text.toLowerCase();
-        if (translations.hasOwnProperty(lowerCaseText)) {
-            return translations[lowerCaseText];
-        } else {
-            return text;
+
+        reg = /[.!?\\-]$/;
+        if (lowerCaseText.match(reg)) {
+            p = lowerCaseText.match(reg)[0];
+            text = lowerCaseText.replace(reg, '');
+
+            if (translations.hasOwnProperty(text)) {
+                return translations[text] + p;
+            }
+            else {
+                return text + p;
+            }
+        }
+        else {
+            if (translations.hasOwnProperty(lowerCaseText)) {
+                return translations[lowerCaseText];
+            } else {
+                return text;
+            }
         }
     }
 }
