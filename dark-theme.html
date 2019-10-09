@@ -15,8 +15,8 @@
   body {
     font-family: 'Helvetica', sans-serif;
     font-weight: 300;
-    background: #fff;
-    color: #535353;
+    background: #000;
+    color: #ababab;
     margin: 0px;
     padding: 50px;
     overflow: auto;
@@ -56,6 +56,8 @@
     resize: none;
     padding: 15px;
     border-radius: 4px;
+    background: #000;
+    color: #ababab;
   }
 
   select {
@@ -87,8 +89,8 @@
     outline: none;
     cursor: pointer;
     text-align: center;
-    background: #E91E63;
-    color: white;
+    background: #d51555;
+    color: black;
     font-weight: normal;
     transition: all .4s;
     height: 30px;
@@ -151,6 +153,7 @@
     border-radius: 3px;
     font-weight: 500;
     font-family: monospace;
+    border: 3px solid #54FE55;
   }
 </style>
 
@@ -199,106 +202,6 @@
       }
     }
   </style>
-  <style>
-    /*Styles for switch by mmble*/
-    label {
-      cursor: pointer;
-      display: flex;
-      flex-flow: row wrap;
-    }
-
-    label>input {
-      display: none;
-    }
-
-    .btnBlock {
-      width: 60px;
-      height: 35px;
-      display: block;
-      position: absolute;
-      border-radius: 35px;
-    }
-
-    .dayBtn {
-      background: #e8e8e8;
-      opacity: 1;
-      z-index: 1;
-      transition: opacity .2s ease-out;
-    }
-
-    .nightBtn {
-      background: hsl(60, 5%, 25%);
-      opacity: 0;
-      z-index: 0;
-      transition: opacity .2s cubic-bezier(1, 0, 1, 0);
-    }
-
-    .switchDot {
-      height: 25px;
-      width: 25px;
-      margin: 5px;
-      border-radius: 34px;
-      z-index: 2;
-      background: white;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
-      position: absolute;
-      transition: transform .2s ease-out;
-    }
-
-    input:checked~#switchModeButton>.switchDot {
-      transform: translateX(25px);
-    }
-
-    input:checked~#switchModeButton>.dayBtn {
-      opacity: 0;
-    }
-
-    input:checked~#switchModeButton>.nightBtn {
-      opacity: 1;
-      transition: none;
-    }
-
-    #switchModeButton {
-      width: 60px;
-      height: 35px;
-      margin: 16px 8px;
-    }
-
-    /*change style*/
-    body.darkTheme,
-    textarea.darkTheme {
-      background: #000;
-      color: #ababab;
-    }
-
-    button.darkTheme {
-      background: #d51555;
-      color: black;
-    }
-
-    #output.darkTheme {
-      border: 3px solid #54FE55;
-    }
-  </style>
-  <label style="justify-content: center;">
-    <h2>Switch to the DARK SIDE: </h2>
-    <input type="checkbox" id="switchMode" /></input>
-    <div id="switchModeButton">
-      <span class="switchDot"></span>
-      <span class="dayBtn btnBlock"></span>
-      <span class="nightBtn btnBlock"></span>
-      <span class="btnBlock" style="/*box-shadow: 0 2px 8px rgba(0, 0, 0, .1);*/"></span>
-    </div>
-  </label>
-
-  <script>
-    document.getElementById("switchMode").onclick = function () {
-      document.querySelector('body').classList.toggle('darkTheme')
-      document.querySelector('textarea').classList.toggle('darkTheme')
-      document.querySelector('button').classList.toggle('darkTheme')
-      document.getElementById('output').classList.toggle('darkTheme')
-    }
-  </script>
   <div class="container">
     <h1>From layman 👶&nbsp;&nbsp;&nbsp;<button style="margin-left: 0px" onclick="randomQuote()"
         id="randomQuoteButton">Random Quote</button></h1>
