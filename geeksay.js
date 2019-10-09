@@ -97,6 +97,7 @@ const translations = {
   red: "#ff0000",
   green: "#00ff00",
   blue: "#0000ff",
+  badass: "#bada55",
   marry: "merge",
   propose: "commit",
   notfound: "404!",
