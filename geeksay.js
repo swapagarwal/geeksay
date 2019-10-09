@@ -142,7 +142,7 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
-    "Home sweet home", // 127.0.0.1 sweet 127.0.0.1
+    "home sweet home", // 127.0.0.1 sweet 127.0.0.1
 ]
 
 function isNumeric(num){
@@ -150,6 +150,12 @@ function isNumeric(num){
 }
 
 function geeksay(text) {
+    const input =  Array.isArray(text) ? text : String(text).split(' ');
+
+    return input.map(geeksayWord).join(' ');
+}
+
+function geeksayWord(text) {
     if(isNumeric(text)) {
         return (text >>> 0).toString(2);
     }
@@ -172,3 +178,5 @@ function getRandomTranslation() {
 function getRandomQuote() {
     return quotes[Math.floor(Math.random() * quotes.length)];
 }
+
+module.exports = geeksay;
