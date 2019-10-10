@@ -186,18 +186,14 @@ function geeksayWord(text) {
     let prefix = '',
         suffix = '';
 
-    if (pattern.test(text[0])) {
-        while (pattern.test(text[0])) {
-            prefix = prefix + text[0];
-            text = text.substring(1);
-        }
+    while (pattern.test(text[0])) {
+        prefix = prefix + text[0];
+        text = text.substring(1);
     }
 
-    if (pattern.test(text[text.length - 1])) {
-        while (pattern.test(text[text.length - 1])) {
-            suffix = text[text.length - 1] + suffix;
-            text = text.substring(0, text.length -1);
-        }
+    while (pattern.test(text[text.length - 1])) {
+        suffix = text[text.length - 1] + suffix;
+        text = text.substring(0, text.length -1);
     }
 
     if(isNumeric(text)) {
