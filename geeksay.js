@@ -104,6 +104,8 @@ const translations = {
     "heart": "<3",
     "love": "<3",
     "like": "<3",
+    "yes": "true",
+    "no": "false",
 }
 
 const quotes = [
@@ -143,6 +145,7 @@ const quotes = [
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
+    "it's a yes or no question", // it's a true || false question
 ]
 
 function isNumeric(num){
