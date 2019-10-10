@@ -104,6 +104,7 @@ const translations = {
     "heart": "<3",
     "love": "<3",
     "like": "<3",
+    "repeat": "while true",
 }
 
 const quotes = [
@@ -139,7 +140,7 @@ const quotes = [
     "I love my house", // I <3 my 127.0.0.1
     "heart break", // <3 <br>
     "I like to fix shit", // I <3 to debug dump
-    "eat sleep code repeat", // eat shutdown code repeat
+    "eat sleep code repeat", // eat shutdown code while true
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
