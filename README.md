@@ -38,7 +38,9 @@ $ npm install geeksay
 $ geeksay copy that // ctrl+c that
 $ geeksay to be or not to be, that is the question // to be || ! to be, that is the question
 ```
-> Note: *do not* put quotes around the phrase, even if it contains spaces.
+
+> Note: **Do not** put quotes around the phrase, even if it contains spaces!
+
 ### npx
 
 ```
