@@ -39,6 +39,8 @@ $ geeksay copy that // ctrl+c that
 $ geeksay to be or not to be, that is the question // to be || ! to be, that is the question
 ```
 
+> Note: **Do not** put quotes around the phrase, even if it contains spaces!
+
 ### npx
 
 ```
