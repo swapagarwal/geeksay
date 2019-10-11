@@ -1,0 +1,124 @@
+body {
+    font-family: 'Helvetica';
+    font-weight: 300;
+    background: #fff;
+    color: #535353;
+    margin: 0px;
+    padding: 50px;
+    overflow: auto;
+    font-size: 16px;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: auto;
+    z-index: 10;
+  }
+  @media (max-width: 500px) {
+    body {
+      padding: 20px;
+    }
+    button {
+      margin: 20px 0 !important;
+    }
+  }
+  h1 {
+    /font-family: 'Lato', 'Helvetica', Arial, sans-serif;
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+  textarea {
+    width: 100%;
+    font-family: 'Helvetica';
+    font-weight: 300;
+    font-size: 16px;
+    height: 150px;
+    line-height: 24px;
+    resize: none;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 4px;
+    line-height: 1.5;
+    background-color: #eee;
+    border-radius: 3px;
+    margin: 0 4px 4px 4px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 1px 5px 0 rgba(0, 0, 0, 0.12),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  }
+  select:focus {
+    background-color: #7bd6cf;
+  }
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    background: #E91E63;
+    color: white;
+    font-weight: normal;
+    transition: all .4s;
+    height: 30px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: 14px;
+    margin: 20px;
+    width: 130px;
+  }
+  #footer {
+    margin-top: 100px;
+    padding-top: 20px;
+    border-top: 2px solid #E91E63;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #footer > p {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .2em;
+    padding-right: 6px;
+  }
+  .note {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+  .red {
+    color: #E91E63;
+  }
+  a:link, a:visited {
+    color: #E91E63;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #2196F3;
+  }
+  /* Hide this somewhere */
+  #clipboardContents {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+  #output {
+    padding: 15px;
+    background-color: black;
+    color: #54FE55;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: monospace;
+  }
