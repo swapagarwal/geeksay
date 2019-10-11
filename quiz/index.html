@@ -198,8 +198,8 @@
       <div id="questionHeader">
         <span class="questionSpan">QUESTION</span>
         <span class="questionCounter">3/10</span>
-        <img class="noResult" style="float:right" src="good.png" width="40" height="auto"/>
-        <img class="noResult" style="float:right" src="bad.png" width="30" height="auto"/>
+        <img class="noResult" id="correctIcon" style="float:right" src="img2.png" width="40" height="auto"/>
+        <img class="noResult" id="wrongIcon" style="float:right" src="img1.png" width="25" height="auto"/>
 
       </div>
       <div class="contentQA">
@@ -229,30 +229,49 @@
   <div id="clipboardContents">
 
 
-
   </div>
 
 
   <script type="text/javascript">
     //console.log(geeksay('sometimes, i just need a break'));
-    //document.getElementById("randomTranslation").innerText = getRandomTranslation();
+    console.log(getRandomTranslation())
+   // document.getElementById("question").innerText = getRandomTranslation();
   </script>
 
   <script>
     document.getElementById('answerInput').addEventListener('input', function() {
+      hideIcons();
       document.getElementById('nextButton').style = 
       'background-color: #E91E63; border-color: #E91E63';
      
     });
+    function hideIcons() {
+      var wrongIcon = document.getElementById('wrongIcon');
+      var correctIcon = document.getElementById('correctIcon');
+      wrongIcon.style = 
+      'display:none; float: right'
+      correctIcon.style = 
+      'display:none; float: right'
+    }
     function checkAnswer(str) {
 
       var inputGeek = document.getElementById('question').innerText;
+      var wrongIcon = document.getElementById('wrongIcon');
+      var correctIcon = document.getElementById('correctIcon');
 
       if (geeksay(str) == inputGeek) {
-        alert('Good!')
+        correctIcon.style = 
+        'display:block; float: right'
+         wrongIcon.style = 
+        'display:none; float: right'
+
       }else{
-        alert('Wrong!')
+        wrongIcon.style = 
+        'display:block; float: right'
+         correctIcon.style = 
+        'display:none; float: right'
       }
+
     }
 
     function submitGeek() {
@@ -262,7 +281,6 @@
             document.getElementById('nextButton').style = 
         'background-color: #929292; border-color: #929292';
             checkAnswer(text);
-
         }
        
         
