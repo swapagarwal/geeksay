@@ -104,6 +104,7 @@ const translations = {
     "heart": "<3",
     "love": "<3",
     "like": "<3",
+    "half": "0.5"
 }
 
 const quotes = [
