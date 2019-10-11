@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="icon" type="image/png" href="../logo.png">
   <link rel="apple-touch-icon" sizes="128x128" href="logo.png" />
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
   <script src="../geeksay.js"></script>
@@ -61,6 +61,12 @@
     background: #f7f6f6;
     padding: 40px;
   }
+  #contentResult{
+    min-height: 200px;
+    background: #f7f6f6;
+    padding: 10px 40px;
+    display: none;
+  }
   .descriptionSpan{
     font-weight: bold;
   }
@@ -83,6 +89,15 @@
   }
   #questionFooter{
     float: right;
+    margin-top: 20px;
+
+  }
+  #questionHeader{
+    padding-bottom:  10px;
+    padding-left: 0px;
+    border-bottom: 2px solid #fff
+  }
+  .resultFooter{
     margin-top: 20px;
 
   }
@@ -116,13 +131,25 @@
 
   }
   .geekQuestion{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
   }
   .noResult{
     display: none;
   }
-
+ 
+   #reviewButton{
+    background-color: #E91E63;
+    border-color: #E91E63;
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    border-radius: 0;
+    padding: 10px 30px;
+    height: 40px;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.30), 0 5px 6px rgba(0,0,0,0.22);
+    margin-top: 20px
+  }
   button {
     border: none;
     outline: none;
@@ -186,7 +213,7 @@
     </h1>
     <h3 id="copyright"><i>From layman &nbsp; </i>👶&nbsp;&nbsp;&nbsp;</h3>
 
-    <p class="note">
+    <p class="note" id="description">
       <span class="descriptionSpan">Short Description</span>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -197,7 +224,7 @@
     <div id="content">
       <div id="questionHeader">
         <span class="questionSpan">QUESTION</span>
-        <span class="questionCounter">3/10</span>
+        <span id="numberQuestion" class="questionCounter">0/10</span>
         <img class="noResult" id="correctIcon" style="float:right" src="img2.png" width="40" height="auto"/>
         <img class="noResult" id="wrongIcon" style="float:right" src="img1.png" width="25" height="auto"/>
 
@@ -209,15 +236,34 @@
       </div>
       <div id="questionFooter">
           <button  onclick="submitGeek()" id="nextButton">NEXT QUESTION</button>
+      </div>
+    </div>
+    <div id="contentResult">
+      <div id="questionHeader">
+        <h3>👶&nbsp;&nbsp;&nbsp;<span class="questionSpan">RESULTS</span></h3>
+
+      </div>
+      <div class="contentQA">
+        <div style="float: left" align="center">
+          <h4 style="font-size: 12px; color: green; font-weight: 400;">GOOD RESPONSES</h4>
+          <h4 id="goodResponse" style="font-size: 16px; color:green"></h4>
+        </div>
+        <div style="float: right;" align="center">
+             <h4 style="font-size: 12px; color: red; font-weight: 400;">BAD RESPONSES</h4>
+        <h4 id="badResponse" style="font-size: 16px; color:red"></h4>
+        </div>
 
       </div>
 
+    </div>
+    <div align="center" id="resultFooter">
+        <button  onclick="retakeQuiz()" id="reviewButton">RETAKE</button>
 
     </div>
 
     <div id="footer">
         <p>made with <span class="red">❤︎</span> by <a href="https://swapnil.net/" target="_blank">swapnil</a> |
-        designed by <a href="https://twitter.com/notwaldorf" target="_blank">monica</a>&nbsp;+&nbsp;<a href="https://github.com/wang-ories" target="_blank">wang </a></p>
+        designed by <a href="https://github.com/wang-ories" target="_blank">wang </a>&nbsp;+&nbsp;<a href="https://twitter.com/notwaldorf" target="_blank">monica</a></p>
     </div>
     <br>
     <div align="center">
@@ -233,18 +279,47 @@
 
 
   <script type="text/javascript">
-    //console.log(geeksay('sometimes, i just need a break'));
-    console.log(getRandomTranslation())
-   // document.getElementById("question").innerText = getRandomTranslation();
+    document.getElementById('reviewButton').style = 
+      'display:none';
+    var cnt = 0;
+    var results = [];
+
+    var quote = geeksay(getRandomQuote());
+    document.getElementById('question').innerHTML = quote.charAt(0).toUpperCase() + quote.substring(1);
+    document.getElementById('numberQuestion').innerHTML = cnt+1+"/5";
   </script>
 
   <script>
     document.getElementById('answerInput').addEventListener('input', function() {
-      hideIcons();
-      document.getElementById('nextButton').style = 
-      'background-color: #E91E63; border-color: #E91E63';
+       var inputField = document.getElementById('answerInput');
+       var text = inputField.value.trim();
+       if (text.length !== 0) {
+            document.getElementById('nextButton').style = 
+        'background-color: #E91E63; border-color: #E91E63';
+        }else{
+          document.getElementById('nextButton').style = 
+        'background-color: #929292; border-color: #929292';
+        hideIcons();
+        }
      
     });
+    function retakeQuiz(){
+      cnt = 0;
+      results = [];
+      var quote = geeksay(getRandomQuote());
+      document.getElementById('question').innerHTML = quote.charAt(0).toUpperCase() + quote.substring(1);
+      document.getElementById('numberQuestion').innerHTML = cnt+1+"/5";
+      document.getElementById('contentResult').style = 
+      'display:none';
+      document.getElementById('content').style = 
+      'display:block';
+        document.getElementById('description').style = 
+      'display:block';
+        document.getElementById('reviewButton').style = 
+      'display:none';
+      document.getElementById('answerInput').value = '';
+      hideIcons();
+    }
     function hideIcons() {
       var wrongIcon = document.getElementById('wrongIcon');
       var correctIcon = document.getElementById('correctIcon');
@@ -253,35 +328,66 @@
       correctIcon.style = 
       'display:none; float: right'
     }
-    function checkAnswer(str) {
+    function loadNext(){
+      if (cnt < 5) {
+        document.getElementById('answerInput').value = '';
+        document.getElementById('numberQuestion').innerHTML = cnt+1+"/5";
+        var quote = geeksay(getRandomQuote());
+        document.getElementById('question').innerHTML = quote.charAt(0).toUpperCase() + quote.substring(1);
 
+      }else{
+        setResults()
+      }
+      
+
+    }
+    function setResults(){
+      var sum = results.reduce(function(a, b) { return a + b; }, 0);
+      document.getElementById('content').style = 
+      'display:none'
+      document.getElementById('description').style = 
+      'display:none'
+      document.getElementById('goodResponse').innerHTML = sum
+      document.getElementById('badResponse').innerHTML = 5-sum
+      document.getElementById('contentResult').style = 
+      'display:block';
+      document.getElementById('reviewButton').style = 
+      'display:block';
+    }
+    function checkAnswer(str) {
+ 
       var inputGeek = document.getElementById('question').innerText;
       var wrongIcon = document.getElementById('wrongIcon');
       var correctIcon = document.getElementById('correctIcon');
 
-      if (geeksay(str) == inputGeek) {
+      if (geeksay(str).toLowerCase() == inputGeek.toLowerCase()) {
         correctIcon.style = 
         'display:block; float: right'
          wrongIcon.style = 
         'display:none; float: right'
+        results.push(1)
 
       }else{
         wrongIcon.style = 
         'display:block; float: right'
          correctIcon.style = 
         'display:none; float: right'
+        results.push(0)
       }
-
+      cnt ++;
+      loadNext();
     }
-
     function submitGeek() {
+      if (cnt < 5) {
         var inputField = document.getElementById('answerInput');
         var text = inputField.value.trim();
         if (text.length !== 0) {
-            document.getElementById('nextButton').style = 
-        'background-color: #929292; border-color: #929292';
             checkAnswer(text);
+        }else{
+          document.getElementById('nextButton').style = 
+        'background-color: #929292; border-color: #929292';
         }
+      }
        
         
     }
