@@ -69,6 +69,7 @@
   }
   .descriptionSpan{
     font-weight: bold;
+    font-size: 13px
   }
   .questionSpan{
     font-weight: 600;
@@ -119,8 +120,9 @@
     height: auto;
     border-radius: 0px;
     font-family: 'Helvetica';
-    padding: 10px;
-    border: 1px solid #000
+    padding: 6px 10px;
+    border: 1px solid #000;
+    font-size: 14px
 
   }
   .answerInputClass:focus {
@@ -231,7 +233,7 @@
       </div>
       <div class="contentQA">
         <h3>👶&nbsp;&nbsp;&nbsp;<span class="geekQuestion" id="question">There's no place <3 127.0.0.1</span></h3>
-        <input id="answerInput" class="answerInputClass"/>
+        <input id="answerInput" class="answerInputClass" placeholder="Type your response and hit enter" />
 
       </div>
       <div id="questionFooter">
@@ -283,13 +285,25 @@
       'display:none';
     var cnt = 0;
     var results = [];
-
+   // console.log(noGeeksay("g33k inside"))
     var quote = geeksay(getRandomQuote());
     document.getElementById('question').innerHTML = quote.charAt(0).toUpperCase() + quote.substring(1);
     document.getElementById('numberQuestion').innerHTML = cnt+1+"/5";
   </script>
 
   <script>
+  
+    document.getElementById("answerInput").addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        var inputField = document.getElementById('answerInput');
+        var text = inputField.value.trim();
+        if (text.length !== 0) {
+            checkAnswer(text, false);
+        }
+        //document.getElementById("nextButton").click();
+      }
+    });
     document.getElementById('answerInput').addEventListener('input', function() {
        var inputField = document.getElementById('answerInput');
        var text = inputField.value.trim();
@@ -329,6 +343,9 @@
       'display:none; float: right'
     }
     function loadNext(){
+      document.getElementById('answerInput').style =
+        'border: 1px solid #000; color:#000';
+        hideIcons();
       if (cnt < 5) {
         document.getElementById('answerInput').value = '';
         document.getElementById('numberQuestion').innerHTML = cnt+1+"/5";
@@ -354,35 +371,48 @@
       document.getElementById('reviewButton').style = 
       'display:block';
     }
-    function checkAnswer(str) {
+    function checkAnswer(str, next) {
  
       var inputGeek = document.getElementById('question').innerText;
       var wrongIcon = document.getElementById('wrongIcon');
       var correctIcon = document.getElementById('correctIcon');
-
-      if (geeksay(str).toLowerCase() == inputGeek.toLowerCase()) {
+      if (next) {
+        cnt ++;
+        loadNext();
+      }else{
+        if (geeksay(str).toLowerCase() == inputGeek.toLowerCase()) {
         correctIcon.style = 
         'display:block; float: right'
          wrongIcon.style = 
         'display:none; float: right'
+        document.getElementById('answerInput').style =
+        'border: 1px solid green; color: green'
         results.push(1)
 
       }else{
         wrongIcon.style = 
         'display:block; float: right'
          correctIcon.style = 
-        'display:none; float: right'
+        'display:none; float: right';
+        document.getElementById('answerInput').style =
+        'border: 1px solid red; color:red'
+        document.getElementById('answerInput').value = 
+        noGeeksay(inputGeek);
         results.push(0)
       }
-      cnt ++;
-      loadNext();
+      
+      }
+      
+
+
     }
+
     function submitGeek() {
       if (cnt < 5) {
         var inputField = document.getElementById('answerInput');
         var text = inputField.value.trim();
         if (text.length !== 0) {
-            checkAnswer(text);
+            checkAnswer(text, true);
         }else{
           document.getElementById('nextButton').style = 
         'background-color: #929292; border-color: #929292';
@@ -391,6 +421,7 @@
        
         
     }
+  
   </script>
 </body>
 </html>

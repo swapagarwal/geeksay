@@ -177,5 +177,29 @@ function getRandomTranslation() {
 function getRandomQuote() {
     return quotes[Math.floor(Math.random() * quotes.length)];
 }
+function noGeeksay(text) {
+    const input =  Array.isArray(text) ? text : String(text).split(' ');
+    return input.map(noGeeksayWord).join(' ');
+}
+function noGeeksayWord(text){
+    
+    lowerCaseText = text.toLowerCase();
+    var found = false;
+    var geek = ''
+     Object.keys(translations).forEach(function(key) {
+        if (translations[key] == lowerCaseText) {
+                found = true;
+                geek = key
+                return key
+            }
+    });
+    if(!found){
+          return lowerCaseText
+        }else{
+            return geek;
+    }
+
+    
+}
 
 module.exports = geeksay;
