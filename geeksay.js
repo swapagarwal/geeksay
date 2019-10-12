@@ -104,14 +104,16 @@ const translations = {
     "heart": "<3",
     "love": "<3",
     "like": "<3",
+    "is": "=",
+    "is not": "!=",
 }
 
 const quotes = [
     "Hello World", // ping 0.0.0.0/0
     "Bye World", // exit 0.0.0.0/0
     "Forget that ever happened", // ctrl+z that ever happened
-    "Home is where the heart is", // 127.0.0.1 is where the heart is
-    "Home is where ideas come to life", // 127.0.0.1 is where ideas come to 42
+    "Home is where the heart is", // 127.0.0.1 = where the <3 is
+    "Home is where ideas come to life", // 127.0.0.1 = where ideas come to 42
     "Home is where the wifi connects automatically", // 127.0.0.1 is where the wifi connects automatically
     "fuck that shit", // fork that dump
     "go hard or go home", // go hard || go 127.0.0.1
@@ -128,11 +130,11 @@ const quotes = [
     "copy that!", // ctrl+c that!
     "get out of home", // git out of 127.0.0.1
     "not everything is black and white", // ! 42 is #000 && #fff
-    "to be or not to be, that is the question", // to be || ! to be, that is the question
+    "to be or not to be, that is the question", // to be || ! to be, that = the question
     "i was 5 and he was 6", // i was 101 && he was 110
     "he wore black and i wore white", // he wore #000 && i wore #fff
     "bang bang my baby shot me down", // ! ! my baby shot self down
-    "Today is the first day of the rest of your lifetime", // Today is the first day of the rest of your runtime
+    "Today is the first day of the rest of your lifetime", // Today = the first day of the rest of your runtime
     "i need to sleep", // i need to shutdown
     "There are ten types of people in the world: those who understand binary and those who don't", // There are ten types of people in the world: those who understand 01 && those who don't
     "I love my life", // I <3 my 42
