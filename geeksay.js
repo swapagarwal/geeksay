@@ -143,6 +143,8 @@ const quotes = [
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
+    "I'll always remember you"  // I'll always keep you in my hard drive
+    "You're temporary" // You're in my cache
 ]
 
 function isNumeric(num){
