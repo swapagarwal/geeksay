@@ -102,6 +102,27 @@
     margin-top: 20px;
 
   }
+  ::-webkit-input-placeholder { /* Edge */
+      color: "#212121";
+      font-size: 12px;
+      font-style: italic;
+      padding-left: 10px
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: "#212121";
+   font-size: 12px;
+   font-style: italic;
+   padding-left: 10px   
+
+  }
+ 
+  ::placeholder {
+    color: "#212121";
+    font-size: 12px;
+    font-style: italic;
+    padding-left: 10px
+  }
   #nextButton{
     background-color: #929292;
     border-color: #929292;
@@ -283,6 +304,7 @@
   <script type="text/javascript">
     document.getElementById('reviewButton').style = 
       'display:none';
+    var submitted = false;
     var cnt = 0;
     var results = [];
    // console.log(noGeeksay("g33k inside"))
@@ -299,7 +321,10 @@
         var inputField = document.getElementById('answerInput');
         var text = inputField.value.trim();
         if (text.length !== 0) {
-            checkAnswer(text, false);
+            if (!submitted) {
+              submitted = true;
+              checkAnswer(text, false);
+            }
         }
         //document.getElementById("nextButton").click();
       }
@@ -343,6 +368,8 @@
       'display:none; float: right'
     }
     function loadNext(){
+      submitted = false;
+
       document.getElementById('answerInput').style =
         'border: 1px solid #000; color:#000';
         hideIcons();
@@ -390,6 +417,7 @@
         results.push(1)
 
       }else{
+        var responseGeek = noGeeksay(inputGeek);
         wrongIcon.style = 
         'display:block; float: right'
          correctIcon.style = 
@@ -397,14 +425,11 @@
         document.getElementById('answerInput').style =
         'border: 1px solid red; color:red'
         document.getElementById('answerInput').value = 
-        noGeeksay(inputGeek);
+        responseGeek.charAt(0).toUpperCase() + responseGeek.substring(1);
         results.push(0)
       }
-      
       }
       
-
-
     }
 
     function submitGeek() {
