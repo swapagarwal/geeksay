@@ -48,6 +48,11 @@ $ npx geeksay i was 5 and he was 6 // i was 101 && he was 110
 $ npx geeksay sometimes i just need a break // sometimes i just need a <br>
 ```
 
+## Test
+```
+$ npm test
+```
+
 ## Demo
 
 This is what you actually want, right? Right?? [There you go!](http://geeksay.xyz) 👏
