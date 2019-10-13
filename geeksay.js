@@ -103,6 +103,9 @@ const translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
+    "laugh": "😁",
+    "angry": "😡",
+    "pixel": "px",
 }
 
 const quotes = [
