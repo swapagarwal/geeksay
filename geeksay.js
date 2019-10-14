@@ -1,11 +1,11 @@
+const colors = require('./colors.json')
+
 const translations = {
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
     "rule": "ctrl",
     "escape": "esc",
-    "black": "#000",
-    "white": "#fff",
     "bang": "!",
     "not": "!",
     "new": "ctrl+n",
@@ -83,9 +83,6 @@ const translations = {
     "everything": "42",
     "lifetime": "runtime",
     "sleep": "shutdown",
-    "red": "#ff0000",
-    "green": "#00ff00",
-    "blue": "#0000ff",
     "marry": "merge",
     "propose": "commit",
     "not found": "404",
@@ -158,8 +155,11 @@ function geeksayWord(text) {
     if(isNumeric(text)) {
         return (text >>> 0).toString(2);
     }
-    else {
-        lowerCaseText = text.toLowerCase();
+
+    let lowerCaseText = text.toLowerCase();
+    if (lowerCaseText in colors) {
+        return colors[lowerCaseText]
+    } else {
         if (translations.hasOwnProperty(lowerCaseText)) {
             return translations[lowerCaseText];
         } else {

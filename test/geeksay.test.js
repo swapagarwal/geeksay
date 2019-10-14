@@ -96,3 +96,13 @@ describe('inputs', () => {
     should.equal(geeksay([1, 2, 3, 4, '100']), '1 10 11 100 1100100');
   });
 });
+
+describe('colors', () => {
+  it('contains color black', () => {
+    should.equal(geeksay('is black a color?'), 'is #000000 a color?');
+  });
+
+  it('contains CamelCased color', () => {
+    should.equal(geeksay('DarkOliveGreen is a fancy color'), '#556B2F is a fancy color');
+  });
+});
