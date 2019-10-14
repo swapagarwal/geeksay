@@ -67,7 +67,6 @@ const translations = {
     "bullshit": "dump",
     "poop": "dump",
     "delete": "del",
-    "force": "ma",
     "coffee": "covfefe",
     "number": "#",
     "image": "img",
@@ -102,6 +101,13 @@ const translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
+    "force": "!important",
+    "phone": "ping",
+    "dead": "null",
+    "people": "users",
+    "see": "parse",
+    "say": "print",
+    "king": "admin",
 }
 
 const quotes = [
@@ -141,6 +147,12 @@ const quotes = [
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
+    "May the force be with you", // May the !important be with you
+    "E.T. phone home", // E.T. ping 127.0.0.1
+    "I see dead people.", // I parse null users
+    "You had me at hello.", // You had me @ ping.
+    "say hello to my little friend!", // print ping to my little friend!
+    "I'm king of the world!", // I'm admin of the 0.0.0.0/0
 ]
 
 function isNumeric(num){
