@@ -1,4 +1,5 @@
 const translations = {
+    "on": "1",
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
@@ -140,7 +141,8 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
-    "home sweet home", // 127.0.0.1 sweet 127.0.0.1
+    "home sweet home", // 127.0.0.1 sweet 127.0.0.1,
+    "keep calm and geek on" // keep calm and geek 1
 ]
 
 function isNumeric(num){
