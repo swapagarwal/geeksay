@@ -102,6 +102,11 @@ const translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
+    "variable": "var",
+    "condition": "con",
+    "function": "func",
+    "string": "str",
+    "function": "func",
 }
 
 const quotes = [
