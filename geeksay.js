@@ -102,6 +102,8 @@ const translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
+    "idiot": "ID10T",
+    "hashtag": "#",
 }
 
 const quotes = [
@@ -141,6 +143,9 @@ const quotes = [
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
+    "I break warranties". // I <br> warranties
+    "Good Game". //GG
+    "I am a huge nerd in real life". //I am a huge nerd IRL
 ]
 
 function isNumeric(num){
