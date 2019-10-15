@@ -102,6 +102,10 @@ const translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
+    "byeVim":":qa!",
+    "list": "ls",
+    "make folder": "mkdir",
+
 }
 
 const quotes = [
@@ -140,7 +144,10 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
-    "home sweet home", // 127.0.0.1 sweet 127.0.0.1
+    "home sweet home", // 127.0.0.1 sweet 127.0.0.1,
+    "so hard to quit vim", // :qa!
+    "show me whats inside", // ls
+    "make a folder please", // mkdir
 ]
 
 function isNumeric(num){
