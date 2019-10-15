@@ -102,6 +102,7 @@ const translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
+    "success":"200"
 }
 
 const quotes = [
