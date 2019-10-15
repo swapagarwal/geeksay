@@ -91,7 +91,7 @@ const translations = {
     "not found": "404",
     "link": "url",
     "forbidden": "403",
-    "send" : "push",
+    "send": "push",
     "alternate": "alt",
     "alternative": "alt",
     "inspect": "ctrl+shift+i",
@@ -102,6 +102,10 @@ const translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
+    "question": "?",
+    "history": "log"
+
+
 }
 
 const quotes = [
@@ -126,7 +130,7 @@ const quotes = [
     "copy that!", // ctrl+c that!
     "get out of home", // git out of 127.0.0.1
     "not everything is black and white", // ! 42 is #000 && #fff
-    "to be or not to be, that is the question", // to be || ! to be, that is the question
+    "to be or not to be, that is the question", // to be || ! to be, that is the ?
     "i was 5 and he was 6", // i was 101 && he was 110
     "he wore black and i wore white", // he wore #000 && i wore #fff
     "bang bang my baby shot me down", // ! ! my baby shot self down
@@ -143,18 +147,18 @@ const quotes = [
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
 ]
 
-function isNumeric(num){
+function isNumeric(num) {
     return !isNaN(parseInt(num));
 }
 
 function geeksay(text) {
-    const input =  Array.isArray(text) ? text : String(text).split(' ');
+    const input = Array.isArray(text) ? text : String(text).split(' ');
 
     return input.map(geeksayWord).join(' ');
 }
 
 function geeksayWord(text) {
-    if(isNumeric(text)) {
+    if (isNumeric(text)) {
         return (text >>> 0).toString(2);
     }
     else {
