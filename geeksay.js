@@ -121,6 +121,7 @@ const quotes = [
     "coffee is life", // covfefe is 42
     "what's your name", // what's your alias
     "I will find you and I will fix you!", // I will ctrl+f you && I will debug you!
+    "I need help"
     "geek alert", // g33k alert
     "geek inside", // g33k inside
     "copy that!", // ctrl+c that!
