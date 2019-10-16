@@ -132,7 +132,7 @@ const quotes = [
     "bang bang my baby shot me down", // ! ! my baby shot self down
     "Today is the first day of the rest of your lifetime", // Today is the first day of the rest of your runtime
     "i need to sleep", // i need to shutdown
-    "There are ten types of people in the world: those who understand binary and those who don't", // There are ten types of people in the world: those who understand 01 && those who don't
+    "There are 10 types of people in the world: those who understand binary and those who don't", // There are 10 types of people in the world: those who understand 01 && those who don't
     "I love my life", // I <3 my 42
     "I love my house", // I <3 my 127.0.0.1
     "heart break", // <3 <br>
