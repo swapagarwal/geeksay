@@ -111,7 +111,15 @@ const translations = {
     "history": "log",
     "on": "1",
     "pixel": "px",
-    "say": "log",
+    "say": "log",  
+    "body": "<body>",
+    "head": "<head>",
+    "restart": "ctrl+alt+del",
+    "death": "BSOD",
+    "wait": "load",
+    "waiting": "loading",
+    "forbidden": "403",
+    "unauthorized": "401",
 }
 
 const quotes = [
