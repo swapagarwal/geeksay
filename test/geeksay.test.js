@@ -40,7 +40,7 @@ describe('multi-line and symbols', () => {
         I say Hello World and 
         hi
         to the world `), `Every day after waking up
-        I say ping 0.0.0.0/0 && 
+        I log ping 0.0.0.0/0 && 
         hi
         to the 0.0.0.0/0 `);
   });
