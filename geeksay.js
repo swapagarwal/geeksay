@@ -104,6 +104,7 @@ const translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
+    "list": "ls",
     "ok": "200",
     "okay": "200",
     "question": "?",
