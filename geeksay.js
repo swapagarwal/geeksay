@@ -109,6 +109,7 @@ const translations = {
     "okay": "200",
     "question": "?",
     "history": "log",
+    "on": "1",
 }
 
 const quotes = [
@@ -151,6 +152,7 @@ const quotes = [
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
     "history repeats itself", // log repeats itself
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
+    "keep calm and geek on", // keep calm && g33k 1
 ]
 
 function isNumeric(num) {
