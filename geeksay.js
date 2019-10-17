@@ -110,6 +110,7 @@ const translations = {
     "question": "?",
     "history": "log",
     "on": "1",
+    "pixel": "px",
 }
 
 const quotes = [
