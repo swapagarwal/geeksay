@@ -25,6 +25,7 @@ const translations = {
     "find": "ctrl+f",
     "replace": "ctrl+r",
     "print": "ctrl+p",
+    "greet": "ping",
     "get": "git",
     "got": "git",
     "home": "127.0.0.1",
@@ -142,7 +143,8 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
-    "home sweet home", // 127.0.0.1 sweet 127.0.0.1
+    "home sweet home", // 127.0.0.1 sweet 127.0.0.1,
+    "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
 ]
 
 function isNumeric(num){
