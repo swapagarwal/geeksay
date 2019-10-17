@@ -1,5 +1,6 @@
 # geeksay
 
+[![Build Status](https://travis-ci.org/swapagarwal/geeksay.svg?branch=master)](https://travis-ci.org/swapagarwal/geeksay)
 [![npm version](https://img.shields.io/npm/v/geeksay)](https://www.npmjs.com/package/geeksay)
 [![npm downloads](https://img.shields.io/npm/dm/geeksay)](https://www.npmjs.com/package/geeksay)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/geeksay)](https://www.npmjs.com/package/geeksay)
