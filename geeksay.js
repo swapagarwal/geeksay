@@ -111,6 +111,8 @@ const translations = {
     "history": "log",
     "on": "1",
     "pixel": "px",
+    "off": "0",
+    "important": "!important"
 }
 
 const quotes = [
