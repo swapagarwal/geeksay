@@ -25,6 +25,7 @@ const translations = {
     "find": "ctrl+f",
     "replace": "ctrl+r",
     "print": "ctrl+p",
+    "greet": "ping",
     "get": "git",
     "got": "git",
     "home": "127.0.0.1",
@@ -39,6 +40,7 @@ const translations = {
     "forget": "ctrl+z",
     "world": "0.0.0.0/0",
     "want": "require",
+    "need": "require",
     "name": "alias",
     "address": "url",
     "pie": "π",
@@ -91,19 +93,23 @@ const translations = {
     "not found": "404",
     "link": "url",
     "forbidden": "403",
-    "send" : "push",
+    "send": "push",
     "alternate": "alt",
     "alternative": "alt",
     "inspect": "ctrl+shift+i",
     "equal": "=",
     "remove": "rm",
     "move": "mv",
-    "plus": "+",
     "random": "rand",
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
-    "like": "<3",
+    "list": "ls",
+    "ok": "200",
+    "okay": "200",
+    "question": "?",
+    "history": "log",
+    "on": "1",
 }
 
 const quotes = [
@@ -123,41 +129,45 @@ const quotes = [
     "coffee is life", // covfefe is 42
     "what's your name", // what's your alias
     "I will find you and I will fix you!", // I will ctrl+f you && I will debug you!
+    "I need help", // I require f1
     "geek alert", // g33k alert
     "geek inside", // g33k inside
     "copy that!", // ctrl+c that!
     "get out of home", // git out of 127.0.0.1
     "not everything is black and white", // ! 42 is #000 && #fff
-    "to be or not to be, that is the question", // to be || ! to be, that is the question
+    "to be or not to be, that is the question", // to be || ! to be, that is the ?
     "i was 5 and he was 6", // i was 101 && he was 110
     "he wore black and i wore white", // he wore #000 && i wore #fff
     "bang bang my baby shot me down", // ! ! my baby shot self down
     "Today is the first day of the rest of your lifetime", // Today is the first day of the rest of your runtime
-    "i need to sleep", // i need to shutdown
+    "i need to sleep", // i require to shutdown
     "There are ten types of people in the world: those who understand binary and those who don't", // There are ten types of people in the world: those who understand 01 && those who don't
     "I love my life", // I <3 my 42
     "I love my house", // I <3 my 127.0.0.1
     "heart break", // <3 <br>
-    "I like to fix shit", // I <3 to debug dump
+    "I like to fix shit", // I like to debug dump
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
+    "history repeats itself", // log repeats itself
+    "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
+    "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
 ]
 
-function isNumeric(num){
+function isNumeric(num) {
     return !isNaN(parseInt(num));
 }
 
 function geeksay(text) {
-    const input =  Array.isArray(text) ? text : String(text).split(' ');
+    const input = Array.isArray(text) ? text : String(text).split(' ');
 
     return input.map(geeksayWord).join(' ');
 }
 
 function geeksayWord(text) {
-    if(isNumeric(text)) {
+    if (isNumeric(text)) {
         return (text >>> 0).toString(2);
     }
     else {
