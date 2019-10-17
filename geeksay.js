@@ -1,4 +1,4 @@
-var translations = {
+const translations = {
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
@@ -25,6 +25,7 @@ var translations = {
     "find": "ctrl+f",
     "replace": "ctrl+r",
     "print": "ctrl+p",
+    "greet": "ping",
     "get": "git",
     "got": "git",
     "home": "127.0.0.1",
@@ -39,6 +40,7 @@ var translations = {
     "forget": "ctrl+z",
     "world": "0.0.0.0/0",
     "want": "require",
+    "need": "require",
     "name": "alias",
     "address": "url",
     "pie": "π",
@@ -83,61 +85,99 @@ var translations = {
     "everything": "42",
     "lifetime": "runtime",
     "sleep": "shutdown",
-    "user": "idiot",
-    "first": "alpha",
-    "second": "beta",
+    "red": "#ff0000",
+    "green": "#00ff00",
+    "blue": "#0000ff",
+    "marry": "merge",
+    "propose": "commit",
+    "not found": "404",
+    "link": "url",
+    "forbidden": "403",
+    "send": "push",
+    "alternate": "alt",
+    "alternative": "alt",
+    "inspect": "ctrl+shift+i",
+    "equal": "=",
+    "remove": "rm",
+    "move": "mv",
+    "random": "rand",
+    "mathematics": "math",
+    "heart": "<3",
+    "love": "<3",
+    "list": "ls",
+    "ok": "200",
+    "okay": "200",
+    "question": "?",
+    "history": "log",
+    "on": "1",
+    "pixel": "px",
+    "say": "log",  
     "body": "<body>",
     "head": "<head>",
     "restart": "ctrl+alt+del",
     "death": "BSOD",
-    "resolution": "1920x1080",
-    "back": "alt+⬅️",
-    "forward": "alt+➡️",
-    "baby": "n00b",
     "wait": "load",
     "waiting": "loading",
-    "comment": "/* */",
     "forbidden": "403",
-    "unauthorized": "401"
+    "unauthorized": "401",
 }
 
-var quotes = [
-    "Hello World",
-    "Bye World",
-    "Forget that ever happened",
-    "Home is where the heart is",
-    "Home is where ideas come to life",
-    "Home is where the wifi connects automatically",
-    "fuck that shit",
-    "go hard or go home",
-    "I will call you",
-    "I want the world to know me",
-    "I am the owner",
-    "I am God",
-    "please make me a sandwich",
-    "coffee is life",
-    "what's your name",
-    "I will find you and I will fix you!",
-    "geek alert",
-    "geek inside",
-    "copy that!",
-    "get out of home",
-    "not everything is black and white",
-    "to be or not to be, that is the question",
-    "i was 5 and he was 6",
-    "he wore black and i wore white",
-    "bang bang my baby shot me down",
-    "Today is the first day of the rest of your lifetime",
-    "i need to sleep",
-    "I eat paste"	
+const quotes = [
+    "Hello World", // ping 0.0.0.0/0
+    "Bye World", // exit 0.0.0.0/0
+    "Forget that ever happened", // ctrl+z that ever happened
+    "Home is where the heart is", // 127.0.0.1 is where the heart is
+    "Home is where ideas come to life", // 127.0.0.1 is where ideas come to 42
+    "Home is where the wifi connects automatically", // 127.0.0.1 is where the wifi connects automatically
+    "fuck that shit", // fork that dump
+    "go hard or go home", // go hard || go 127.0.0.1
+    "I will call you", // I will ping you
+    "I want the world to know me", // I require the 0.0.0.0/0 to know self
+    "I am the owner", // I am the admin
+    "I am God", // I am root
+    "please make me a sandwich", // sudo make self a sandwich
+    "coffee is life", // covfefe is 42
+    "what's your name", // what's your alias
+    "I will find you and I will fix you!", // I will ctrl+f you && I will debug you!
+    "I need help", // I require f1
+    "geek alert", // g33k alert
+    "geek inside", // g33k inside
+    "copy that!", // ctrl+c that!
+    "get out of home", // git out of 127.0.0.1
+    "not everything is black and white", // ! 42 is #000 && #fff
+    "to be or not to be, that is the question", // to be || ! to be, that is the ?
+    "i was 5 and he was 6", // i was 101 && he was 110
+    "he wore black and i wore white", // he wore #000 && i wore #fff
+    "bang bang my baby shot me down", // ! ! my baby shot self down
+    "Today is the first day of the rest of your lifetime", // Today is the first day of the rest of your runtime
+    "i need to sleep", // i require to shutdown
+    "There are ten types of people in the world: those who understand binary and those who don't", // There are ten types of people in the world: those who understand 01 && those who don't
+    "I love my life", // I <3 my 42
+    "I love my house", // I <3 my 127.0.0.1
+    "heart break", // <3 <br>
+    "I like to fix shit", // I like to debug dump
+    "eat sleep code repeat", // eat shutdown code repeat
+    "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
+    "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
+    "home sweet home", // 127.0.0.1 sweet 127.0.0.1
+    "history repeats itself", // log repeats itself
+    "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
+    "keep calm and geek on", // keep calm && g33k 1
+    "somebody save me", // somebody ctrl+s me
 ]
 
-function isNumeric(num){
+function isNumeric(num) {
     return !isNaN(parseInt(num));
 }
 
 function geeksay(text) {
-    if(isNumeric(text)) {
+    const input = Array.isArray(text) ? text : String(text).split(' ');
+
+    return input.map(geeksayWord).join(' ');
+}
+
+function geeksayWord(text) {
+    if (isNumeric(text)) {
         return (text >>> 0).toString(2);
     }
     else {
@@ -151,11 +191,13 @@ function geeksay(text) {
 }
 
 function getRandomTranslation() {
-    var keys = Object.keys(translations);
-    var randomKey = keys[Math.floor(Math.random() * keys.length)];
+    const keys = Object.keys(translations);
+    const randomKey = keys[Math.floor(Math.random() * keys.length)];
     return "Random Translation: " + randomKey + " -> " + translations[randomKey];
 }
 
 function getRandomQuote() {
     return quotes[Math.floor(Math.random() * quotes.length)];
 }
+
+module.exports = geeksay;
