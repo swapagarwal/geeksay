@@ -91,6 +91,7 @@ const translations = {
     "marry": "merge",
     "propose": "commit",
     "not found": "404",
+    "lost": "404",
     "link": "url",
     "forbidden": "403",
     "send": "push",
