@@ -2,8 +2,8 @@
 
 const geeksay = require("./geeksay");
 
-const [,, ...words] = process.argv;
+const [, , ...words] = process.argv;
 
-const translation =  geeksay(words)
+const translation = geeksay(words)
 
 console.log(translation);
