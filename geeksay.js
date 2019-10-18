@@ -92,7 +92,6 @@ const translations = {
     "propose": "commit",
     "not found": "404",
     "link": "url",
-    "forbidden": "403",
     "send": "push",
     "alternate": "alt",
     "alternative": "alt",
@@ -120,6 +119,41 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
+    "war": "jar",
+    "want": "require",
+    "need": "require",
+    "prepare": "pre-process",
+    "speed": "hz",
+    "do": "execute",
+    "did": "executed",
+    "done": "executed",
+    "die": "crash",
+    "reality": "!VR",
+    "often": "cached",
+    "clue": "trace",
+    "parents": "()",
+    "wave": "~",
+    "string": "thread",
+    "strings": "threads",
+    "space": "&nbsp;",
+    "waves": "~~",
+    "any": "*",
+    "anything": "*",
+    "trust": "authorise",
+    "believe": "authorise",
+    "bee": "usb",
+    "distraction": "popup",
+    "fate": "f8",
+    "fixed": "read-only",
+    "rules": "settings",
+    "burden": "payload",
+    "carrot": "^",
+    "explain": "man",
+    "describe": "man",
+    "age": "timestamp",
+    "arrest": "quarantine",
+    "improve": "upgrade",
+    "improving": "upgrading",
 }
 
 const quotes = [
@@ -164,6 +198,14 @@ const quotes = [
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
+    "Is our fate fixed?", // is our f8 read-only?
+    "Allow no distraction", // allow no popup
+    "Don't be a burden", // don't be a payload
+    "Want peace? prepare for war", // require peace? pre-process 4 jar
+    "Thanos did the snap", // Thanos executed the img
+    "Reality is often disappointing", // !VR is cached disappointing
+    "Do or Die", // execute or crash
+    "I need some space", // I require some &nbsp;
 ]
 
 function isNumeric(num) {
