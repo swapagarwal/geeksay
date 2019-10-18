@@ -64,6 +64,7 @@ const translations = {
     "god": "root",
     "please": "sudo",
     "at": "@",
+    "hashtag": "#",
     "fix": "debug",
     "shit": "dump",
     "bullshit": "dump",
@@ -111,7 +112,7 @@ const translations = {
     "history": "log",
     "on": "1",
     "pixel": "px",
-    "say": "log",  
+    "say": "log",
     "body": "<body>",
     "head": "<head>",
     "restart": "ctrl+alt+del",
@@ -179,8 +180,7 @@ function geeksay(text) {
 function geeksayWord(text) {
     if (isNumeric(text)) {
         return (text >>> 0).toString(2);
-    }
-    else {
+    } else {
         lowerCaseText = text.toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
             return translations[lowerCaseText];
