@@ -111,7 +111,7 @@ const translations = {
     "history": "log",
     "on": "1",
     "pixel": "px",
-    "say": "log",  
+    "say": "log",
     "body": "<body>",
     "head": "<head>",
     "restart": "ctrl+alt+del",
@@ -120,6 +120,8 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
+    "lock": "ctrl+l",
+    "small": "bit",
 }
 
 const quotes = [
@@ -164,6 +166,8 @@ const quotes = [
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
+    "When I find it, I don't need it. When I need it, I can't find it.", //  When I ctrl+f it, I don't require it. When I require it, I can't ctrl+f it.
+    "Life is too short to remove USB safely", // 42 is too short to rm USB safely.
 ]
 
 function isNumeric(num) {
