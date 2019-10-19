@@ -120,6 +120,7 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
+    "change":"switch()",
 }
 
 const quotes = [
