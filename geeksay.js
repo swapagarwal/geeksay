@@ -120,6 +120,9 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
+    "create": "fork",
+    "true": "!false",
+    "space": "&nbsp;",
 }
 
 const quotes = [
@@ -164,6 +167,10 @@ const quotes = [
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
+    "create your own path", // fork your own path
+    "it's no fun because it's true", // it's not funny because it's !false
+    "give me some space", // give me some &nbsp;
+    "give me a break", // give me a <br>
 ]
 
 function isNumeric(num) {
