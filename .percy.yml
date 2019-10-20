@@ -1,0 +1,2 @@
+static-snapshots:
+  snapshot-files: 'index.html'
