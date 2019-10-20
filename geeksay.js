@@ -104,6 +104,7 @@ const translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
+    "like": "<3",
     "list": "ls",
     "ok": "200",
     "okay": "200",
@@ -120,6 +121,8 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
+   "increment":"++",
+    "decrement":"--"
 }
 
 const quotes = [
@@ -164,6 +167,7 @@ const quotes = [
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
+    "Change is the only constant", // const change
 ]
 
 function isNumeric(num) {
