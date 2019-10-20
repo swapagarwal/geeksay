@@ -163,7 +163,8 @@ const quotes = [
     "history repeats itself", // log repeats itself
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
-    "somebody save me", // somebody ctrl+s me
+    "somebody save me", // somebody ctrl+s me,
+    "With great power comes great responsibility" // eval()
 ]
 
 function isNumeric(num) {
