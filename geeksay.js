@@ -166,8 +166,10 @@ const quotes = [
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
+    "Easy as pie", // easy as π
     "When I find it, I don't need it. When I need it, I can't find it.", //  When I ctrl+f it, I don't require it. When I require it, I can't ctrl+f it.
     "Life is too short to remove USB safely", // 42 is too short to rm USB safely.
+
 ]
 
 function isNumeric(num) {
