@@ -182,7 +182,7 @@ function geeksayWord(text) {
         return (text >>> 0).toString(2);
     }
     else {
-        lowerCaseText = text.toLowerCase();
+        lowerCaseText = text.toLowerCase().replace(/,/g, '');
         if (translations.hasOwnProperty(lowerCaseText)) {
             return translations[lowerCaseText];
         } else {
