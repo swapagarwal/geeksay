@@ -120,6 +120,7 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
+    "code": "01100011 01101111 01100100 01100101",
 }
 
 const quotes = [
@@ -156,7 +157,7 @@ const quotes = [
     "I love my house", // I <3 my 127.0.0.1
     "heart break", // <3 <br>
     "I like to fix shit", // I like to debug dump
-    "eat sleep code repeat", // eat shutdown code repeat
+    "eat sleep code repeat", // eat shutdown 01100011 01101111 01100100 01100101 repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
@@ -164,7 +165,9 @@ const quotes = [
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
-    "Easy as pie", // easy as π
+    "Easy as pie", // easy as π,
+    "fuck you", // fork you,
+    "which part of code don't you understand ?", // which part of 01100011 01101111 01100100 01100101 don't you understand ?"
 ]
 
 function isNumeric(num) {
