@@ -165,6 +165,8 @@ const quotes = [
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
     "Easy as pie", // easy as π
+    "I want to become like you!",//I(New class) want to inherit you (Base class)
+    "Arrange the books in a stack",//Push the books into stack
 ]
 
 function isNumeric(num) {
