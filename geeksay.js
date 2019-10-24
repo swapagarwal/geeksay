@@ -120,6 +120,10 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
+    "east": "0°",
+    "north": "90°",
+    "west": "180°",
+    "south": "270°"
 }
 
 const quotes = [
@@ -165,6 +169,7 @@ const quotes = [
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
     "Easy as pie", // easy as π
+    "east or west home is best"// 0° || 180° 127.0.0.1 is the best
 ]
 
 function isNumeric(num) {
