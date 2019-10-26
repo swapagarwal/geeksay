@@ -110,6 +110,7 @@ const translations = {
     "question": "?",
     "history": "log",
     "on": "1",
+    "off": "0",
     "pixel": "px",
     "say": "log",  
     "body": "<body>",
