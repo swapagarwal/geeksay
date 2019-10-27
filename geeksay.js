@@ -185,8 +185,8 @@ function geeksayWord(text) {
     const matchingTransaltions = translations.filter( translation => (translation.in === text.toLowerCase()) );
 
     return (matchingTransaltions.length > 0)
-        ? matchingTransaltions.pop()
-        : { in: text, out: text };
+        ? matchingTransaltions.pop().out
+        : { in: text, out: text }.out;
 }
 
 function getRandomTranslation() {
