@@ -1,5 +1,5 @@
 const should = require('should');
-const geeksay = require('../geeksay')
+const geeksay = require('../geeksay');
 
 describe('words', () => {
   it('love', () => {
