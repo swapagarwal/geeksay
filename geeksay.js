@@ -112,16 +112,15 @@ const translations = {
     "on": "1",
     "off": "0",
     "pixel": "px",
-    "say": "log",  
+    "say": "log",
     "body": "<body>",
     "head": "<head>",
     "restart": "ctrl+alt+del",
     "death": "BSOD",
     "wait": "load",
     "waiting": "loading",
-    "forbidden": "403",
     "unauthorized": "401",
-}
+};
 
 const quotes = [
     "Hello World", // ping 0.0.0.0/0
@@ -159,14 +158,14 @@ const quotes = [
     "I like to fix shit", // I like to debug dump
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
-    "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
+    "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
     "history repeats itself", // log repeats itself
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
     "Easy as pie", // easy as π
-]
+];
 
 function isNumeric(num) {
     return !isNaN(parseInt(num));
@@ -203,3 +202,5 @@ function getRandomQuote() {
 }
 
 module.exports = geeksay;
+module.exports.translations = translations;
+module.exports.quotes = quotes;
