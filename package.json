@@ -7,6 +7,7 @@
     "geeksay": "./cli.js"
   },
   "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
     "test": "node_modules/.bin/mocha test/*"
   },
   "repository": {
@@ -26,6 +27,9 @@
   },
   "homepage": "https://github.com/swapagarwal/geeksay#readme",
   "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
     "mocha": "^6.2.1",
     "percy": "^0.19.1",
     "should": "^13.2.3"
