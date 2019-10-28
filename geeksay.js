@@ -121,6 +121,7 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
+    "not": "!",
 }
 
 const quotes = [
@@ -165,7 +166,8 @@ const quotes = [
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
-    "Easy as pie", // easy as π
+    "Easy as pie", // easy as π,
+    "Lets be friends, not enemies",//(beFriends && !enemies)
 ]
 
 function isNumeric(num) {
