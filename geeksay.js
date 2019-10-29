@@ -78,6 +78,7 @@ const translations = {
     "picture": "img",
     "snap": "img",
     "snapshot": "img",
+    "quit": "exit",
     "bye": "exit",
     "noob": "n00b",
     "life": "42",
@@ -91,6 +92,7 @@ const translations = {
     "marry": "merge",
     "propose": "commit",
     "not found": "404",
+    "bad request": "400",
     "link": "url",
     "forbidden": "403",
     "send": "push",
@@ -138,6 +140,7 @@ const quotes = [
     "I am God", // I am root
     "please make me a sandwich", // sudo make self a sandwich
     "coffee is life", // covfefe is 42
+    "coffee is everything", // covfefe is 42
     "what's your name", // what's your alias
     "I will find you and I will fix you!", // I will ctrl+f you && I will debug you!
     "I need help", // I require f1
