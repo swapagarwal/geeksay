@@ -121,6 +121,9 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
+    "close": "alt+f4",
+    "qualities": "attrib"
+    
 }
 
 const quotes = [
