@@ -104,6 +104,7 @@ const translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
+    "style": "<style>",
     "list": "ls",
     "ok": "200",
     "okay": "200",
@@ -161,6 +162,7 @@ const quotes = [
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
+    "Web developers do it with style", // Web developers do it with <style>
     "history repeats itself", // log repeats itself
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
