@@ -68,7 +68,7 @@ const translations = {
     "shit": "dump",
     "bullshit": "dump",
     "poop": "dump",
-    "delete": "del",
+    "delete": "rm",
     "force": "ma",
     "coffee": "covfefe",
     "number": "#",
@@ -97,7 +97,7 @@ const translations = {
     "alternate": "alt",
     "alternative": "alt",
     "inspect": "ctrl+shift+i",
-    "equal": "=",
+    "equal": "==",
     "remove": "rm",
     "move": "mv",
     "random": "rand",
@@ -121,6 +121,7 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
+    "problem": "bug",
 }
 
 const quotes = [
