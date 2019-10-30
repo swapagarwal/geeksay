@@ -121,6 +121,8 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
+    "equals": "===",
+    "make": "sudo"
 }
 
 const quotes = [
@@ -166,6 +168,8 @@ const quotes = [
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
     "Easy as pie", // easy as π
+    "Coffee equals Code", //covfefe === code
+    "Make coffee" //sudo covfefe
 ]
 
 function isNumeric(num) {
@@ -183,7 +187,7 @@ function geeksayWord(text) {
         return (text >>> 0).toString(2);
     }
     else {
-        lowerCaseText = text.toLowerCase();
+        lowerCaseText = text.toLowerCase().replace(/,/g, '');
         if (translations.hasOwnProperty(lowerCaseText)) {
             return translations[lowerCaseText];
         } else {
