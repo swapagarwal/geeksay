@@ -93,6 +93,6 @@ describe('inputs', () => {
   });
 
   it('array of numbers', () => {
-    should.equal(geeksay([1, 2, 3, 4, '100']), '1 10 11 100 1100100');
+    should.equal(geeksay([1, 2, 3, 4, '100', '-20']), '1 10 11 100 1100100 -10100');
   });
 });
