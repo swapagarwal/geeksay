@@ -27,6 +27,7 @@
   "homepage": "https://github.com/swapagarwal/geeksay#readme",
   "devDependencies": {
     "mocha": "^6.2.1",
+    "percy": "^0.19.1",
     "should": "^13.2.3"
   }
 }

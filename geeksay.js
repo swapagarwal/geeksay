@@ -110,8 +110,17 @@ const translations = {
     "question": "?",
     "history": "log",
     "on": "1",
-    "pixel": "px",
     "off": "0",
+    "pixel": "px",
+    "say": "log",  
+    "body": "<body>",
+    "head": "<head>",
+    "restart": "ctrl+alt+del",
+    "death": "BSOD",
+    "wait": "load",
+    "waiting": "loading",
+    "forbidden": "403",
+    "unauthorized": "401",
     "important": "!important"
 }
 
@@ -157,6 +166,7 @@ const quotes = [
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
+    "Easy as pie", // easy as π
 ]
 
 function isNumeric(num) {

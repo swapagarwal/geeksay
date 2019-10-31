@@ -4,6 +4,7 @@
 [![npm version](https://img.shields.io/npm/v/geeksay)](https://www.npmjs.com/package/geeksay)
 [![npm downloads](https://img.shields.io/npm/dm/geeksay)](https://www.npmjs.com/package/geeksay)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/geeksay)](https://www.npmjs.com/package/geeksay)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/swap/geeksay)
 [![open issues](https://img.shields.io/github/issues/swapagarwal/geeksay.svg)](https://github.com/swapagarwal/geeksay/issues?q=is%3Aopen+is%3Aissue)
 [![closed pull requests](https://img.shields.io/github/issues-pr-closed/swapagarwal/geeksay.svg)](https://github.com/swapagarwal/geeksay/pulls?q=is%3Apr+is%3Aclosed)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/swapagarwal/geeksay/fork)
