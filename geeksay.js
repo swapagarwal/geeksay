@@ -169,7 +169,7 @@ const quotes = [
 ]
 
 function isNumeric(num) {
-    return !isNaN(parseInt(num));
+    return /^-?\d+(\.\d+)?$/.test(num);
 }
 
 function geeksay(text) {
