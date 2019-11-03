@@ -121,8 +121,6 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
-    "change": "mutable",
-    "unchanged": "immutable",
     "nothing": "void",
 }
 
