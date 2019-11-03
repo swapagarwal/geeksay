@@ -121,6 +121,7 @@ const translations = {
     "waiting": "loading",
     "forbidden": "403",
     "unauthorized": "401",
+    "nothing": "void",
 }
 
 const quotes = [
@@ -166,6 +167,7 @@ const quotes = [
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
     "Easy as pie", // easy as π
+    "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
 ]
 
