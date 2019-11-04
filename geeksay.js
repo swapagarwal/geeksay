@@ -184,14 +184,14 @@ function geeksayWord(text) {
     else {
         lowerCaseText = removeSymbols(text).toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
-            text = text.replace(lowerCaseText, translations[lowerCaseText]);
+            text = text.replace(text, translations[lowerCaseText]);
         }
         return text;
     }
 }
 
 function removeSymbols(word) {
-    return word.replace(/[^a-zA-Z0-9]+/, '');
+    return word.replace(/(?!\n|\r\n)[^a-zA-Z0-9]+/, '');
 }
 
 function getRandomTranslation() {
