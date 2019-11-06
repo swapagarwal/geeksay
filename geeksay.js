@@ -172,7 +172,7 @@ const quotes = [
 ]
 
 function isNumeric(num) {
-    return !isNaN(parseInt(num));
+    return /^-?\d+(\.\d+)?$/.test(num);
 }
 
 function geeksay(text) {
@@ -183,7 +183,7 @@ function geeksay(text) {
 
 function geeksayWord(text) {
     if (isNumeric(text)) {
-        return (text >>> 0).toString(2);
+        return Math.trunc(text).toString(2);
     }
     else {
         lowerCaseText = text.toLowerCase();
