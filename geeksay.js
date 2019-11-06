@@ -177,16 +177,16 @@ function geeksay(text) {
     return input.map(geeksayWord).join(' ');
 }
 
-function geeksayWord(text) {
-    if (isNumeric(text)) {
-        return (text >>> 0).toString(2);
+function geeksayWord(word) {
+    if (isNumeric(word)) {
+        return (word >>> 0).toString(2);
     }
     else {
-        lowerCaseText = removeSymbols(text).toLowerCase();
+        lowerCaseText = removeSymbols(word).toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
-            text = text.toLowerCase().replace(lowerCaseText, translations[lowerCaseText]);
+            word = word.toLowerCase().replace(lowerCaseText, translations[lowerCaseText]);
         }
-        return text;
+        return word;
     }
 }
 
