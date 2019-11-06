@@ -184,7 +184,7 @@ function geeksayWord(text) {
     else {
         lowerCaseText = removeSymbols(text).toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
-            text = text.replace(text, translations[lowerCaseText]);
+            text = text.toLowerCase().replace(lowerCaseText, translations[lowerCaseText]);
         }
         return text;
     }
