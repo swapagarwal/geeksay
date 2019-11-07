@@ -1,8 +1,10 @@
 # geeksay
 
+[![Build Status](https://travis-ci.org/swapagarwal/geeksay.svg?branch=master)](https://travis-ci.org/swapagarwal/geeksay)
 [![npm version](https://img.shields.io/npm/v/geeksay)](https://www.npmjs.com/package/geeksay)
 [![npm downloads](https://img.shields.io/npm/dm/geeksay)](https://www.npmjs.com/package/geeksay)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/geeksay)](https://www.npmjs.com/package/geeksay)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/swap/geeksay)
 [![open issues](https://img.shields.io/github/issues/swapagarwal/geeksay.svg)](https://github.com/swapagarwal/geeksay/issues?q=is%3Aopen+is%3Aissue)
 [![closed pull requests](https://img.shields.io/github/issues-pr-closed/swapagarwal/geeksay.svg)](https://github.com/swapagarwal/geeksay/pulls?q=is%3Apr+is%3Aclosed)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/swapagarwal/geeksay/fork)
@@ -39,11 +41,18 @@ $ geeksay copy that // ctrl+c that
 $ geeksay to be or not to be, that is the question // to be || ! to be, that is the question
 ```
 
+> Note: **Do not** put quotes around the phrase, even if it contains spaces!
+
 ### npx
 
 ```
-$ npx i was 5 and he was 6 // i was 101 && he was 110
-$ npx sometimes i just need a break // sometimes i just need a <br>
+$ npx geeksay i was 5 and he was 6 // i was 101 && he was 110
+$ npx geeksay sometimes i just need a break // sometimes i just need a <br>
+```
+
+## Test
+```
+$ npm test
 ```
 
 ## Demo
