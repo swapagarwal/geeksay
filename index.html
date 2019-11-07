@@ -193,8 +193,7 @@ sometimes, i just need a break</textarea>
         // Re-add the translated words.
         for (var i = 0; i < words.length; i++ ) {
           var node = document.createElement('span');
-          trimWord=trimPunctuation(words[i]);
-          node.innerText = geeksay(trimWord) + ' ';
+          node.innerText = geeksay(words[i]) + ' ';
           if (node)
             container.appendChild(node);
         }
