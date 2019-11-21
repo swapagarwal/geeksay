@@ -123,6 +123,8 @@ const translations = {
     "forbidden": "403",
     "unauthorized": "401",
     "nothing": "void",
+    "style": "CSS"
+    "developer": "dev"
 }
 
 const quotes = [
