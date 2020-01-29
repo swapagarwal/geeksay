@@ -108,6 +108,7 @@ const translations = {
     "list": "ls",
     "ok": "200",
     "okay": "200",
+    "alright": "200",
     "question": "?",
     "history": "log",
     "on": "1",
@@ -170,6 +171,7 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "I forget where at home I put the pie", // I ctrl+z where @ 127.0.0.1 I put the π
 ]
 
 function isNumeric(num) {
