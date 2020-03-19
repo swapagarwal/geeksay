@@ -1,1 +1,10 @@
-node_modules
+node_modules/
+
+## IDEs
+
+# Intelli J
+.idea/
+*.iml
+
+# VS Code
+.code/

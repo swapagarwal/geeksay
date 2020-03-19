@@ -57,10 +57,13 @@ describe('multi-line and symbols', () => {
     should.equal(geeksay('(=> I love my house )'), '(=> I <3 my 127.0.0.1 )');
   });
 
-  // TODO:
-  // it('symbols #3', () => {
-  // 	should.equal(geeksay('I love my house!'), 'I <3 my 127.0.0.1!');
-  // });
+  it('symbols #3', () => {
+  	should.equal(geeksay('I love my house!'), 'I <3 my 127.0.0.1!');
+  });
+  
+  it('symbols #4', () => {
+  	should.equal(geeksay('Roses are red, violets are blue.'), 'Roses are #ff0000, violets are #0000ff.');
+  });
 
 });
 
