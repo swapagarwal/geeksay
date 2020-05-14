@@ -8,6 +8,7 @@ const translations = {
     "white": "#fff",
     "bang": "!",
     "not": "!",
+    "never": "!ever",
     "new": "ctrl+n",
     "open": "ctrl+o",
     "anchor": "<a>",
@@ -123,6 +124,7 @@ const translations = {
     "forbidden": "403",
     "unauthorized": "401",
     "nothing": "void",
+    "now" : "new Date()"
 }
 
 const quotes = [
@@ -170,6 +172,7 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "Its now or never", // Its new Date() || !ever
 ]
 
 function isNumeric(num) {
