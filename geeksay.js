@@ -123,6 +123,12 @@ const translations = {
     "forbidden": "403",
     "unauthorized": "401",
     "nothing": "void",
+    "paragraph": "<p>",
+    "alpha": "α",
+    "beta": "β",
+    "multiply": "*",
+    "for": "4",
+    "to": "2",
 }
 
 const quotes = [
@@ -170,6 +176,8 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "E.T. phone home", //E.T phone 127.0.0.1
+    "La vie en rose", //La vie en rgb(255,192,203)
 ]
 
 function isNumeric(num) {
