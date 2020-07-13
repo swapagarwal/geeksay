@@ -98,6 +98,7 @@ const translations = {
     "alternative": "alt",
     "inspect": "ctrl+shift+i",
     "equal": "=",
+    "same" : "==",
     "remove": "rm",
     "move": "mv",
     "random": "rand",
