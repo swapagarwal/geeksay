@@ -120,7 +120,6 @@ const translations = {
     "death": "BSOD",
     "wait": "load",
     "waiting": "loading",
-    "forbidden": "403",
     "unauthorized": "401",
     "nothing": "void",
 }
