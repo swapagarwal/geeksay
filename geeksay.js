@@ -137,6 +137,7 @@ const quotes = [
     "I want the world to know me", // I require the 0.0.0.0/0 to know self
     "I am the owner", // I am the admin
     "I am God", // I am root
+    "Just sudo it",// <3 sudo 
     "please make me a sandwich", // sudo make self a sandwich
     "coffee is life", // covfefe is 42
     "what's your name", // what's your alias
