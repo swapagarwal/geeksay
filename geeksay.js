@@ -80,6 +80,7 @@ const translations = {
     "snapshot": "img",
     "bye": "exit",
     "noob": "n00b",
+    "leet": "1337",
     "life": "42",
     "universe": "42",
     "everything": "42",
@@ -143,6 +144,7 @@ const quotes = [
     "I will find you and I will fix you!", // I will ctrl+f you && I will debug you!
     "I need help", // I require f1
     "geek alert", // g33k alert
+    "leet alert", // 1337 alert
     "geek inside", // g33k inside
     "copy that!", // ctrl+c that!
     "get out of home", // git out of 127.0.0.1
@@ -161,6 +163,8 @@ const quotes = [
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
+    "I don't see women as Objects. I consider each to be in a Class of her own", // I don't see women as Objects. I consider each to be in a Class of her own
+    "Programmer (noun.), a machine that turns coffee into code.", // Programmer (noun.), a machine that turns covfefe into code. 
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
     "history repeats itself", // log repeats itself
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
