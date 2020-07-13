@@ -122,6 +122,9 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "mistake": "bug",
+    "chain": "concatenation",
+    "wedlock": "deadlock",
 }
 
 const quotes = [
@@ -169,6 +172,9 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "The chain of wedlock is so heavy that it takes two to carry it - and sometimes three",// The concatenation of deadlock is so heavy that it takes two to carry it - && sometimes three
+    "Refocus. Refresh. Restart.",// Refocus. f5. ctrl+alt+del.
+    "You make mistakes. Mistakes don't make you. ", // You make bugs. bugs don't make you.
 ]
 
 function isNumeric(num) {
