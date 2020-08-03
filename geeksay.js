@@ -169,7 +169,12 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
-]
+    "Never tell me the odds", //Never tell self the odds
+    "Black and Yellow", //#000 && yellow
+    "I will try to fix you", //I will try to debug you
+    "For in this sleep of death what dreams may come", //For in this shutdown of BSOD what dreams may come
+    "Wait for it", //Load for it
+] 
 
 function isNumeric(num) {
     return !isNaN(parseInt(num));
