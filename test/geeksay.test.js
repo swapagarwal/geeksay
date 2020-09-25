@@ -19,6 +19,10 @@ describe('words', () => {
   it('SloW - case insensitive', () => {
     should.equal(geeksay('SloW'), 'O(n^n)');
   });
+
+  it('not found', () => {
+    should.equal(geeksay('not found'), '404');
+  });
 });
 
 

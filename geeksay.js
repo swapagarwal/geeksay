@@ -160,7 +160,7 @@ const quotes = [
     "I like to fix shit", // I like to debug dump
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
-    "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
+    "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
     "history repeats itself", // log repeats itself
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
@@ -171,26 +171,43 @@ const quotes = [
     "Green with envy", // #00ff00 with envy
 ]
 
+
+const translationsArray = Object.keys(translations)
+                          .map(layman => ({layman: layman.split(' '), geek: translations[layman]}))
+                          .sort((a, b) => b.layman.length - a.layman.length);
+
 function isNumeric(num) {
     return !isNaN(parseInt(num));
 }
 
 function geeksay(text) {
     const input = Array.isArray(text) ? text : String(text).split(' ');
-    return input.map(geeksayWord).join(' ');
+    const numsProcessed = input.map(geeksayWord);
+    const numsLC = numsProcessed.map(str => str.toLowerCase());
+    const numsNoSymbols = numsLC.map(removeSymbols);
+    for (const translation of translationsArray) {
+        const joinedLayman = translation.layman.join(' ');
+        for (let i = 0; i < numsProcessed.length; i++) {
+            const toMatch = numsNoSymbols.slice(i, i + translation.layman.length);
+            if (toMatch.join(' ') === joinedLayman) {
+              const newText = numsLC.slice(i, i + translation.layman.length)
+                              .join(' ')
+                              .split(joinedLayman)
+                              .join(translation.geek);
+              numsProcessed.splice(i, translation.layman.length, newText);
+              numsNoSymbols.splice(i, translation.layman.length, newText);
+              numsLC.splice(i, translation.layman.length, newText);
+            }
+        }
+    }
+    return numsProcessed.join(' ');
 }
 
 function geeksayWord(word) {
     if (isNumeric(word)) {
         return (word >>> 0).toString(2);
     }
-    else {
-        lowerCaseText = removeSymbols(word).toLowerCase();
-        if (translations.hasOwnProperty(lowerCaseText)) {
-            word = word.toLowerCase().replace(lowerCaseText, translations[lowerCaseText]);
-        }
-        return word;
-    }
+    return word;
 }
 
 function removeSymbols(word) {
