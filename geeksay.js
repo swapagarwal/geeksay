@@ -122,6 +122,10 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "positive": "|x|",
+    "mass": "m=f/a",
+    "destruction": "~()",
+    
 }
 
 const quotes = [
@@ -169,6 +173,9 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "Stay positive", // stay |x|
+    "Weapons of mass destruction", // Weapons of m=f/a ~()
+    "First solve the problem, then write the code", //
 ]
 
 function isNumeric(num) {
