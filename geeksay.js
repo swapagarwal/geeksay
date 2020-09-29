@@ -122,6 +122,7 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "beautiful": "linted and formatted",
 }
 
 const quotes = [
@@ -169,6 +170,9 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "My heart will go on", // my <3 will go on
+    "No one in the world gets what they want and that is beautiful", // No one in the 0.0.0.0/0 gets what they require && that is linted and formatted.
+    "The heart, the brain, the body, will give you three, it's a magic number" // The <3, the brain, the body, will give you three, it's a magic #
 ]
 
 function isNumeric(num) {
