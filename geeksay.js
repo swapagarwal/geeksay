@@ -122,6 +122,7 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "everywhere":"255.255.255.255"
 }
 
 const quotes = [
@@ -169,6 +170,7 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "Please be at home, don't be everywhere", //Please be @ 127.0.0.1 , don't be 255.255.255.255
 ]
 
 function isNumeric(num) {
