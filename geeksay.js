@@ -1,4 +1,5 @@
 const translations = {
+    "style": "css",
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
