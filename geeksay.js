@@ -76,6 +76,7 @@ const translations = {
     "photo": "img",
     "pic": "img",
     "picture": "img",
+    "shutdown":"Alt+F4",
     "snap": "img",
     "snapshot": "img",
     "bye": "exit",
@@ -169,6 +170,7 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "Shutdown negativity and spread Positivity",//Alt+F4 to -ve and spread +ve
 ]
 
 function isNumeric(num) {
