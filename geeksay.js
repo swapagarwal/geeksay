@@ -122,6 +122,8 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "refresh":"F5",
+    "search":"F3",
 }
 
 const quotes = [
@@ -169,6 +171,7 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "I am not your help", //I am not your F1button
 ]
 
 function isNumeric(num) {
