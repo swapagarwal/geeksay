@@ -169,6 +169,8 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "Get busy living or get busy dying", // git busy living || git busy dying
+    
 ]
 
 function isNumeric(num) {
