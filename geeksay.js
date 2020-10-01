@@ -1,4 +1,6 @@
 const translations = {
+    "hide": "incognito",
+    "repeat": "loop",
     "style": "css",
     "save": "ctrl+s",
     "break": "<br>",
@@ -172,6 +174,7 @@ const quotes = [
     "Green with envy", // #00ff00 with envy
     "I love you", //I <3 you
     "He has a style", //He has a css
+    "hide it!", //incognito it!
 ]
 
 function isNumeric(num) {
