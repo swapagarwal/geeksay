@@ -1,4 +1,8 @@
 const translations = {
+    "windows": "trash",
+    "fork": "fork()",
+    "directory": "dir",
+    "elite": "31337",
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
