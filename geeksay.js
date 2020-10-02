@@ -128,7 +128,7 @@ const translations = {
 const quotes = [
     "live life king size", // live 42 king size
     "never give up", // ! give up 
-    "coding for life" // coding for 42
+    "coding for life", // coding for 42
     "Hello World", // ping 0.0.0.0/0
     "Bye World", // exit 0.0.0.0/0
     "Forget that ever happened", // ctrl+z that ever happened
