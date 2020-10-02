@@ -169,6 +169,22 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "There are 2 types of people in this world, one who understands binary and others who don't",//There are 10 types of people in this world, one who understands binary and others who don't
+    "Things are not always White and Black", //Things are not always #FFFFFF and #000000
+    "She is scared of Bugs", //We all(programmers) are scared of Bugs
+    "I need a Break", //I need a <br>
+    "I lost control, I dont remember anything", //I lost ctrl, I havent saved anything
+    "Do you have it in writing?", //Do you have its Documentation
+    "Save me!", //ctrl+s me!
+    "I will work till i dont finish my project", //while(project !=0){ work() }
+    "When will you come back? I come as soon as traffic gets clear", //if(traffic != NULL){ print("soon") }
+    "Turn your weekness into your strength", //Turn your Bugs into your Features
+    "God Save me please!", //Root ctrl+s self sudo
+    "wait, i will stop the car", //Load, i will abort my CAR
+    "Its a lifetime acheivement", //Its a runtime acheivement
+    "Escape that shit", //esc that dump
+    "I quit", //I ctrl+q
+    "nothing can stop me", //void can abort self
 ]
 
 function isNumeric(num) {
