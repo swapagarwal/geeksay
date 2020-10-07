@@ -122,6 +122,8 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "all"   : "*",
+    "lineartime" : "o(N)",
 }
 
 const quotes = [
@@ -169,6 +171,8 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "Hello All" , // Hello *
+    "It is lineartime" , // It is o(N)
 ]
 
 function isNumeric(num) {
