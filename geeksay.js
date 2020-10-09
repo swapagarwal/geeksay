@@ -122,6 +122,8 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "head": "<head>,
+    "release":"dealloc",
 }
 
 const quotes = [
