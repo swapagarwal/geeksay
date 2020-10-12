@@ -122,6 +122,7 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "pink": "#ffc0cb"
 }
 
 const quotes = [
@@ -169,6 +170,7 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "pink panter" //  #ffc0cb panter
 ]
 
 function isNumeric(num) {
@@ -183,8 +185,7 @@ function geeksay(text) {
 function geeksayWord(word) {
     if (isNumeric(word)) {
         return (word >>> 0).toString(2);
-    }
-    else {
+    } else {
         lowerCaseText = removeSymbols(word).toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
             word = word.toLowerCase().replace(lowerCaseText, translations[lowerCaseText]);
