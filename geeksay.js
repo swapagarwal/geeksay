@@ -160,7 +160,7 @@ const quotes = [
     "I like to fix shit", // I like to debug dump
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
-    "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
+    "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
     "history repeats itself", // log repeats itself
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
@@ -169,6 +169,7 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "Im Not antisocial Im just not user friendly."
 ]
 
 function isNumeric(num) {
