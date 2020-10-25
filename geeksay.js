@@ -116,6 +116,8 @@ const translations = {
     "say": "log",
     "body": "<body>",
     "head": "<head>",
+    "table": "<table>",
+    "meta": "<meta>",
     "restart": "ctrl+alt+del",
     "death": "BSOD",
     "wait": "load",
@@ -169,6 +171,7 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "Good developers copy, great developers paste", // Good developers ctrl+c, great developers ctrl+v
 ]
 
 function isNumeric(num) {
