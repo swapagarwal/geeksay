@@ -123,8 +123,11 @@ const translations = {
     "unauthorized": "401",
     "nothing": "void",
     "empty": "void",
-    "missing": "undefined",
+    "mention": "declare",
     "trash": "/dev/null",
+    "content": "data",
+    "improve": "optimize",
+    "change": "update"
 }
 
 const quotes = [
