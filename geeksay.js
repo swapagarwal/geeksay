@@ -122,6 +122,12 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "empty": "void",
+    "mention": "declare",
+    "trash": "/dev/null",
+    "content": "data",
+    "improve": "optimize",
+    "change": "update"
 }
 
 const quotes = [
