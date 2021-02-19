@@ -121,6 +121,7 @@ const translations = {
     "wait": "load",
     "waiting": "loading",
     "unauthorized": "401",
+    "important": "!important",
     "nothing": "void",
 }
 
