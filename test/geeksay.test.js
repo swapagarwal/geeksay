@@ -1,4 +1,6 @@
 const should = require('should');
+const esprima = require('esprima');
+const fs = require('fs');
 const geeksay = require('../geeksay')
 
 describe('words', () => {
@@ -57,10 +59,13 @@ describe('multi-line and symbols', () => {
     should.equal(geeksay('(=> I love my house )'), '(=> I <3 my 127.0.0.1 )');
   });
 
-  // TODO:
-  // it('symbols #3', () => {
-  // 	should.equal(geeksay('I love my house!'), 'I <3 my 127.0.0.1!');
-  // });
+  it('symbols #3', () => {
+  	should.equal(geeksay('I love my house!'), 'I <3 my 127.0.0.1!');
+  });
+  
+  it('symbols #4', () => {
+  	should.equal(geeksay('Roses are red, violets are blue.'), 'Roses are #ff0000, violets are #0000ff.');
+  });
 
 });
 
@@ -94,5 +99,40 @@ describe('inputs', () => {
 
   it('array of numbers', () => {
     should.equal(geeksay([1, 2, 3, 4, '100']), '1 10 11 100 1100100');
+  });
+});
+
+describe('code checks', () => {
+  it('duplicate translation entries', () => {
+    const libfile = '../geeksay.js'    // Library file location
+    const varname = 'translations'     // Variable to check for duplicate entries
+
+    var code = fs.readFileSync(__dirname + '/' + libfile, 'utf8')
+    var ast  = esprima.parse(code);
+
+    // Find 'translations' variable and extract entries' keys
+    var duplicates;
+    for (const i in ast.body) {
+      let decl = ast.body[i]
+      if (decl.type == 'VariableDeclaration') {
+        for (const j in decl.declarations) {
+          if (decl.declarations[j].id.name == varname) {
+            translations = decl.declarations[j];
+            entries      = translations.init.properties.map(prop => prop.key.value);
+            duplicates   = entries.filter((item, index) => entries.indexOf(item) != index);
+          }
+        }
+      }
+    }
+
+    // Case if 'translations' variable was not found and 'duplicates' is therefore undefined
+    if (typeof duplicates == "undefined") {
+      throw Error("Variable \'" + varname + "\' was not found in library file (" + libfile + ").");
+    }
+
+    // The number of duplicates should be 0
+    should.equal(duplicates.length, 0, 
+      "Found duplicate " + duplicates.length + " entries: " + duplicates.map(entry => '"'+entry+'"').join(', ') );
+
   });
 });

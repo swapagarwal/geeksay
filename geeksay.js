@@ -104,6 +104,7 @@ const translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
+    "smile": ":)",
     "list": "ls",
     "ok": "200",
     "okay": "200",
@@ -112,16 +113,16 @@ const translations = {
     "on": "1",
     "off": "0",
     "pixel": "px",
-    "say": "log",  
+    "say": "log",
     "body": "<body>",
     "head": "<head>",
     "restart": "ctrl+alt+del",
     "death": "BSOD",
     "wait": "load",
     "waiting": "loading",
-    "forbidden": "403",
     "unauthorized": "401",
-    "important": "!important"
+    "important": "!important",
+    "nothing": "void",
 }
 
 const quotes = [
@@ -167,6 +168,8 @@ const quotes = [
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
     "Easy as pie", // easy as π
+    "Live, laugh, love", // live, laugh, <3
+    "Green with envy", // #00ff00 with envy
 ]
 
 function isNumeric(num) {
@@ -175,22 +178,24 @@ function isNumeric(num) {
 
 function geeksay(text) {
     const input = Array.isArray(text) ? text : String(text).split(' ');
-
     return input.map(geeksayWord).join(' ');
 }
 
-function geeksayWord(text) {
-    if (isNumeric(text)) {
-        return (text >>> 0).toString(2);
+function geeksayWord(word) {
+    if (isNumeric(word)) {
+        return (word >>> 0).toString(2);
     }
     else {
-        lowerCaseText = text.toLowerCase();
+        lowerCaseText = removeSymbols(word).toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
-            return translations[lowerCaseText];
-        } else {
-            return text;
+            word = word.toLowerCase().replace(lowerCaseText, translations[lowerCaseText]);
         }
+        return word;
     }
+}
+
+function removeSymbols(word) {
+    return word.replace(/(?!\n|\r\n)[^a-zA-Z0-9]+/, '');
 }
 
 function getRandomTranslation() {
