@@ -122,6 +122,9 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "more": ">",
+    "less": "<",
+    "talk": "parse"
 }
 
 const quotes = [
@@ -148,11 +151,11 @@ const quotes = [
     "get out of home", // git out of 127.0.0.1
     "not everything is black and white", // ! 42 is #000 && #fff
     "to be or not to be, that is the question", // to be || ! to be, that is the ?
-    "i was 5 and he was 6", // i was 101 && he was 110
+    "I was 5 and he was 6", // I was 101 && he was 110
     "he wore black and i wore white", // he wore #000 && i wore #fff
     "bang bang my baby shot me down", // ! ! my baby shot self down
     "Today is the first day of the rest of your lifetime", // Today is the first day of the rest of your runtime
-    "i need to sleep", // i require to shutdown
+    "I need to sleep", // I require to shutdown
     "There are ten types of people in the world: those who understand binary and those who don't", // There are ten types of people in the world: those who understand 01 && those who don't
     "I love my life", // I <3 my 42
     "I love my house", // I <3 my 127.0.0.1
@@ -169,6 +172,7 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "We need to talk.", //We need to parse.
 ]
 
 function isNumeric(num) {
