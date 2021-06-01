@@ -122,6 +122,15 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "find": "grep",
+    "search": "grep",
+    "read": "<",
+    "write": ">",
+    "copy": "cp",
+    "all": ".",
+    "inital": "init",
+    "initialize": "init",
+    "kill": "alt+F4"
 }
 
 const quotes = [
