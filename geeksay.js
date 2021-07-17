@@ -122,20 +122,23 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "today": 'current_date',
+    "created": '201',
+    "the": "=>"
 }
 
 const quotes = [
     "Hello World", // ping 0.0.0.0/0
     "Bye World", // exit 0.0.0.0/0
     "Forget that ever happened", // ctrl+z that ever happened
-    "Home is where the heart is", // 127.0.0.1 is where the heart is
+    "Home is where the heart is", // 127.0.0.1 is where => heart is
     "Home is where ideas come to life", // 127.0.0.1 is where ideas come to 42
-    "Home is where the wifi connects automatically", // 127.0.0.1 is where the wifi connects automatically
+    "Home is where the wifi connects automatically", // 127.0.0.1 is where => wifi connects automatically
     "fuck that shit", // fork that dump
     "go hard or go home", // go hard || go 127.0.0.1
     "I will call you", // I will ping you
-    "I want the world to know me", // I require the 0.0.0.0/0 to know self
-    "I am the owner", // I am the admin
+    "I want the world to know me", // I require => 0.0.0.0/0 to know self
+    "I am the owner", // I am => admin
     "I am God", // I am root
     "please make me a sandwich", // sudo make self a sandwich
     "coffee is life", // covfefe is 42
@@ -147,28 +150,29 @@ const quotes = [
     "copy that!", // ctrl+c that!
     "get out of home", // git out of 127.0.0.1
     "not everything is black and white", // ! 42 is #000 && #fff
-    "to be or not to be, that is the question", // to be || ! to be, that is the ?
+    "to be or not to be, that is the question", // to be || ! to be, that is => ?
     "i was 5 and he was 6", // i was 101 && he was 110
     "he wore black and i wore white", // he wore #000 && i wore #fff
     "bang bang my baby shot me down", // ! ! my baby shot self down
-    "Today is the first day of the rest of your lifetime", // Today is the first day of the rest of your runtime
+    "Today is the first day of the rest of your lifetime", // current_date is => first day of => rest of your runtime
     "i need to sleep", // i require to shutdown
-    "There are ten types of people in the world: those who understand binary and those who don't", // There are ten types of people in the world: those who understand 01 && those who don't
+    "There are ten types of people in the world: those who understand binary and those who don't", // There are ten types of people in => world: those who understand 01 && those who don't
     "I love my life", // I <3 my 42
     "I love my house", // I <3 my 127.0.0.1
     "heart break", // <3 <br>
     "I like to fix shit", // I like to debug dump
     "eat sleep code repeat", // eat shutdown code repeat
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
-    "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
+    "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick => devil ever pulled was convincing the 0.0.0.0/0 he didn't exist
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
     "history repeats itself", // log repeats itself
-    "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
+    "My dog likes to greet me at the door.", // My dog likes to ping me at => door.
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "God created the world", // root 201 => 0.0.0.0/0
 ]
 
 function isNumeric(num) {
