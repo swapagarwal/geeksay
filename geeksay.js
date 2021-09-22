@@ -93,7 +93,6 @@ const translations = {
     "not found": "404",
     "created": "201",
     "accepted": "202",
-    "unauthorized": "401",
     "link": "url",
     "forbidden": "403",
     "send": "push",
