@@ -122,6 +122,10 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "style": "css",
+    "repeat": "loop",
+    "repeats": "loops",
+    "add": "append",
 }
 
 const quotes = [
@@ -158,17 +162,19 @@ const quotes = [
     "I love my house", // I <3 my 127.0.0.1
     "heart break", // <3 <br>
     "I like to fix shit", // I like to debug dump
-    "eat sleep code repeat", // eat shutdown code repeat
+    "eat sleep code repeat", // eat shutdown code loop
     "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
     "The greatest trick the devil ever pulled was convincing the world he didn't exist", // The greatest trick the devil ever pulled was convincing the 0.0.0.0/0 he didn't exist 
     "home sweet home", // 127.0.0.1 sweet 127.0.0.1
-    "history repeats itself", // log repeats itself
+    "history repeats itself", // log loops itself
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "add insult to injury", // append insult to injury
+    "do it with style", // do it with css
 ]
 
 function isNumeric(num) {
