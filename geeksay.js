@@ -122,6 +122,12 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "taskmanager": "ctrl+shift+esc",
+    "fishing": "Phishing",
+    "gigabyte": "gig",
+    "snake": "python",
+    "disco": "disk O",
+
 }
 
 const quotes = [
@@ -169,6 +175,12 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "We should break up", // We should <br> up
+    "Karens love speaking to the TaskManager", // Karens love speaking to the ctrl+shift+esc
+    "My keyboard has lost control!", // My keyboard has lost ctrl!
+    "What do hackers do on a boat? Fishing.", // What do hackers do 1 a boat? Phishing.
+    "It's the time to disco!", // It's the time to disk O!
+
 ]
 
 function isNumeric(num) {
