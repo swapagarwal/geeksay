@@ -108,6 +108,7 @@ const translations = {
     "list": "ls",
     "ok": "200",
     "okay": "200",
+    "continue": "100",
     "question": "?",
     "history": "log",
     "on": "1",
