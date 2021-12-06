@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <title>geeksay</title>
   <meta charset="utf-8">
@@ -21,25 +22,30 @@
     overflow: auto;
     font-size: 16px;
   }
+
   .container {
     max-width: 600px;
     margin: 0 auto;
     overflow: auto;
     z-index: 10;
   }
+
   @media (max-width: 500px) {
     body {
       padding: 20px;
     }
+
     button {
       margin: 20px 0 !important;
     }
   }
+
   h1 {
     font-family: 'Lato', 'Helvetica', Arial, sans-serif;
     font-weight: 300;
     margin-bottom: 0;
   }
+
   textarea {
     width: 100%;
     font-family: 'Helvetica';
@@ -51,6 +57,7 @@
     padding: 15px;
     border-radius: 4px;
   }
+
   select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -67,12 +74,14 @@
     border-radius: 3px;
     margin: 0 4px 4px 4px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-              0 1px 5px 0 rgba(0, 0, 0, 0.12),
-              0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      0 1px 5px 0 rgba(0, 0, 0, 0.12),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2);
   }
+
   select:focus {
     background-color: #7bd6cf;
   }
+
   button {
     border: none;
     outline: none;
@@ -90,6 +99,7 @@
     margin: 20px;
     width: 130px;
   }
+
   #footer {
     margin-top: 100px;
     padding-top: 20px;
@@ -97,27 +107,34 @@
     text-align: center;
     text-transform: uppercase;
   }
-  #footer > p {
+
+  #footer>p {
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: .2em;
     padding-right: 6px;
   }
+
   .note {
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 12px;
   }
+
   .red {
     color: #E91E63;
   }
-  a:link, a:visited {
+
+  a:link,
+  a:visited {
     color: #E91E63;
     text-decoration: none;
   }
+
   a:hover {
     color: #2196F3;
   }
+
   /* Hide this somewhere */
   #clipboardContents {
     opacity: 0;
@@ -126,6 +143,7 @@
     left: 0;
     z-index: 0;
   }
+
   #output {
     padding: 15px;
     background-color: black;
@@ -134,46 +152,188 @@
     font-weight: 500;
     font-family: monospace;
   }
+
   .twitter-tweet-button {
     float: right;
     margin: 7px 0 0 0;
   }
+
   .random-quote-button {
     float: right;
     margin: 6px 0 0 0;
   }
+
+  .take-quiz {
+    text-align: center;
+  }
+
+  /* Modal styles */
+  .quiz-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 1.9);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #score {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+  }
 </style>
+
 <body>
-  <a href="https://github.com/swapagarwal/geeksay" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  <a href="https://github.com/swapagarwal/geeksay" class="github-corner" aria-label="View source on Github"><svg
+      width="80" height="80" viewBox="0 0 250 250"
+      style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg>
+  </a>
+  <style>
+    .github-corner:hover .octo-arm {
+      animation: octocat-wave 560ms ease-in-out
+    }
+
+    @keyframes octocat-wave {
+
+      0%,
+      100% {
+        transform: rotate(0)
+      }
+
+      20%,
+      60% {
+        transform: rotate(-25deg)
+      }
+
+      40%,
+      80% {
+        transform: rotate(10deg)
+      }
+    }
+
+    @media (max-width:500px) {
+      .github-corner:hover .octo-arm {
+        animation: none
+      }
+
+      .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+      }
+    }
+  </style>
+
   <div class="container">
-    <h1>From layman 👶&nbsp;&nbsp;&nbsp;<button class="random-quote-button" onclick="randomQuote()" id="randomQuoteButton">Random Quote</button></h1>
+    <h1>From layman 👶&nbsp;&nbsp;&nbsp;<button class="random-quote-button" onclick="randomQuote()"
+        id="randomQuoteButton">Random Quote</button></h1>
     <p class="note">(just start typing!)</p>
     <textarea id="input" aria-required="true">geeks will save the world!
 There's no place like home
 sometimes, i just need a break</textarea>
     <br><br>
-    <h1>To geek 🤓&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/intent/tweet?button_hashtag=geeksay&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="geeks will ctrl+s the world!&#010;There&#39;s no place like 127.0.0.1&#010;sometimes, i just need a &lt;br&gt;&#010;Can you guess the original text?" data-url="http://geeksay.xyz" data-show-count="false">Tweet #geeksay</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></h1>
+    <h1>To geek 🤓&nbsp;&nbsp;&nbsp;<a
+        href="https://twitter.com/intent/tweet?button_hashtag=geeksay&ref_src=twsrc%5Etfw"
+        class="twitter-hashtag-button" data-size="large"
+        data-text="geeks will ctrl+s the world!&#010;There&#39;s no place like 127.0.0.1&#010;sometimes, i just need a &lt;br&gt;&#010;Can you guess the original text?"
+        data-url="http://geeksay.xyz" data-show-count="false">Tweet #geeksay</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </h1>
     <br>
+    <div class="take-quiz">
+      <p class="quiz-foreword"> Got your geekymeter on? Let's try quizzing! </p>
+      <button class="start-quiz" onclick="startQuiz()">Start Quiz</button>
+    </div>
     <div style="line-height: 24px" id="output"></div>
     <div id="footer">
-        <p>made with <span class="red">❤︎</span> by <a href="https://swapnil.net/" target="_blank">swapnil</a> |
+      <p>made with <span class="red">❤︎</span> by <a href="https://swapnil.net/" target="_blank">swapnil</a> |
         designed by <a href="https://twitter.com/notwaldorf" target="_blank">monica</a></p>
     </div>
     <br>
     <div align="center">
-        <a id="help" href="https://github.com/swapagarwal/geeksay/issues/6" target="_blank">Need an API?</a>
+      <a id="help" href="https://github.com/swapagarwal/geeksay/issues/6" target="_blank">Need an API?</a>
     </div>
     <div align="center">
-        <p style="display:inline-block" id="randomTranslation"></p>
-        <br>
-        <button style="margin-top: 0px" onclick="randomTranslation()" id="randomTranslationButton">One more!</button>
+      <p style="display:inline-block" id="randomTranslation"></p>
+      <br>
+      <button style="margin-top: 0px" onclick="randomTranslation()" id="randomTranslationButton">One more!</button>
+    </div>
+    <div class="quiz-modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="score"> </div>
+        <div class="questions">
+          <h3> Translate the following!</h3>
+          <p class="q1">
+            1. I like to fix shit
+          </p>
+          <input type="text" id="q1" autocomplete="off" onchange="saveAnswers()">
+          <p class="q2">
+            2. My dog likes to greet me at the door.
+          </p>
+          <input type="text" id="q2" autocomplete="off" onchange="saveAnswers()">
+          <p class="q3">
+            3. somebody save me
+          </p>
+          <input type="text" id="q3" autocomplete="off" onchange="saveAnswers()">
+          <p class="q4">
+            4. Green with envy
+          </p>
+          <input type="text" id="q4" autocomplete="off" onchange="saveAnswers()">
+          <p class="q5">
+            5. I will find you and I will fix you!
+          </p>
+          <input type="text" id="q5" autocomplete="off" onchange="saveAnswers()">
+          <br />
+          <button class="submit-quiz" onclick="submitQuiz()">Submit</button>
+        </div>
+      </div>
+
     </div>
   </div>
 
   <!-- Gigantor hack to get the copy-to-clipboard working. I don't think it
   works with hidden divs, so uhhhh just hide this one real well -->
   <div id="clipboardContents"></div>
-
 
   <script type="text/javascript">
     console.log(geeksay('geeks will save the world'));
@@ -182,7 +342,7 @@ sometimes, i just need a break</textarea>
 
   <script>
     updateOutput();
-    document.getElementById('input').addEventListener('input', function() {
+    document.getElementById('input').addEventListener('input', function () {
       updateOutput();
     });
     function updateOutput() {
@@ -191,24 +351,24 @@ sometimes, i just need a break</textarea>
       document.getElementById('output').innerHTML = '';
       var inputField = document.getElementById('input');
       var text = inputField.value.trim();
-      if(text.length !== 0) {
-      var container = document.getElementById('output');
-      var allLines = text.split('\n');
-      for (var line = 0; line < allLines.length; line++ ){
-        if (allLines[line] == '')
-          continue
-        var words = allLines[line].split(' ');
-        // Re-add the translated words.
-        for (var i = 0; i < words.length; i++ ) {
-          var node = document.createElement('span');
-          node.innerText = geeksay(words[i]) + ' ';
-          if (node)
-            container.appendChild(node);
+      if (text.length !== 0) {
+        var container = document.getElementById('output');
+        var allLines = text.split('\n');
+        for (var line = 0; line < allLines.length; line++) {
+          if (allLines[line] == '')
+            continue
+          var words = allLines[line].split(' ');
+          // Re-add the translated words.
+          for (var i = 0; i < words.length; i++) {
+            var node = document.createElement('span');
+            node.innerText = geeksay(words[i]) + ' ';
+            if (node)
+              container.appendChild(node);
+          }
+          var newLine = document.createElement('br');
+          container.appendChild(newLine);
         }
-        var newLine = document.createElement('br');
-        container.appendChild(newLine);
-      }
-      return container;
+        return container;
       } else {
         document.getElementById('output').innerHTML = "Type something in the above area...";
       }
@@ -232,7 +392,7 @@ sometimes, i just need a break</textarea>
         copyButton.innerHTML = 'Oops, error copying :(';
       }
       // Return to the copy button after a second.
-      setTimeout(function() {
+      setTimeout(function () {
         copyButton.innerHTML = 'Copy to clipboard';
       }.bind(this), 1000);
       selection.removeAllRanges();
@@ -254,12 +414,58 @@ sometimes, i just need a break</textarea>
       return value;
     }
     function randomTranslation() {
-        document.getElementById("randomTranslation").innerText = getRandomTranslation();
+      document.getElementById("randomTranslation").innerText = getRandomTranslation();
     }
     function randomQuote() {
-        document.getElementById("input").value = getRandomQuote();
-        updateOutput();
+      document.getElementById("input").value = getRandomQuote();
+      updateOutput();
+    }
+
+    function startQuiz() {
+      const modal = document.querySelector('.quiz-modal');
+      const btn = document.querySelector(".start-quiz");
+      const span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      }
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    }
+    function saveAnswers() {
+      const questionKeys = ['q1', 'q2', 'q3', 'q4', 'q5'];
+      const answers = {};
+      for (let i = 0; i < questionKeys.length; i++) {
+        answers[questionKeys[i]] = document.getElementById(questionKeys[i]).value;
+        sessionStorage.setItem(questionKeys[i], answers[questionKeys[i]]);
+      }
+    }
+
+    function submitQuiz() {
+      const scoreArea = document.querySelector('#score');
+      let score = 0;
+      const answers = [
+        'I like to debug dump',
+        'My dog likes to ping me at the door',
+        'somebody ctrl+s me',
+        '#00ff00 with envy',
+        'I will ctrl+f you && I will debug you!'
+
+      ]
+      const questionKeys = ['q1', 'q2', 'q3', 'q4', 'q5'];
+      for (let i = 0; i < questionKeys.length; i++) {
+        if (sessionStorage.getItem(questionKeys[i]) === answers[i]) {
+          score++;
+        }
+      }
+      scoreArea.innerText = `You got ${score} out of ${questionKeys.length} correct!`;
     }
   </script>
 </body>
+
 </html>
