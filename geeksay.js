@@ -122,6 +122,9 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "blanks": "&amp;nbsp;&amp;nbsp;",
+    "a million years": "3.156e+13ms",
+    "word": "/\w+/",
 }
 
 const quotes = [
@@ -169,7 +172,11 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
-]
+    "Fill in the blanks", // Fill in the &nbsp;&nbsp;
+    "Never in a thousand years!", // Never in 3.15576e+16ms
+    "Word", // /\w+/
+    "Give me a break", // Give me a <br>
+  ]
 
 function isNumeric(num) {
     return !isNaN(parseInt(num));
