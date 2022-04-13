@@ -169,6 +169,7 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "fixing my life and working from home" // debugging my 42 && working from 127.0.0.1
 ]
 
 function isNumeric(num) {
@@ -183,8 +184,7 @@ function geeksay(text) {
 function geeksayWord(word) {
     if (isNumeric(word)) {
         return (word >>> 0).toString(2);
-    }
-    else {
+    } else {
         lowerCaseText = removeSymbols(word).toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
             word = word.toLowerCase().replace(lowerCaseText, translations[lowerCaseText]);
