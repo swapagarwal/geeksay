@@ -169,6 +169,7 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "save the best for the last", //ctrl+s the best for the last
 ]
 
 function isNumeric(num) {
