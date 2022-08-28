@@ -169,6 +169,8 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "It Is Very Easy To Defeat Someone, But It Is Very Hard To Win Someone", //updated 28th august 2022
+    "All Birds find shelter during a rain.But Eagle avoids rain by flying above the Clouds.Problems are common, but attitude makes the difference!!!", //updated 28th august 2022
 ]
 
 function isNumeric(num) {
