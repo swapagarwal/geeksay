@@ -128,6 +128,7 @@ const quotes = [
     "Hello World", // ping 0.0.0.0/0
     "Bye World", // exit 0.0.0.0/0
     "Forget that ever happened", // ctrl+z that ever happened
+    "déjà vu", // ctrl+y it happened before
     "Home is where the heart is", // 127.0.0.1 is where the heart is
     "Home is where ideas come to life", // 127.0.0.1 is where ideas come to 42
     "Home is where the wifi connects automatically", // 127.0.0.1 is where the wifi connects automatically
