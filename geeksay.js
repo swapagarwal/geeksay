@@ -174,6 +174,8 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "out of the blue", // out of the #0000ff
+    "caught red-handed", // caught #ff0000 handed
     "I love you", //I <3 you
     "He has a style", //He has a css
     "hide it!", //incognito it!
