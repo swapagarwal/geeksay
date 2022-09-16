@@ -125,6 +125,7 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "pink": "#ffc0cb"
     "style": "CSS",
     "developer": "dev"
 }
@@ -174,6 +175,7 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "pink panther" //  #ffc0cb panther
     "Get busy living or get busy dying", // git busy living || git busy dying
     "out of the blue", // out of the #0000ff
     "caught red-handed", // caught #ff0000 handed
@@ -194,8 +196,7 @@ function geeksay(text) {
 function geeksayWord(word) {
     if (isNumeric(word)) {
         return (word >>> 0).toString(2);
-    }
-    else {
+    } else {
         lowerCaseText = removeSymbols(word).toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
             word = word.toLowerCase().replace(lowerCaseText, translations[lowerCaseText]);
