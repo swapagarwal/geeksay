@@ -1,4 +1,7 @@
 const translations = {
+    "hide": "incognito",
+    "repeat": "loop",
+    "style": "css",
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
@@ -122,6 +125,8 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "style": "CSS",
+    "developer": "dev"
 }
 
 const quotes = [
@@ -170,7 +175,11 @@ const quotes = [
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
     "Get busy living or get busy dying", // git busy living || git busy dying
-    
+    "out of the blue", // out of the #0000ff
+    "caught red-handed", // caught #ff0000 handed
+    "I love you", //I <3 you
+    "He has a style", //He has a css
+    "hide it!", //incognito it!
 ]
 
 function isNumeric(num) {
