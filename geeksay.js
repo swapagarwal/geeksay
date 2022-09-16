@@ -174,6 +174,8 @@ const quotes = [
     "somebody save me", // somebody ctrl+s me
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
+    "Green with envy", // #00ff00 with envy 
+    "There's no place like home" //There's no place like 127.0.0.1
     "Green with envy", // #00ff00 with envy
     "you yourself are the anchor of your life", //you yourself are the <a> of your life
     "you are the love of my life", //you are the <3 of my 42
@@ -185,7 +187,7 @@ const quotes = [
     "He has a style", //He has a css
     "hide it!", //incognito it!
 ]
-
+ 
 function isNumeric(num) {
     return !isNaN(parseInt(num));
 }
