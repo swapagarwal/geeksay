@@ -122,8 +122,8 @@ const translations = {
   waiting: "loading",
   unauthorized: "401",
   nothing: "void",
-  power: "pow5r",
-  Knowledge: "Knowl54ge",
+  power: "wealth",
+  Knowledge: "Information",
 };
 
 const quotes = [
