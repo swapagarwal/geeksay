@@ -1,4 +1,7 @@
 const translations = {
+    "hide": "incognito",
+    "repeat": "loop",
+    "style": "css",
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
@@ -104,22 +107,26 @@ const translations = {
     "mathematics": "math",
     "heart": "<3",
     "love": "<3",
+    "smile": ":)",
     "list": "ls",
     "ok": "200",
     "okay": "200",
     "question": "?",
     "history": "log",
     "on": "1",
+    "off": "0",
     "pixel": "px",
-    "say": "log",  
+    "say": "log",
     "body": "<body>",
     "head": "<head>",
     "restart": "ctrl+alt+del",
     "death": "BSOD",
     "wait": "load",
     "waiting": "loading",
-    "forbidden": "403",
     "unauthorized": "401",
+    "nothing": "void",
+    "style": "CSS",
+    "developer": "dev"
 }
 
 const quotes = [
@@ -164,7 +171,12 @@ const quotes = [
     "My dog likes to greet me at the door.", // My dog likes to ping me at the door.
     "keep calm and geek on", // keep calm && g33k 1
     "somebody save me", // somebody ctrl+s me
-    "I love watching people from a safe distance", // i like watching people from the monitor
+    "Easy as pie", // easy as π
+    "Live, laugh, love", // live, laugh, <3
+    "Green with envy", // #00ff00 with envy
+    "I love you", //I <3 you
+    "He has a style", //He has a css
+    "hide it!", //incognito it!
 ]
 
 function isNumeric(num) {
@@ -173,22 +185,24 @@ function isNumeric(num) {
 
 function geeksay(text) {
     const input = Array.isArray(text) ? text : String(text).split(' ');
-
     return input.map(geeksayWord).join(' ');
 }
 
-function geeksayWord(text) {
-    if (isNumeric(text)) {
-        return (text >>> 0).toString(2);
+function geeksayWord(word) {
+    if (isNumeric(word)) {
+        return (word >>> 0).toString(2);
     }
     else {
-        lowerCaseText = text.toLowerCase();
+        lowerCaseText = removeSymbols(word).toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
-            return translations[lowerCaseText];
-        } else {
-            return text;
+            word = word.toLowerCase().replace(lowerCaseText, translations[lowerCaseText]);
         }
+        return word;
     }
+}
+
+function removeSymbols(word) {
+    return word.replace(/(?!\n|\r\n)[^a-zA-Z0-9]+/, '');
 }
 
 function getRandomTranslation() {
