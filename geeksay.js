@@ -125,7 +125,7 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
-    "style": "CSS"
+    "style": "CSS",
     "developer": "dev"
 }
 
