@@ -125,7 +125,7 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
-    "pink": "#ffc0cb"
+    "pink": "#ffc0cb",
     "style": "CSS",
     "developer": "dev"
 }
@@ -175,11 +175,11 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy 
-    "There's no place like home" //There's no place like 127.0.0.1
+    "There's no place like home", //There's no place like 127.0.0.1
     "Green with envy", // #00ff00 with envy
     "you yourself are the anchor of your life", //you yourself are the <a> of your life
     "you are the love of my life", //you are the <3 of my 42
-    "pink panther" //  #ffc0cb panther
+    "pink panther", //  #ffc0cb panther
     "Get busy living or get busy dying", // git busy living || git busy dying
     "out of the blue", // out of the #0000ff
     "caught red-handed", // caught #ff0000 handed
