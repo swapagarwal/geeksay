@@ -175,6 +175,8 @@ const quotes = [
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
     "Green with envy", // #00ff00 with envy
+    "you yourself are the anchor of your life", //you yourself are the <a> of your life
+    "you are the love of my life", //you are the <3 of my 42
     "pink panther" //  #ffc0cb panther
     "Get busy living or get busy dying", // git busy living || git busy dying
     "out of the blue", // out of the #0000ff
