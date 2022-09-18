@@ -1,4 +1,7 @@
 const translations = {
+    "hide": "incognito",
+    "repeat": "loop",
+    "style": "css",
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
@@ -124,6 +127,9 @@ const translations = {
     "nothing": "void",
     "change": "alt",
     "random": "Lorem Ipsum",
+    "pink": "#ffc0cb",
+    "style": "CSS",
+    "developer": "dev"
 }
 
 const quotes = [
@@ -170,9 +176,20 @@ const quotes = [
     "somebody save me", // somebody ctrl+s me
     "Easy as pie", // easy as π
     "Live, laugh, love", // live, laugh, <3
+    "Green with envy", // #00ff00 with envy 
+    "There's no place like home", //There's no place like 127.0.0.1
     "Green with envy", // #00ff00 with envy
+    "you yourself are the anchor of your life", //you yourself are the <a> of your life
+    "you are the love of my life", //you are the <3 of my 42
+    "pink panther", //  #ffc0cb panther
+    "Get busy living or get busy dying", // git busy living || git busy dying
+    "out of the blue", // out of the #0000ff
+    "caught red-handed", // caught #ff0000 handed
+    "I love you", //I <3 you
+    "He has a style", //He has a css
+    "hide it!", //incognito it!
 ]
-
+ 
 function isNumeric(num) {
     return !isNaN(parseInt(num));
 }
@@ -185,8 +202,7 @@ function geeksay(text) {
 function geeksayWord(word) {
     if (isNumeric(word)) {
         return (word >>> 0).toString(2);
-    }
-    else {
+    } else {
         lowerCaseText = removeSymbols(word).toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
             word = word.toLowerCase().replace(lowerCaseText, translations[lowerCaseText]);
