@@ -125,6 +125,8 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "change": "alt",
+    "random": "Lorem Ipsum",
     "pink": "#ffc0cb",
     "style": "CSS",
     "developer": "dev"
