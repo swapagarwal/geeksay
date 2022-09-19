@@ -335,7 +335,7 @@ sometimes, i just need a break</textarea
 
       const copyText = document.querySelector(".copy-btn")
 
-      
+
       updateOutput();
       document.getElementById("input").addEventListener("input", function () {
         updateOutput();
@@ -421,8 +421,9 @@ sometimes, i just need a break</textarea
         return copiedValue
       }
       copyText.addEventListener("click", function(){
-      let copiedValue = document.getElementById("input").value;
+      let copiedValue = document.getElementById("output").textContent;
         navigator.clipboard.writeText(copiedValue);
+        console.log();
 
       })
     </script>
