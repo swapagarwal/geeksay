@@ -292,6 +292,8 @@ sometimes, i just need a break</textarea
         >
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"
         ></script>
+
+        <button class="copy-btn random-quote-button">Copy Quote</button>
       </h1>
       <br />
       <div style="line-height: 24px" id="output"></div>
@@ -330,6 +332,10 @@ sometimes, i just need a break</textarea
         getRandomTranslation();
     </script>
     <script>
+
+      const copyText = document.querySelector(".copy-btn")
+
+      
       updateOutput();
       document.getElementById("input").addEventListener("input", function () {
         updateOutput();
@@ -411,7 +417,14 @@ sometimes, i just need a break</textarea
       function randomQuote() {
         document.getElementById("input").value = getRandomQuote();
         updateOutput();
+        copiedValue = document.getElementById("input").value
+        return copiedValue
       }
+      copyText.addEventListener("click", function(){
+      let copiedValue = document.getElementById("input").value;
+        navigator.clipboard.writeText(copiedValue);
+
+      })
     </script>
   </body>
 </html>
