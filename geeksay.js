@@ -129,7 +129,9 @@ const translations = {
     "random": "Lorem Ipsum",
     "pink": "#ffc0cb",
     "style": "CSS",
-    "developer": "dev"
+    "developer": "dev",
+    "knowledge": "knowl5dg5",
+    "power": "pow5r"
 }
 
 const quotes = [
@@ -188,6 +190,7 @@ const quotes = [
     "I love you", //I <3 you
     "He has a style", //He has a css
     "hide it!", //incognito it!
+    "knowledge is power", // knowl5dg5 is pow5r 
 ]
  
 function isNumeric(num) {
