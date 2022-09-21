@@ -181,6 +181,7 @@ const quotes = [
     "Green with envy", // #00ff00 with envy 
     "There's no place like home", //There's no place like 127.0.0.1
     "Green with envy", // #00ff00 with envy
+    "Once in a blue moon", //Once in a #0000ff moon
     "Hello All" , // Hello *
     "It is lineartime" , // It is o(N)
     "you yourself are the anchor of your life", //you yourself are the <a> of your life
