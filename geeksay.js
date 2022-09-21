@@ -125,6 +125,8 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "all"   : "*",
+    "lineartime" : "o(N)",
     "change": "alt",
     "random": "Lorem Ipsum",
     "pink": "#ffc0cb",
@@ -179,6 +181,8 @@ const quotes = [
     "Green with envy", // #00ff00 with envy 
     "There's no place like home", //There's no place like 127.0.0.1
     "Green with envy", // #00ff00 with envy
+    "Hello All" , // Hello *
+    "It is lineartime" , // It is o(N)
     "you yourself are the anchor of your life", //you yourself are the <a> of your life
     "you are the love of my life", //you are the <3 of my 42
     "pink panther", //  #ffc0cb panther
