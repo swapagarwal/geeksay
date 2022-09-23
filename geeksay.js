@@ -193,6 +193,7 @@ const quotes = [
     "I love you", //I <3 you
     "He has a style", //He has a css
     "hide it!", //incognito it!
+    "99 little bugs in the code. 99 little bugs in the code. Take one down, patch it around. 127 little bugs in the code" //cb - so many bugs
 ]
  
 function isNumeric(num) {
