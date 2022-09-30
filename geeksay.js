@@ -128,9 +128,7 @@ const translations = {
   all: "*",
   lineartime: "o(N)",
   change: "alt",
-  random: "Lorem Ipsum",
   pink: "#ffc0cb",
-  style: "CSS",
   developer: "dev",
 };
 
@@ -194,6 +192,7 @@ const quotes = [
   "He has a style", //He has a css
   "hide it!", //incognito it!
   "99 little bugs in the code. 99 little bugs in the code. Take one down, patch it around. 127 little bugs in the code", //cb - so many bugs
+  "Hey Google! Find me the best repo.", //ping Google! ctrl+f self the best repo
 ];
 
 function isNumeric(num) {
@@ -209,7 +208,7 @@ function geeksayWord(word) {
   if (isNumeric(word)) {
     return (word >>> 0).toString(2);
   } else {
-    lowerCaseText = removeSymbols(word).toLowerCase();
+    let lowerCaseText = removeSymbols(word).toLowerCase();
     if (translations.hasOwnProperty(lowerCaseText)) {
       word = word
         .toLowerCase()
