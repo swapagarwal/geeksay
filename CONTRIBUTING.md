@@ -10,3 +10,8 @@ The core of this project is the [geeksay.js](https://github.com/swapagarwal/geek
 - You can also contribute by:
   - Reporting issues
   - Suggesting new features or enhancements
+  - Improving documentation
+  
+
+- Make sure not to format html files using prettier. It will break the format.
+- Also, make sure to format javascript files using prettier.  
