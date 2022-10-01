@@ -171,6 +171,8 @@ const quotes = [
     "Green with envy", // #00ff00 with envy
     "you yourself are the anchor of your life", //you yourself are the <a> of your life
     "you are the love of my life", //you are the <3 of my 42
+    "politics is bullshit", //politics is dump
+    "I want the address of my love", //I require the url of my <3
 ]
 
 function isNumeric(num) {
