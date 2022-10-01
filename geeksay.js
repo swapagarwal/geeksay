@@ -93,7 +93,7 @@ const translations = {
   blue: "#0000ff",
   marry: "merge",
   propose: "commit",
-  "not found": "404",
+  notfound: "404!",
   link: "url",
   forbidden: "403",
   send: "push",
@@ -130,6 +130,16 @@ const translations = {
   change: "alt",
   pink: "#ffc0cb",
   developer: "dev",
+  information: "info",
+  close: "</close>",
+  space: "' '",
+  full: "overload",
+  style: "css",
+  plus: "+",
+  minus: "-",
+  modulo: "%",
+  mind: "database",
+  heart: "SMPS",
 };
 
 const quotes = [
@@ -193,6 +203,10 @@ const quotes = [
   "hide it!", //incognito it!
   "99 little bugs in the code. 99 little bugs in the code. Take one down, patch it around. 127 little bugs in the code", //cb - so many bugs
   "Hey Google! Find me the best repo.", //ping Google! ctrl+f self the best repo
+  "thought process", //Algorithm
+  "we are not same bro", //we != mate
+  "this is not my family", //this is not my server
+  "trying to remember", //searching in database
 ];
 
 function isNumeric(num) {
