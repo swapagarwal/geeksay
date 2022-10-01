@@ -1,4 +1,7 @@
 const translations = {
+    "hide": "incognito",
+    "repeat": "loop",
+    "style": "css",
     "save": "ctrl+s",
     "break": "<br>",
     "control": "ctrl",
@@ -122,6 +125,9 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
+    "pink": "#ffc0cb"
+    "style": "CSS",
+    "developer": "dev"
 }
 
 const quotes = [
@@ -187,8 +193,7 @@ function geeksay(text) {
 function geeksayWord(word) {
     if (isNumeric(word)) {
         return (word >>> 0).toString(2);
-    }
-    else {
+    } else {
         lowerCaseText = removeSymbols(word).toLowerCase();
         if (translations.hasOwnProperty(lowerCaseText)) {
             word = word.toLowerCase().replace(lowerCaseText, translations[lowerCaseText]);
