@@ -12,10 +12,6 @@ describe("words", () => {
     should.equal(geeksay("not"), "!");
   });
 
-  it("NOT - case insensitive", () => {
-    should.equal(geeksay("NOT"), "!");
-  });
-
   it("slow", () => {
     should.equal(geeksay("slow"), "O(n^n)");
   });
