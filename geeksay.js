@@ -125,10 +125,9 @@ const translations = {
     "waiting": "loading",
     "unauthorized": "401",
     "nothing": "void",
-    "pink": "#ffc0cb"
-    "style": "CSS",
+    "pink": "#ffc0cb",
     "developer": "dev"
-}
+};
 
 const quotes = [
     "Hello World", // ping 0.0.0.0/0
