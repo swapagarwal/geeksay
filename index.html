@@ -221,6 +221,43 @@
     float: right;
     margin: 6px 0 0 0;
   }
+  .cpBtn {
+    position: relative;
+    display: inline-block;
+  }
+
+  .cpBtn .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .cpBtn .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  .cpBtn:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 </style>
 <style>
   .github-corner:hover .octo-arm {
@@ -295,7 +332,7 @@ sometimes, i just need a break</textarea>
         data-url="http://geeksay.xyz" data-show-count="false">Tweet #geeksay</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-      <button class="copy-btn random-quote-button">Copy Quote</button>
+      <button class="copy-btn random-quote-button" onclick="copyquote()" onmouseout="outFunc()">Copy Quote</button>
     </h1>
     <br />
     <div style="line-height: 24px" id="output"></div>
@@ -410,11 +447,17 @@ sometimes, i just need a break</textarea>
       document.getElementById("input").value = getRandomQuote();
       updateOutput();
     }
-    copyText.addEventListener("click", function () {
-      let copiedValue = document.getElementById("output").textContent;
-      navigator.clipboard.writeText(copiedValue);
-      alert("Copied Successfully");
-    })
+    function copyquote() {
+      var copyText = document.getElementById("output").textContent;
+      navigator.clipboard.writeText(copyText);
+
+      var copyBtn = document.getElementsByClassName("copy-btn");
+      copyBtn[0].innerHTML = "Copied !!";
+    }
+    function outFunc() {
+      var copyBtn = document.getElementsByClassName("copy-btn");
+      copyBtn[0].innerHTML = "Copy Quote";
+    }
   </script>
 </body>
 
