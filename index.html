@@ -103,18 +103,15 @@
     border-radius: 5px;
     font-family: "Lato", "Helvetica", Arial, sans-serif;
     color: #fff;
-    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     font-size: 17px;
     outline: 0;
     transition: all 0.25s ease;
-    width: 145px;
     position: relative;
     height: 35px;
-    margin: 5px;
-    overflow: hidden;
+    padding: 0px 12px;
     box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
       10px 10px rgba(255, 255, 255, 0.1), 15px 15px rgba(255, 255, 255, 0.05);
   }
@@ -219,7 +216,6 @@
 
   .random-quote-button {
     float: right;
-    margin: 6px 0 0 0;
   }
 </style>
 <style>
@@ -295,7 +291,7 @@ sometimes, i just need a break</textarea>
         data-url="http://geeksay.xyz" data-show-count="false">Tweet #geeksay</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-      <button class="copy-btn random-quote-button" onclick="copyquote()" onmouseout="outFunc()">Copy Quote</button>
+      <button class="copy-btn random-quote-button" onclick="copyquote()" onmouseout="outFunc()">Copy 📄</button>
     </h1>
     <br />
     <div style="line-height: 24px" id="output"></div>
@@ -415,11 +411,11 @@ sometimes, i just need a break</textarea>
       navigator.clipboard.writeText(copyText);
 
       var copyBtn = document.getElementsByClassName("copy-btn");
-      copyBtn[0].innerHTML = "Copied !!";
+      copyBtn[0].innerHTML = "Copied ✔️";
     }
     function outFunc() {
       var copyBtn = document.getElementsByClassName("copy-btn");
-      copyBtn[0].innerHTML = "Copy Quote";
+      copyBtn[0].innerHTML = "Copy 📄";
     }
   </script>
 </body>
