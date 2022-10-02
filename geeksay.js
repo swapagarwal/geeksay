@@ -130,6 +130,7 @@ const translations = {
   change: "alt",
   pink: "#ffc0cb",
   developer: "dev",
+  "bad request": "400"
 };
 
 const quotes = [
