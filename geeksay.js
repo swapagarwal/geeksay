@@ -119,6 +119,7 @@ const translations = {
   say: "log",
   body: "<body>",
   head: "<head>",
+  title: "<title>",
   restart: "ctrl+alt+del",
   death: "BSOD",
   wait: "load",
@@ -130,6 +131,7 @@ const translations = {
   change: "alt",
   pink: "#ffc0cb",
   developer: "dev",
+  switch: "alt+tab",
 };
 
 const quotes = [
@@ -193,6 +195,7 @@ const quotes = [
   "hide it!", //incognito it!
   "99 little bugs in the code. 99 little bugs in the code. Take one down, patch it around. 127 little bugs in the code", //cb - so many bugs
   "Hey Google! Find me the best repo.", //ping Google! ctrl+f self the best repo
+  "I just switch tabs, not the love ones",// I just alt+tab tabs, not the <3 ones
 ];
 
 function isNumeric(num) {
