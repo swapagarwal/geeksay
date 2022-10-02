@@ -193,6 +193,9 @@ const quotes = [
   "hide it!", //incognito it!
   "99 little bugs in the code. 99 little bugs in the code. Take one down, patch it around. 127 little bugs in the code", //cb - so many bugs
   "Hey Google! Find me the best repo.", //ping Google! ctrl+f self the best repo
+  "Life is a big question that even Google can't find answer.",//42 is a big ? that even Google can't ctrl+f answer
+  "Have no friends not equal to yourself.",// Have no friends ! = to yourself
+  "The past does not equal the future.",//The past does ! = the future
 ];
 
 function isNumeric(num) {
