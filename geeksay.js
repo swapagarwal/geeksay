@@ -48,7 +48,7 @@ const translations = {
   address: "url",
   pie: "π",
   function: "fn",
-  kill: "ctrl+c",
+  kill: "alt+f4",
   stop: "abort",
   refresh: "f5",
   slow: "O(n^n)",
