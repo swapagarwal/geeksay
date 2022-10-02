@@ -1,4 +1,6 @@
 const translations = {
+  enter:"login",
+  female:" ~ male",
   hide: "incognito",
   repeat: "loop",
   style: "css",
@@ -81,7 +83,7 @@ const translations = {
   picture: "img",
   snap: "img",
   snapshot: "img",
-  bye: "exit",
+  bye: "alt+f4",
   noob: "n00b",
   life: "42",
   universe: "42",
@@ -133,6 +135,9 @@ const translations = {
 };
 
 const quotes = [
+  "I have the power", //I have root access
+  "Ask her out", //Create your pull request with her
+  "Only she can fix me", //Only she can debug self
   "Hello World", // ping 0.0.0.0/0
   "Bye World", // exit 0.0.0.0/0
   "Forget that ever happened", // ctrl+z that ever happened
