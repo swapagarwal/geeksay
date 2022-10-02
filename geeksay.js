@@ -130,6 +130,7 @@ const translations = {
   change: "alt",
   pink: "#ffc0cb",
   developer: "dev",
+  "bad request": "400"
 };
 
 const quotes = [
@@ -192,7 +193,8 @@ const quotes = [
   "He has a style", //He has a css
   "hide it!", //incognito it!
   "99 little bugs in the code. 99 little bugs in the code. Take one down, patch it around. 127 little bugs in the code", //cb - so many bugs
-  "Hey Google! Find me the best repo.", //ping Google! ctrl+f self the best repo
+  "Hey Google! Find me the best repo.", //ping Google! ctrl+f self the best repo,
+  "Copy-and-Paste was programmed by programmers for programmers actually." // ctrl+c and ctrl+v enthusiast
 ];
 
 function isNumeric(num) {
