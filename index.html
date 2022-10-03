@@ -41,7 +41,7 @@
     z-index: 10;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 523px) {
     body {
       padding: 20px;
     }
@@ -221,7 +221,7 @@
     width: 145px;
     position: relative;
     height: 35px;
-    margin: 5px;
+    margin: 5px 0px;
     overflow: hidden;
     box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
       10px 10px rgba(255, 255, 255, 0.1), 15px 15px rgba(255, 255, 255, 0.05);
@@ -230,8 +230,28 @@
   .random-quote-button {
     float: right;
   }
+
   #randomQuoteButton {
     margin: 14px;
+  }
+  
+  .rt-btns {
+    float: right;
+    margin-bottom: 10px;
+  }
+
+  .copy-btn {
+    margin-right: 8px;
+  }
+
+  @media (max-width:523px) {
+    .twitter-tweet-button {
+      float: none;
+    }
+
+    .copy-btn {
+      margin: 0px;
+    }
   }
 </style>
 <style>
@@ -257,7 +277,7 @@
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 523px) {
     .github-corner:hover .octo-arm {
       animation: none;
     }
@@ -331,13 +351,16 @@ There's no place like home
 sometimes, i just need a break</textarea>
     <br /><br />
     <h1>
-      To geek 🤓&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/intent/tweet?button_hashtag=geeksay&ref_src=twsrc%5Etfw"
-        class="twitter-hashtag-button" data-size="large"
-        data-text="geeks will ctrl+s the world!&#010;There&#39;s no place like 127.0.0.1&#010;sometimes, i just need a &lt;br&gt;&#010;Can you guess the original text?"
-        data-url="http://geeksay.xyz" data-show-count="false">Tweet #geeksay</a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-      <button class="copy-btn random-quote-button" onclick="copyquote()" onmouseout="outFunc()">Copy 📄</button>
+      To geek 🤓&nbsp;&nbsp;&nbsp;
+      <div class="rt-btns">
+        <a href="https://twitter.com/intent/tweet?button_hashtag=geeksay&ref_src=twsrc%5Etfw"
+          class="twitter-hashtag-button" data-size="large"
+          data-text="geeks will ctrl+s the world!&#010;There&#39;s no place like 127.0.0.1&#010;sometimes, i just need a &lt;br&gt;&#010;Can you guess the original text?"
+          data-url="http://geeksay.xyz" data-show-count="false">Tweet #geeksay</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  
+        <button class="copy-btn random-quote-button" onclick="copyquote()" onmouseout="outFunc()">Copy 📄</button>
+      </div>
     </h1>
     <br />
     <div style="line-height: 24px" id="output"></div>
