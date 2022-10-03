@@ -142,6 +142,23 @@ const translations = {
   modulo: "%",
   mind: "database",
   heart: "SMPS",
+  future: "ctrl+y",
+  past: "ctrl+z",
+  missing: "404!",
+  unavailable: "503!",
+  overloaded: "502!",
+  forbidden: "403!",
+  timeout: "408!",
+  repository: "repo",
+  disapperar: "heisenbug",
+  new: "Jimmy",
+  clueless: "Jimmy",
+  imaginary: "Unicorny",
+  catastrophic: "hidenbug",
+  useless: "reality 101 faliure",
+  different: "nested",
+  calling: "recursion",
+  
 };
 
 const quotes = [
