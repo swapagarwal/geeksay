@@ -142,6 +142,23 @@ const translations = {
   modulo: "%",
   mind: "database",
   heart: "SMPS",
+  future: "ctrl+y",
+  past: "ctrl+z",
+  missing: "404!",
+  unavailable: "503!",
+  overloaded: "502!",
+  forbidden: "403!",
+  timeout: "408!",
+  repository: "repo",
+  disapperar: "heisenbug",
+  new: "Jimmy",
+  clueless: "Jimmy",
+  imaginary: "Unicorny",
+  catastrophic: "hidenbug",
+  useless: "reality 101 faliure",
+  different: "nested",
+  calling: "recursion",
+  
 };
 
 const quotes = [
@@ -230,9 +247,23 @@ function geeksay(text) {
   return input.map(geeksayWord).join(" ");
 }
 
+function containsSpecialChars(str) {
+  const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~a-zA-Z]/;
+  return specialChars.test(str);
+}
 function geeksayWord(word) {
-  if (isNumeric(word)) {
-    return (word).toString(2);
+  
+  if (isNumeric(word) ) {
+      
+      for(var i= 0;i < word.length ; i++) {
+        if(containsSpecialChars(word)){
+          return (word).toString(2);
+        }
+        else{
+          return (word >>> 0).toString(2);
+        }
+      }
+    
   } else {
     let lowerCaseText = removeSymbols(word).toLowerCase();
     if (translations.hasOwnProperty(lowerCaseText)) {
