@@ -93,7 +93,7 @@ const translations = {
   blue: "#0000ff",
   marry: "merge",
   propose: "commit",
-  "not found": "404",
+  notfound: "404!",
   link: "url",
   forbidden: "403",
   send: "push",
@@ -132,6 +132,16 @@ const translations = {
   pink: "#ffc0cb",
   developer: "dev",
   switch: "alt+tab",
+  information: "info",
+  close: "</close>",
+  space: "' '",
+  full: "overload",
+  style: "css",
+  plus: "+",
+  minus: "-",
+  modulo: "%",
+  mind: "database",
+  heart: "SMPS",
 };
 
 const quotes = [
