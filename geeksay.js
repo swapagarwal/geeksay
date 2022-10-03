@@ -48,7 +48,7 @@ const translations = {
   address: "url",
   pie: "π",
   function: "fn",
-  kill: "ctrl+c",
+  kill: "alt+f4",
   stop: "abort",
   refresh: "f5",
   slow: "O(n^n)",
@@ -203,10 +203,8 @@ const quotes = [
   "hide it!", //incognito it!
   "99 little bugs in the code. 99 little bugs in the code. Take one down, patch it around. 127 little bugs in the code", //cb - so many bugs
   "Hey Google! Find me the best repo.", //ping Google! ctrl+f self the best repo
-  "thought process", //Algorithm
-  "we are not same bro", //we != mate
-  "this is not my family", //this is not my server
-  "trying to remember", //searching in database
+  "Life is a big question that even Google can't find answer.",//42 is a big ? that even Google can't ctrl+f answer
+
 ];
 
 function isNumeric(num) {
