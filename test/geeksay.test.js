@@ -11,7 +11,7 @@ describe("words", () => {
    it("LOVE - case insensitive ", () => {
     should.equal(geeksay("LOVE"), "<3");
   });
-  
+
   it("not", () => {
     should.equal(geeksay("not"), "!");
   });
@@ -26,6 +26,10 @@ describe("words", () => {
 
   it("SloW - case insensitive", () => {
     should.equal(geeksay("SloW"), "O(n^n)");
+  });
+
+  it("semicolon", () => {
+    should.equal(geeksay("semicolon"), ";");
   });
 });
 
@@ -47,11 +51,11 @@ describe("multi-line and symbols", () => {
   it(`Every day after waking up \\n I say Hello World and \\n hi \\n to the world `, () => {
     should.equal(
       geeksay(`Every day after waking up
-        I say Hello World and 
+        I say Hello World and
         hi
         to the world `),
       `Every day after waking up
-        I log ping 0.0.0.0/0 && 
+        I log ping 0.0.0.0/0 &&
         hi
         to the 0.0.0.0/0 `
     );
