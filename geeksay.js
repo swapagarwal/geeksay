@@ -119,6 +119,7 @@ const translations = {
   say: "log",
   body: "<body>",
   head: "<head>",
+  title: "<title>",
   restart: "ctrl+alt+del",
   death: "BSOD",
   wait: "load",
@@ -130,6 +131,7 @@ const translations = {
   change: "alt",
   pink: "#ffc0cb",
   developer: "dev",
+  switch: "alt+tab",
   information: "info",
   close: "</close>",
   space: "' '",
@@ -204,7 +206,9 @@ const quotes = [
   "99 little bugs in the code. 99 little bugs in the code. Take one down, patch it around. 127 little bugs in the code", //cb - so many bugs
   "Hey Google! Find me the best repo.", //ping Google! ctrl+f self the best repo
   "Life is a big question that even Google can't find answer.",//42 is a big ? that even Google can't ctrl+f answer
-
+  "Have no friends not equal to yourself.",// Have no friends ! = to yourself
+  "The past does not equal the future.",//The past does ! = the future
+  "I just switch tabs, not the love ones",// I just alt+tab tabs, not the <3 ones
 ];
 
 function isNumeric(num) {
