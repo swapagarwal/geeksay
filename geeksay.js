@@ -142,6 +142,7 @@ const translations = {
   modulo: "%",
   mind: "database",
   heart: "SMPS",
+  semicolon: ";",
   future: "ctrl+y",
   past: "ctrl+z",
   missing: "404!",
@@ -157,8 +158,7 @@ const translations = {
   catastrophic: "hidenbug",
   useless: "reality 101 faliure",
   different: "nested",
-  calling: "recursion",
-  
+  calling: "recursion"
 };
 
 const quotes = [

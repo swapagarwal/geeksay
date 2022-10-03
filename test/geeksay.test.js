@@ -27,6 +27,10 @@ describe("words", () => {
   it("SloW - case insensitive", () => {
     should.equal(geeksay("SloW"), "O(n^n)");
   });
+
+  it("semicolon", () => {
+    should.equal(geeksay("semicolon"), ";");
+  });
 });
 
 describe("quotes", () => {
