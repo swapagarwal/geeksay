@@ -214,6 +214,10 @@ const quotes = [
   "The past does not equal the future.",//The past does ! = the future
   "I just switch tabs, not the love ones",// I just alt+tab tabs, not the <3 ones
   "I have not failed. I’ve just found 10,000 ways that won’t work", // I have ! failed. I’ve just found 0 ways that won’t work
+  "Life is a big question that even Google can't find answer.", //42 is a big ? that even Google can't ctrl+f answer
+  "Have no friends not equal to yourself.", // Have no friends ! = to yourself
+  "The past does not equal the future.", //The past does ! = the future
+  "I just switch tabs, not the love ones", // I just alt+tab tabs, not the <3 ones
 ];
 
 function isNumeric(num) {
