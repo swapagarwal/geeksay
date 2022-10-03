@@ -48,7 +48,7 @@ const translations = {
   address: "url",
   pie: "π",
   function: "fn",
-  kill: "ctrl+c",
+  kill: "alt+f4",
   stop: "abort",
   refresh: "f5",
   slow: "O(n^n)",
@@ -93,7 +93,7 @@ const translations = {
   blue: "#0000ff",
   marry: "merge",
   propose: "commit",
-  "not found": "404",
+  notfound: "404!",
   link: "url",
   forbidden: "403",
   send: "push",
@@ -119,6 +119,7 @@ const translations = {
   say: "log",
   body: "<body>",
   head: "<head>",
+  title: "<title>",
   restart: "ctrl+alt+del",
   death: "BSOD",
   wait: "load",
@@ -130,6 +131,17 @@ const translations = {
   change: "alt",
   pink: "#ffc0cb",
   developer: "dev",
+  switch: "alt+tab",
+  information: "info",
+  close: "</close>",
+  space: "' '",
+  full: "overload",
+  style: "css",
+  plus: "+",
+  minus: "-",
+  modulo: "%",
+  mind: "database",
+  heart: "SMPS",
 };
 
 const quotes = [
@@ -197,6 +209,10 @@ const quotes = [
   "Paste my Copy", // ctrl+v my ctrl+c
   "What's new?", // What's ctrl+n
   "You're done coding! Go to sleep." // You're done coding! Go to shutdown
+  "Life is a big question that even Google can't find answer.",//42 is a big ? that even Google can't ctrl+f answer
+  "Have no friends not equal to yourself.",// Have no friends ! = to yourself
+  "The past does not equal the future.",//The past does ! = the future
+  "I just switch tabs, not the love ones",// I just alt+tab tabs, not the <3 ones
 ];
 
 function isNumeric(num) {

@@ -8,8 +8,16 @@ describe("words", () => {
     should.equal(geeksay("love"), "<3");
   });
 
+   it("LOVE - case insensitive ", () => {
+    should.equal(geeksay("LOVE"), "<3");
+  });
+  
   it("not", () => {
     should.equal(geeksay("not"), "!");
+  });
+
+  it("NOT - case insensitive", () => {
+    should.equal(geeksay("NOT"), "!");
   });
 
   it("slow", () => {
