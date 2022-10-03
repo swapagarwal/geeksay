@@ -213,7 +213,7 @@ const quotes = [
   "Have no friends not equal to yourself.",// Have no friends ! = to yourself
   "The past does not equal the future.",//The past does ! = the future
   "I just switch tabs, not the love ones",// I just alt+tab tabs, not the <3 ones
-  "Copy-and-Paste was programmed by programmers for programmers actually", // Copy-and-Paste was programmed by programmers for programmers actually
+  "I have not failed. I’ve just found 10,000 ways that won’t work", // I have ! failed. I’ve just found 0 ways that won’t work
 ];
 
 function isNumeric(num) {

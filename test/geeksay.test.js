@@ -11,7 +11,7 @@ describe("words", () => {
    it("LOVE - case insensitive ", () => {
     should.equal(geeksay("LOVE"), "<3");
   });
-  
+
   it("not", () => {
     should.equal(geeksay("not"), "!");
   });
@@ -42,8 +42,8 @@ describe("quotes", () => {
     should.equal(geeksay("I love my house"), "I <3 my 127.0.0.1");
   });
 
-  it("Copy-and-Paste was programmed by programmers for programmers actually", () => {
-    should.equal(geeksay("Copy-and-Paste was programmed by programmers for programmers actually"), "Copy-and-Paste was programmed by programmers for programmers actually");
+  it("I have not failed. I’ve just found 10,000 ways that won’t work", () => {
+    should.equal(geeksay("I have not failed. I’ve just found 10,000 ways that won’t work"), "I have ! failed. I’ve just found 0 ways that won’t work");
   });
 });
 
