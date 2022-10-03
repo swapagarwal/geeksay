@@ -142,6 +142,23 @@ const translations = {
   modulo: "%",
   mind: "database",
   heart: "SMPS",
+  semicolon: ";",
+  future: "ctrl+y",
+  past: "ctrl+z",
+  missing: "404!",
+  unavailable: "503!",
+  overloaded: "502!",
+  forbidden: "403!",
+  timeout: "408!",
+  repository: "repo",
+  disapperar: "heisenbug",
+  new: "Jimmy",
+  clueless: "Jimmy",
+  imaginary: "Unicorny",
+  catastrophic: "hidenbug",
+  useless: "reality 101 faliure",
+  different: "nested",
+  calling: "recursion"
 };
 
 const quotes = [
@@ -205,13 +222,24 @@ const quotes = [
   "hide it!", //incognito it!
   "99 little bugs in the code. 99 little bugs in the code. Take one down, patch it around. 127 little bugs in the code", //cb - so many bugs
   "Hey Google! Find me the best repo.", //ping Google! ctrl+f self the best repo
+  "I need to restart my life", // I require to ctrl+alt+del my 42
+  "Paste my Code", // ctrl+v my Code
+  "Paste my Copy", // ctrl+v my ctrl+c
+  "What's new?", // What's ctrl+n
+  "You're done coding! Go to sleep.", // You're done coding! Go to shutdown
   "Life is a big question that even Google can't find answer.",//42 is a big ? that even Google can't ctrl+f answer
   "Have no friends not equal to yourself.",// Have no friends ! = to yourself
   "The past does not equal the future.",//The past does ! = the future
   "I just switch tabs, not the love ones",// I just alt+tab tabs, not the <3 ones
+  "I have not failed. I’ve just found 10,000 ways that won’t work", // I have ! failed. I’ve just found 0 ways that won’t work
+  "Life is a big question that even Google can't find answer.", //42 is a big ? that even Google can't ctrl+f answer
+  "Have no friends not equal to yourself.", // Have no friends ! = to yourself
+  "The past does not equal the future.", //The past does ! = the future
+  "I just switch tabs, not the love ones", // I just alt+tab tabs, not the <3 ones
 ];
 
 function isNumeric(num) {
+  
   return !isNaN(parseInt(num));
 }
 
@@ -220,9 +248,23 @@ function geeksay(text) {
   return input.map(geeksayWord).join(" ");
 }
 
+function containsSpecialChars(str) {
+  const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~a-zA-Z]/;
+  return specialChars.test(str);
+}
 function geeksayWord(word) {
-  if (isNumeric(word)) {
-    return (word >>> 0).toString(2);
+  
+  if (isNumeric(word) ) {
+      
+      for(var i= 0;i < word.length ; i++) {
+        if(containsSpecialChars(word)){
+          return (word).toString(2);
+        }
+        else{
+          return (word >>> 0).toString(2);
+        }
+      }
+    
   } else {
     let lowerCaseText = removeSymbols(word).toLowerCase();
     if (translations.hasOwnProperty(lowerCaseText)) {
