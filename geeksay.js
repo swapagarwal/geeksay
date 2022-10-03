@@ -162,6 +162,8 @@ const translations = {
 };
 
 const quotes = [
+  "Everything is under control",// Everything is under ctrl
+  "Give me a break",// Give me a <br>
   "Hello World", // ping 0.0.0.0/0
   "Bye World", // exit 0.0.0.0/0
   "Forget that ever happened", // ctrl+z that ever happened
