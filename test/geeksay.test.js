@@ -45,6 +45,10 @@ describe("quotes", () => {
   it("I love my house", () => {
     should.equal(geeksay("I love my house"), "I <3 my 127.0.0.1");
   });
+
+  it("I have not failed. I’ve just found 10,000 ways that won’t work", () => {
+    should.equal(geeksay("I have not failed. I’ve just found 10,000 ways that won’t work"), "I have ! failed. I’ve just found 0 ways that won’t work");
+  });
 });
 
 describe("multi-line and symbols", () => {
