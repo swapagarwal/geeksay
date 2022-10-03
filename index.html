@@ -187,11 +187,22 @@
 
   ::-webkit-scrollbar {
     background: #555;
+    width: 8px;
+    height: 8px;
   }
 
   ::-webkit-scrollbar-thumb {
     background: #4f53ff;
+    border-radius: 4px;
   }
+
+  ::-webkit-scrollbar-corner {
+  background: none;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
 
   .twitter-tweet-button {
     float: right;
@@ -254,6 +265,30 @@
       animation: octocat-wave 560ms ease-in-out;
     }
   }
+
+  .animate-geeksay {
+    
+    background-image: linear-gradient( 285deg, #231557 0%, #2556ed 29%, #a90ddb 67%, #fff800 100% );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 35px;
+    font-family: "Source Code Pro", monospace;
+}
+
+ @keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 </style>
 
 <body>
@@ -275,7 +310,13 @@
         fill="currentColor" class="octo-body"></path>
     </svg>
   </a>
+<br>
   <div class="container">
+      <div class="row">
+        <div align="left">
+          <h3 class="animate-geeksay"> Geeksay</h3>
+        </div>
+    </div>
     <h1>
       From layman 👶&nbsp;&nbsp;&nbsp;<button class="random-quote-button" onclick="randomQuote()"
         id="randomQuoteButton">
