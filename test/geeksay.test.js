@@ -41,17 +41,21 @@ describe("quotes", () => {
   it("I love my house", () => {
     should.equal(geeksay("I love my house"), "I <3 my 127.0.0.1");
   });
+
+  it("Copy-and-Paste was programmed by programmers for programmers actually", () => {
+    should.equal(geeksay("Copy-and-Paste was programmed by programmers for programmers actually"), "Copy-and-Paste was programmed by programmers for programmers actually");
+  });
 });
 
 describe("multi-line and symbols", () => {
   it(`Every day after waking up \\n I say Hello World and \\n hi \\n to the world `, () => {
     should.equal(
       geeksay(`Every day after waking up
-        I say Hello World and 
+        I say Hello World and
         hi
         to the world `),
       `Every day after waking up
-        I log ping 0.0.0.0/0 && 
+        I log ping 0.0.0.0/0 &&
         hi
         to the 0.0.0.0/0 `
     );
