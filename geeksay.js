@@ -221,6 +221,7 @@ const quotes = [
 ];
 
 function isNumeric(num) {
+  
   return !isNaN(parseInt(num));
 }
 
@@ -231,7 +232,7 @@ function geeksay(text) {
 
 function geeksayWord(word) {
   if (isNumeric(word)) {
-    return (word >>> 0).toString(2);
+    return (word).toString(2);
   } else {
     let lowerCaseText = removeSymbols(word).toLowerCase();
     if (translations.hasOwnProperty(lowerCaseText)) {
