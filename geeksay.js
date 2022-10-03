@@ -222,6 +222,7 @@ const quotes = [
   "hide it!", //incognito it!
   "99 little bugs in the code. 99 little bugs in the code. Take one down, patch it around. 127 little bugs in the code", //cb - so many bugs
   "Hey Google! Find me the best repo.", //ping Google! ctrl+f self the best repo
+  "I need to restart my life", // I require to ctrl+alt+del my 42
   "Paste my Code", // ctrl+v my Code
   "Paste my Copy", // ctrl+v my ctrl+c
   "What's new?", // What's ctrl+n
