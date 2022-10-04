@@ -159,6 +159,9 @@ const translations = {
   useless: "reality 101 faliure",
   different: "nested",
   calling: "recursion"
+  mac-copy: "command + c"
+  mac-command: "windows copy"
+  heartbeat: "ping"
 };
 
 const quotes = [
