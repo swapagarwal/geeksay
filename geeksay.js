@@ -159,6 +159,9 @@ const translations = {
   useless: "reality 101 faliure",
   different: "nested",
   calling: "recursion"
+  life:"bug"
+  hope:"code"
+  strength:"source code"
 };
 
 const quotes = [
@@ -236,6 +239,8 @@ const quotes = [
   "Have no friends not equal to yourself.", // Have no friends ! = to yourself
   "The past does not equal the future.", //The past does ! = the future
   "I just switch tabs, not the love ones", // I just alt+tab tabs, not the <3 ones
+  "I can change the world , but god is not giving me the strength.",//I can alt the world , but god is not giving me the source code
+  "Where there’s hope, there’s life”,// Where there’s code, there’s bug.
 ];
 
 function isNumeric(num) {
