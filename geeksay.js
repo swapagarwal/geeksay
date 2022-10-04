@@ -158,7 +158,8 @@ const translations = {
   catastrophic: "hidenbug",
   useless: "reality 101 faliure",
   different: "nested",
-  calling: "recursion"
+  calling: "recursion",
+  run: "ctrl+F5"
 };
 
 const quotes = [
