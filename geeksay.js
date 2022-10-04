@@ -165,11 +165,13 @@ const translations = {
 };
 
 const quotes = [
+  "Everything is under control", // Everything is under ctrl
+  "Give me a break", // Give me a <br>
   "alternating current", // alt .
-  "current directory", // .
+  "current directory", // ./
   "Hello World", // ping 0.0.0.0/0
   "Bye World", // exit 0.0.0.0/0
-  "Every journey begins with a step", // * journey init with a >>
+  "Every journey begins with a step", // * journey init with a step
   "Forget that ever happened", // ctrl+z that ever happened
   "Home is where the heart is", // 127.0.0.1 is where the heart is
   "Home is where ideas come to life", // 127.0.0.1 is where ideas come to 42
