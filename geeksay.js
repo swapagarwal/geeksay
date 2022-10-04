@@ -162,6 +162,7 @@ const translations = {
   mac-copy: "command + c"
   mac-command: "windows copy"
   heartbeat: "ping"
+  boobs: "80085"
 };
 
 const quotes = [
