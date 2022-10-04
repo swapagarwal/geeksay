@@ -162,7 +162,6 @@ const translations = {
   heartbeat: "ping",
   boobs: "80085",
   error: "404",
-  head: "</head>,
   top: "</head>,
 };
 
