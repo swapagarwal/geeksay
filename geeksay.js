@@ -5,6 +5,7 @@ const translations = {
   input: "<input>",
   structure: "<html>",
   into:"*",
+  emotion: "emoticon",
   repeat: "loop",
   style: "css",
   save: "ctrl+s",
