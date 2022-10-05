@@ -409,15 +409,12 @@ sometimes, i just need a break</textarea>
       if (text.length !== 0) {
         var container = document.getElementById("output");
         var allLines = text.split("\n");
-        for (var line = 0; line < allLines.length; line++) {
+        for (const line in allLines) {
           if (allLines[line] == "") continue;
           var words = allLines[line].split(" ");
-          // Re-add the translated words.
-          for (var i = 0; i < words.length; i++) {
-            var node = document.createElement("span");
-            node.innerText = geeksay(words[i]) + " ";
-            if (node) container.appendChild(node);
-          }
+          var node = document.createElement("span");
+          node.innerText = geeksay(words) + " ";
+          if (node) container.appendChild(node);
           var newLine = document.createElement("br");
           container.appendChild(newLine);
         }
