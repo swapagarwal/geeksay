@@ -3,7 +3,6 @@ const translations = {
   hidden: "incognito",
   screenshot: "start+prt sc",
   input: "<input>",
-  structure: "<html>",
   into:"*",
   emotion: "emoticon",
   repeat: "loop",
