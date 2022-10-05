@@ -160,6 +160,13 @@ const translations = {
   different: "nested",
   calling: "recursion",
   "not found": "404",
+  comment: "//comment",
+  table: "<table>",
+  form: "<form>",
+  input: "<input>",
+  select: "<select>",
+  leave: "alt+f4",
+  mistake: "ERROR"
 };
 
 const translationsMap = new Map(Object.entries(translations));

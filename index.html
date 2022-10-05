@@ -41,7 +41,7 @@
     z-index: 10;
   }
 
-  @media (max-width: 537px) {
+  @media (max-width: 550px) {
     body {
       padding: 20px;
     }
@@ -51,6 +51,7 @@
     }
     textarea{
       margin: 0vh -2vh;
+      width: 98% !important;
     }
   }
 
@@ -160,7 +161,7 @@
 
   #randomTranslationButton {
     margin: 30px;
-    margin-top: 30px;
+    margin-top: 30px !important;
   }
 
   /* Hide this somewhere */
@@ -209,7 +210,7 @@
   .twitter-tweet-button {
     float: right;
     margin: 7px 0 0 0;
-    background: #4f53ff;
+    background: #1d9bf0;
     border: none;
     border-radius: 5px;
     font-family: "Lato", "Helvetica", Arial, sans-serif;
@@ -223,7 +224,8 @@
     transition: all 0.25s ease;
     width: 145px;
     position: relative;
-    height: 35px;
+    height: 33px !important;
+    padding-top: 3px !important;
     margin: 5px 0px;
     overflow: hidden;
     box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
@@ -244,16 +246,53 @@
   }
 
   .copy-btn {
-    margin-right: 8px;
+    margin-top: 3px;
+    margin-right: 20px;
   }
 
-  @media (max-width:537px) {
+  @media (max-width:550px) {
+    #geek-buttons{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
     .twitter-tweet-button {
       float: none;
+      margin-top: 20px;
+      width: 165px !important;
+      height: 35px !important;
+      padding-top: 7px !important;
+      transition: all 0.2s linear;
+    }
+
+    .rt-btns {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .btn{
+      padding: 0% !important;
     }
 
     .copy-btn {
-      margin: 0px;
+      margin: 15px 0px 0px 0px;
+      width: 165px !important;
+      height: 40px !important;
+      transition: all 0.2s linear;
+    }
+  }
+
+  @media (max-width:400px) {
+    .rt-btns {
+      flex-direction: column-reverse;
+      gap: 5px;
     }
   }
 </style>
@@ -277,10 +316,10 @@
     40%,
     80% {
       transform: rotate(10deg);
-    }
+    }  
   }
 
-  @media (max-width: 537px) {
+  @media (max-width: 550px) {
     .github-corner:hover .octo-arm {
       animation: none;
     }
@@ -353,15 +392,14 @@ geeks will save the world!
 There's no place like home
 sometimes, i just need a break</textarea>
     <br /><br />
-    <h1>
+    <h1 id="geek-buttons">
       To geek 🤓&nbsp;&nbsp;&nbsp;
       <div class="rt-btns">
         <a href="https://twitter.com/intent/tweet?button_hashtag=geeksay&ref_src=twsrc%5Etfw"
           class="twitter-hashtag-button" data-size="large"
           data-text="geeks will ctrl+s the world!&#010;There&#39;s no place like 127.0.0.1&#010;sometimes, i just need a &lt;br&gt;&#010;Can you guess the original text?"
           data-url="http://geeksay.xyz" data-show-count="false">Tweet #geeksay</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  
+        <script defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <button class="copy-btn random-quote-button" onclick="copyquote()" onmouseout="outFunc()">Copy 📄</button>
       </div>
     </h1>
