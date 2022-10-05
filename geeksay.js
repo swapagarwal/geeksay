@@ -158,7 +158,14 @@ const translations = {
   catastrophic: "hidenbug",
   useless: "reality 101 faliure",
   different: "nested",
-  calling: "recursion"
+  calling: "recursion",
+  comment: "//comment",
+  table: "<table>",
+  form: "<form>",
+  input: "<input>",
+  select: "<select>",
+  leave: "alt+f4",
+  mistake: "ERROR"
 };
 
 const quotes = [
