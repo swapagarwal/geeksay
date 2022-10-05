@@ -1,5 +1,10 @@
 const translations = {
   hide: "incognito",
+  hidden: "incognito",
+  screenshot: "start+prt sc",
+  and : "&&",
+  or: "||",
+  into:"*",
   repeat: "loop",
   style: "css",
   save: "ctrl+s",
