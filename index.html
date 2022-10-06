@@ -218,6 +218,10 @@
       cursor: pointer;
     }
 
+    .tweet-btn:hover {
+      background-color: #0f76bb;
+    }
+
     .random-quote-button {
       float: right;
     }
@@ -468,7 +472,7 @@ sometimes, i just need a break</textarea
       });
 
       function postTweet() {
-        const url = 'https://twitter.com/intent/tweet?text=';
+        const url = 'https://twitter.com/intent/tweet?hashtags=geeksay&text=';
 
         const unformattedText = document.getElementById('output').innerText;
         const words = unformattedText.split('\n');
