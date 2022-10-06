@@ -251,6 +251,8 @@ const quotes = [
   "Have no friends not equal to yourself.", // Have no friends ! = to yourself
   "The past does not equal the future.", //The past does ! = the future
   "I just switch tabs, not the love ones", // I just alt+tab tabs, not the <3 ones
+  "There is always one more bug to fix", // There is always one more bug to debug
+  "A program is never less than 90% complete, and never more than 95% complete.", //A program is never less than 90% complete, && never more than 95% complete.
 ];
 
 function isNumeric(num) {
