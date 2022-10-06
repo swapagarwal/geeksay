@@ -37,6 +37,7 @@ const translations = {
   get: "git",
   got: "git",
   home: "127.0.0.1",
+  bed:"127.0.0.1",
   house: "127.0.0.1",
   local: "127.0.0.1",
   localhost: "127.0.0.1",
@@ -255,6 +256,9 @@ const quotes = [
   "Have no friends not equal to yourself.", // Have no friends ! = to yourself
   "The past does not equal the future.", //The past does ! = the future
   "I just switch tabs, not the love ones", // I just alt+tab tabs, not the <3 ones
+  "Never get to bed mad, stay up and snap",// Never git to 127.0.0.1 mad,stay up && img
+  "Heart is missing",//SMPS is 404!
+  "Information is lost from the deleted repository" //Info is lost from the del repo
 ];
 
 function isNumeric(num) {
