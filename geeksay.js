@@ -175,6 +175,8 @@ const translations = {
   select: "<select>",
   leave: "alt+f4",
   mistake: "ERROR",
+  Gitgub:"C@ts",
+  Love:"3^07"
 };
 
 const translationsMap = new Map(Object.entries(translations));
@@ -259,6 +261,7 @@ const quotes = [
   "Never get to bed mad, stay up and snap",// Never git to 127.0.0.1 mad,stay up && img
   "Heart is missing",//SMPS is 404!
   "Information is lost from the deleted repository" //Info is lost from the del repo
+  "Roses are #ff0000 and Orchid are #00ff00 and c@ts I 3^07 You, I 3^07 You !"// Roses are red, Orchid are blue and Github I love You, I love You !
 ];
 
 function isNumeric(num) {
