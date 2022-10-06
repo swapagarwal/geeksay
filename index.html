@@ -1,534 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>geeksay</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="geeksay.js"></script>
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
-<head>
-  <title>geeksay</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link rel="icon" type="image/png" href="logo.png" />
-  <link rel="apple-touch-icon" sizes="128x128" href="logo.png" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css" />
-  <script src="geeksay.js"></script>
-</head>
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    height: 100%;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    background-color: #111111;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23111111' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23161616' href='%23s' y='2'/%3E%3Cuse fill='%23161616' href='%23s' x='1' y='2'/%3E%3Cuse fill='%231b1b1b' href='%23s' x='2' y='2'/%3E%3Cuse fill='%231b1b1b' href='%23s'/%3E%3Cuse fill='%231f1f1f' href='%23s' x='2'/%3E%3Cuse fill='%231f1f1f' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23242424'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23242424'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23292929'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23111111'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%232e2e2e'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%234f53ff'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%234f53ff'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%234f53ff'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
-    color: #fff;
-    padding: 50px;
-    overflow-x: hidden;
-    font-size: 18px;
-  }
-
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    z-index: 10;
-  }
-
-  @media (max-width: 550px) {
     body {
-      padding: 20px;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      background-color: #111111;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23111111' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23161616' href='%23s' y='2'/%3E%3Cuse fill='%23161616' href='%23s' x='1' y='2'/%3E%3Cuse fill='%231b1b1b' href='%23s' x='2' y='2'/%3E%3Cuse fill='%231b1b1b' href='%23s'/%3E%3Cuse fill='%231f1f1f' href='%23s' x='2'/%3E%3Cuse fill='%231f1f1f' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23242424'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23242424'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23292929'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23111111'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%232e2e2e'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%234f53ff'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%234f53ff'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%234f53ff'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+      background-attachment: fixed;
+      background-size: cover;
+      color: #fff;
+      padding: 50px;
+      overflow-x: hidden;
+      font-size: 18px;
     }
 
-    #randomQuoteButton {
-      margin: 20px 0 !important;
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      z-index: 10;
     }
-    textarea{
-      margin: 0vh -2vh;
-      width: 98% !important;
+
+    @media (max-width: 550px) {
+      body {
+        padding: 20px;
+      }
+
+      #randomQuoteButton {
+        margin: 20px 0 !important;
+      }
+      textarea {
+        margin: 0vh -2vh;
+        width: 98% !important;
+      }
     }
-  }
 
-  h1 {
-    font-family: "Lato", "Helvetica", Arial, sans-serif;
-    font-weight: 300;
-    margin-bottom: 0;
-  }
+    h1 {
+      font-family: 'Lato', 'Helvetica', Arial, sans-serif;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
 
-  textarea {
-    width: 100%;
-    font-family: "Lato", "Helvetica", Arial, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    background: #eee;
-    height: 150px;
-    line-height: 24px;
-    resize: none;
-    padding: 15px;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-
-  textarea:focus {
-    outline: none;
-  }
-
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: inline-block;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 0 4px;
-    line-height: 1.5;
-    background-color: #eee;
-    border-radius: 3px;
-    margin: 0 4px 4px 4px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-      0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  }
-
-  select:focus {
-    background-color: #7bd6cf;
-  }
-
-  button {
-    background: #4f53ff;
-    border: none;
-    border-radius: 5px;
-    font-family: "Lato", "Helvetica", Arial, sans-serif;
-    color: #fff;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 17px;
-    outline: 0;
-    transition: all 0.25s ease;
-    position: relative;
-    height: 35px;
-    padding: 0px 12px;
-    box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
-      10px 10px rgba(255, 255, 255, 0.1), 15px 15px rgba(255, 255, 255, 0.05);
-  }
-
-  button:hover {
-    background: #2196f3;
-  }
-
-  #footer {
-    margin-top: 100px;
-    padding-top: 20px;
-    border-top: 2px solid #4f53ff;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  #footer>p {
-    text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    padding-right: 6px;
-  }
-
-  .note {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 12px;
-  }
-
-  .red {
-    color: #4f53ff;
-  }
-
-  a:link,
-  a:visited {
-    color: #4f53ff;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #2196f3;
-  }
-
-  #randomTranslationButton {
-    margin: 30px;
-    margin-top: 30px !important;
-  }
-
-  /* Hide this somewhere */
-  #clipboardContents {
-    opacity: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-  }
-
-  #output {
-    display: inline-block;    
-    width: -webkit-fill-available;
-    padding: 15px;
-    background-color: #151718;
-    color: #2196f3;
-    border: 1px solid #000;
-    border-radius: 5px;
-    font-weight: 500;
-    overflow: auto;
-    font-family: "Source Code Pro", monospace;
-    box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
-      10px 10px rgba(255, 255, 255, 0.1), 15px 15px rgba(255, 255, 255, 0.05);
-  }
-
-  ::-webkit-scrollbar {
-    background: #555;
-    width: 8px;
-    height: 8px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #4f53ff;
-    border-radius: 4px;
-  }
-
-  ::-webkit-scrollbar-corner {
-  background: none;
-}
-
-::-webkit-scrollbar-track {
-  opacity: 0;
-}
-
-  .twitter-tweet-button {
-    float: right;
-    margin: 7px 0 0 0;
-    background: #1d9bf0;
-    border: none;
-    border-radius: 5px;
-    font-family: "Lato", "Helvetica", Arial, sans-serif;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 17px;
-    outline: 0;
-    transition: all 0.25s ease;
-    width: 145px;
-    position: relative;
-    height: 33px !important;
-    padding-top: 3px !important;
-    margin: 5px 0px;
-    overflow: hidden;
-    box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
-      10px 10px rgba(255, 255, 255, 0.1), 15px 15px rgba(255, 255, 255, 0.05);
-  }
-
-  .random-quote-button {
-    float: right;
-  }
-
-  #randomQuoteButton {
-    margin-top: 14px;
-  }
-  
-  .rt-btns {
-    float: right;
-    margin-bottom: 10px;
-  }
-
-  .copy-btn {
-    margin-top: 3px;
-    margin-right: 20px;
-  }
-
-  @media (max-width:550px) {
-    #geek-buttons{
+    textarea {
       width: 100%;
-      display: flex;
-      flex-direction: column;
+      font-family: 'Lato', 'Helvetica', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      background: #eee;
+      height: 150px;
+      line-height: 24px;
+      resize: none;
+      padding: 15px;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea:focus {
+      outline: none;
+    }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      display: inline-block;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 0 4px;
+      line-height: 1.5;
+      background-color: #eee;
+      border-radius: 3px;
+      margin: 0 4px 4px 4px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+
+    select:focus {
+      background-color: #7bd6cf;
+    }
+
+    button {
+      background: #4f53ff;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Lato', 'Helvetica', Arial, sans-serif;
+      color: #fff;
+      align-items: center;
       justify-content: center;
-      align-items: flex-start;
+      cursor: pointer;
+      font-size: 17px;
+      outline: 0;
+      transition: all 0.25s ease;
+      position: relative;
+      height: 35px;
+      padding: 0px 12px;
+      box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
+        10px 10px rgba(255, 255, 255, 0.1), 15px 15px rgba(255, 255, 255, 0.05);
+    }
+
+    button:hover {
+      background: #2196f3;
+    }
+
+    #footer {
+      margin-top: 100px;
+      padding-top: 20px;
+      border-top: 2px solid #4f53ff;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    #footer > p {
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      padding-right: 6px;
+    }
+
+    .note {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+
+    .red {
+      color: #4f53ff;
+    }
+
+    a:link,
+    a:visited {
+      color: #4f53ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #2196f3;
+    }
+
+    #randomTranslationButton {
+      margin: 30px;
+      margin-top: 30px !important;
+    }
+
+    /* Hide this somewhere */
+    #clipboardContents {
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    #output {
+      display: inline-block;
+      width: -webkit-fill-available;
+      padding: 15px;
+      background-color: #151718;
+      color: #2196f3;
+      border: 1px solid #000;
+      border-radius: 5px;
+      font-weight: 500;
+      overflow: auto;
+      font-family: 'Source Code Pro', monospace;
+      box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
+        10px 10px rgba(255, 255, 255, 0.1), 15px 15px rgba(255, 255, 255, 0.05);
+    }
+
+    ::-webkit-scrollbar {
+      background: #555;
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #4f53ff;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-corner {
+      background: none;
+    }
+
+    ::-webkit-scrollbar-track {
+      opacity: 0;
     }
 
     .twitter-tweet-button {
-      float: none;
-      margin-top: 20px;
-      width: 165px !important;
-      height: 35px !important;
-      padding-top: 7px !important;
-      transition: all 0.2s linear;
+      float: right;
+      margin: 7px 0 0 0;
+      background: #1d9bf0;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Lato', 'Helvetica', Arial, sans-serif;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 17px;
+      outline: 0;
+      transition: all 0.25s ease;
+      width: 145px;
+      position: relative;
+      height: 33px !important;
+      padding-top: 3px !important;
+      margin: 5px 0px;
+      overflow: hidden;
+      box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
+        10px 10px rgba(255, 255, 255, 0.1), 15px 15px rgba(255, 255, 255, 0.05);
+    }
+
+    .random-quote-button {
+      float: right;
+    }
+
+    #randomQuoteButton {
+      margin-top: 14px;
     }
 
     .rt-btns {
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .btn{
-      padding: 0% !important;
+      float: right;
+      margin-bottom: 10px;
     }
 
     .copy-btn {
-      margin: 15px 0px 0px 0px;
-      width: 165px !important;
-      height: 40px !important;
-      transition: all 0.2s linear;
-    }
-  }
-
-  @media (max-width:400px) {
-    .rt-btns {
-      flex-direction: column-reverse;
-      gap: 5px;
-    }
-  }
-</style>
-<style>
-  .github-corner:hover .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-
-  @keyframes octocat-wave {
-
-    0%,
-    100% {
-      transform: rotate(0);
+      margin-top: 3px;
+      margin-right: 20px;
     }
 
-    20%,
-    60% {
-      transform: rotate(-25deg);
+    @media (max-width: 550px) {
+      #geek-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .twitter-tweet-button {
+        float: none;
+        margin-top: 20px;
+        width: 165px !important;
+        height: 35px !important;
+        padding-top: 7px !important;
+        transition: all 0.2s linear;
+      }
+
+      .rt-btns {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .btn {
+        padding: 0% !important;
+      }
+
+      .copy-btn {
+        margin: 15px 0px 0px 0px;
+        width: 165px !important;
+        height: 40px !important;
+        transition: all 0.2s linear;
+      }
     }
 
-    40%,
-    80% {
-      transform: rotate(10deg);
-    }  
-  }
-
-  @media (max-width: 550px) {
+    @media (max-width: 400px) {
+      .rt-btns {
+        flex-direction: column-reverse;
+        gap: 5px;
+      }
+    }
+  </style>
+  <style>
     .github-corner:hover .octo-arm {
-      animation: none;
-    }
-
-    .github-corner .octo-arm {
       animation: octocat-wave 560ms ease-in-out;
     }
-  }
 
-  .animate-geeksay {
-    
-    background-image: linear-gradient( 285deg, #231557 0%, #2556ed 29%, #a90ddb 67%, #fff800 100% );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-    font-size: 35px;
-    font-family: "Source Code Pro", monospace;
-}
+    @keyframes octocat-wave {
+      0%,
+      100% {
+        transform: rotate(0);
+      }
 
- @keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
+      20%,
+      60% {
+        transform: rotate(-25deg);
+      }
 
-</style>
+      40%,
+      80% {
+        transform: rotate(10deg);
+      }
+    }
 
-<body>
-  <a href="https://github.com/swapagarwal/geeksay" class="github-corner" aria-label="View source on Github">
-    <svg width="80" height="80" viewBox="0 0 250 250" style="
+    @media (max-width: 550px) {
+      .github-corner:hover .octo-arm {
+        animation: none;
+      }
+
+      .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+      }
+    }
+
+    .animate-geeksay {
+      background-image: linear-gradient(
+        285deg,
+        #231557 0%,
+        #2556ed 29%,
+        #a90ddb 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
+      display: inline-block;
+      font-size: 35px;
+      font-family: 'Source Code Pro', monospace;
+    }
+
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+  </style>
+
+  <body>
+    <a
+      href="https://github.com/swapagarwal/geeksay"
+      class="github-corner"
+      aria-label="View source on Github"
+    >
+      <svg
+        width="80"
+        height="80"
+        viewBox="0 0 250 250"
+        style="
           fill: #eee;
           color: #000;
           position: absolute;
           top: 0;
           border: 0;
           right: 0;
-        " aria-hidden="true">
-      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-      <path
-        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-        fill="currentColor" style="transform-origin: 130px 106px" class="octo-arm"></path>
-      <path
-        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-        fill="currentColor" class="octo-body"></path>
-    </svg>
-  </a>
-<br>
-  <div class="container">
+        "
+        aria-hidden="true"
+      >
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path
+          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+          fill="currentColor"
+          style="transform-origin: 130px 106px"
+          class="octo-arm"
+        ></path>
+        <path
+          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+          fill="currentColor"
+          class="octo-body"
+        ></path>
+      </svg>
+    </a>
+    <br />
+    <div class="container">
       <div class="row">
         <div align="left">
-          <h3 class="animate-geeksay"> Geeksay</h3>
+          <h3 class="animate-geeksay">Geeksay</h3>
         </div>
-    </div>
-    <h1>
-      From layman 👶&nbsp;&nbsp;&nbsp;<button class="random-quote-button" onclick="randomQuote()"
-        id="randomQuoteButton">
-        Random Quote
-      </button>
-    </h1>
-    <p class="note">(just start typing!)</p>
-    <textarea id="input" aria-required="true">
+      </div>
+      <h1>
+        From layman 👶&nbsp;&nbsp;&nbsp;<button
+          class="random-quote-button"
+          onclick="randomQuote()"
+          id="randomQuoteButton"
+        >
+          Random Quote
+        </button>
+      </h1>
+      <p class="note">(just start typing!)</p>
+      <textarea id="input" aria-required="true">
 geeks will save the world!
 There's no place like home
-sometimes, i just need a break</textarea>
-    <br /><br />
-    <h1 id="geek-buttons">
-      To geek 🤓&nbsp;&nbsp;&nbsp;
-      <div class="rt-btns">
-        <a href="https://twitter.com/intent/tweet?button_hashtag=geeksay&ref_src=twsrc%5Etfw"
-          class="twitter-hashtag-button" data-size="large"
-          data-text="geeks will ctrl+s the world!&#010;There&#39;s no place like 127.0.0.1&#010;sometimes, i just need a &lt;br&gt;&#010;Can you guess the original text?"
-          data-url="http://geeksay.xyz" data-show-count="false">Tweet #geeksay</a>
-        <script defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <button class="copy-btn random-quote-button" onclick="copyquote()" onmouseout="outFunc()">Copy 📄</button>
-      </div>
-    </h1>
-    <br />
-    <div style="line-height: 24px" id="output"></div>
-    <div id="footer">
-      <p style="padding-bottom: 15px">
-        made with <span class="red">❤︎</span> by <a href="https://swapnil.net/" target="_blank">swapnil</a> | designed
-        by <a href="https://twitter.com/notwaldorf" target="_blank">monica</a> | maintained by <a
-          href="https://github.com/dk3775" target="_blank">dhyey</a></p>
-      </p>
-    </div>
-    <br />
-    <div align="center">
-      <a id="help" href="https://github.com/swapagarwal/geeksay/issues/6" target="_blank">Need an API?</a>
-    </div>
-    <div align="center">
-      <p style="display: inline-block" id="randomTranslation"></p>
+sometimes, i just need a break</textarea
+      >
+      <br /><br />
+      <h1 id="geek-buttons">
+        To geek 🤓&nbsp;&nbsp;&nbsp;
+        <div class="rt-btns">
+          <a
+            href="https://twitter.com/intent/tweet?button_hashtag=geeksay&ref_src=twsrc%5Etfw"
+            class="twitter-hashtag-button"
+            data-size="large"
+            data-text="geeks will ctrl+s the world!&#010;There&#39;s no place like 127.0.0.1&#010;sometimes, i just need a &lt;br&gt;&#010;Can you guess the original text?"
+            data-url="http://geeksay.xyz"
+            data-show-count="false"
+            >Tweet #geeksay</a
+          >
+          <script
+            defer
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+          <button
+            class="copy-btn random-quote-button"
+            onclick="copyquote()"
+            onmouseout="outFunc()"
+          >
+            Copy 📄
+          </button>
+        </div>
+      </h1>
       <br />
-      <button style="margin-top: 0px" onclick="randomTranslation()" id="randomTranslationButton">
-        One more!
-      </button>
+      <div style="line-height: 24px" id="output"></div>
+      <div id="footer">
+        <p style="padding-bottom: 15px">
+          made with <span class="red">❤︎</span> by
+          <a href="https://swapnil.net/" target="_blank">swapnil</a> | designed
+          by
+          <a href="https://twitter.com/notwaldorf" target="_blank">monica</a> |
+          maintained by
+          <a href="https://github.com/dk3775" target="_blank">dhyey</a>
+        </p>
+      </div>
+      <br />
+      <div align="center">
+        <a
+          id="help"
+          href="https://github.com/swapagarwal/geeksay/issues/6"
+          target="_blank"
+          >Need an API?</a
+        >
+      </div>
+      <div align="center">
+        <p style="display: inline-block" id="randomTranslation"></p>
+        <br />
+        <button
+          style="margin-top: 0px"
+          onclick="randomTranslation()"
+          id="randomTranslationButton"
+        >
+          One more!
+        </button>
+      </div>
     </div>
-  </div>
-  <!-- Gigantor hack to get the copy-to-clipboard working. I don't think it
+    <!-- Gigantor hack to get the copy-to-clipboard working. I don't think it
          works with hidden divs, so uhhhh just hide this one real well -->
-  <div id="clipboardContents"></div>
-  <script type="text/javascript">
-    console.log(geeksay("geeks will save the world"));
-    document.getElementById("randomTranslation").innerText =
-      getRandomTranslation();
-  </script>
-  <script>
-    const copyText = document.querySelector(".copy-btn")
-    updateOutput();
-    document.getElementById("input").addEventListener("input", function () {
-      updateOutput();
-    });
-    function updateOutput() {
-      // Rather than calling geekify, we want all the
-      // possible options.
-      document.getElementById("output").innerHTML = "";
-      var inputField = document.getElementById("input");
-      var text = inputField.value.trim();
-      if (text.length !== 0) {
-        var container = document.getElementById("output");
-        var allLines = text.split("\n");
-        for (var line = 0; line < allLines.length; line++) {
-          if (allLines[line] == "") continue;
-          var words = allLines[line].split(" ");
-          // Re-add the translated words.
-          for (var i = 0; i < words.length; i++) {
-            var node = document.createElement("span");
-            node.innerText = geeksay(words[i]) + " ";
-            if (node) container.appendChild(node);
-          }
-          var newLine = document.createElement("br");
-          container.appendChild(newLine);
-        }
-        return container;
-      } else {
-        document.getElementById("output").innerHTML =
-          "Type something in the above area...";
-      }
-    }
-    function copy() {
-      var value = getActualOutput();
-      clipboardContents.textContent = value;
-      // From https://github.com/google/material-design-lite/blob/master/docs/_assets/snippets.js
-      var snipRange = document.createRange();
-      snipRange.selectNodeContents(clipboardContents);
-      var selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(snipRange);
-      var result = false;
-      try {
-        result = document.execCommand("copy");
-        copyButton.innerHTML = "Done!";
-      } catch (err) {
-        // Copy command is not available
-        console.error(err);
-        copyButton.innerHTML = "Oops, error copying :(";
-      }
-      // Return to the copy button after a second.
-      setTimeout(
-        function () {
-          copyButton.innerHTML = "Copy to clipboard";
-        }.bind(this),
-        1000
-      );
-      selection.removeAllRanges();
-      return result;
-    }
-    function getActualOutput() {
-      var value = "";
-      var nodes = output.children;
-      for (var i = 0; i < nodes.length; i++) {
-        if (nodes[i].tagName === "SELECT") {
-          // Do this instead of .value because we want to maintain whitespace.
-          value += nodes[i].options[nodes[i].selectedIndex].textContent;
-        } else if (nodes[i].tagName === "BR") {
-          value += "\n";
-        } else if (nodes[i].tagName != "OPTION") {
-          value += nodes[i].textContent;
-        }
-      }
-      return value;
-    }
-    function randomTranslation() {
-      document.getElementById("randomTranslation").innerText =
+    <div id="clipboardContents"></div>
+    <script type="text/javascript">
+      console.log(geeksay('geeks will save the world'));
+      document.getElementById('randomTranslation').innerText =
         getRandomTranslation();
-    }
-    function randomQuote() {
-      document.getElementById("input").value = getRandomQuote();
+    </script>
+    <script>
+      const copyText = document.querySelector('.copy-btn');
       updateOutput();
-    }
-    function copyquote() {
-      var copyText = document.getElementById("output").textContent;
-      navigator.clipboard.writeText(copyText);
+      document.getElementById('input').addEventListener('input', function () {
+        updateOutput();
+      });
+      function updateOutput() {
+        // Rather than calling geekify, we want all the
+        // possible options.
+        document.getElementById('output').innerHTML = '';
+        var inputField = document.getElementById('input');
+        var text = inputField.value.trim();
+        if (text.length !== 0) {
+          var container = document.getElementById('output');
+          var allLines = text.split('\n');
+          for (var line = 0; line < allLines.length; line++) {
+            if (allLines[line] == '') continue;
+            var words = allLines[line].split(' ');
+            // Re-add the translated words.
+            for (var i = 0; i < words.length; i++) {
+              var node = document.createElement('span');
+              node.innerText = geeksay(words[i]) + ' ';
+              if (node) container.appendChild(node);
+            }
+            var newLine = document.createElement('br');
+            container.appendChild(newLine);
+          }
+          return container;
+        } else {
+          document.getElementById('output').innerHTML =
+            'Type something in the above area...';
+        }
+      }
+      function copy() {
+        var value = getActualOutput();
+        clipboardContents.textContent = value;
+        // From https://github.com/google/material-design-lite/blob/master/docs/_assets/snippets.js
+        var snipRange = document.createRange();
+        snipRange.selectNodeContents(clipboardContents);
+        var selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(snipRange);
+        var result = false;
+        try {
+          result = document.execCommand('copy');
+          copyButton.innerHTML = 'Done!';
+        } catch (err) {
+          // Copy command is not available
+          console.error(err);
+          copyButton.innerHTML = 'Oops, error copying :(';
+        }
+        // Return to the copy button after a second.
+        setTimeout(
+          function () {
+            copyButton.innerHTML = 'Copy to clipboard';
+          }.bind(this),
+          1000
+        );
+        selection.removeAllRanges();
+        return result;
+      }
+      function getActualOutput() {
+        var value = '';
+        var nodes = output.children;
+        for (var i = 0; i < nodes.length; i++) {
+          if (nodes[i].tagName === 'SELECT') {
+            // Do this instead of .value because we want to maintain whitespace.
+            value += nodes[i].options[nodes[i].selectedIndex].textContent;
+          } else if (nodes[i].tagName === 'BR') {
+            value += '\n';
+          } else if (nodes[i].tagName != 'OPTION') {
+            value += nodes[i].textContent;
+          }
+        }
+        return value;
+      }
+      function randomTranslation() {
+        document.getElementById('randomTranslation').innerText =
+          getRandomTranslation();
+      }
+      function randomQuote() {
+        document.getElementById('input').value = getRandomQuote();
+        updateOutput();
+      }
+      function copyquote() {
+        var copyText = document.getElementById('output').textContent;
+        navigator.clipboard.writeText(copyText);
 
-      var copyBtn = document.getElementsByClassName("copy-btn");
-      copyBtn[0].innerHTML = "Copied ✔️";
-    }
-    function outFunc() {
-      var copyBtn = document.getElementsByClassName("copy-btn");
-      copyBtn[0].innerHTML = "Copy 📄";
-    }
-  </script>
-</body>
-
+        var copyBtn = document.getElementsByClassName('copy-btn');
+        copyBtn[0].innerHTML = 'Copied ✔️';
+      }
+      function outFunc() {
+        var copyBtn = document.getElementsByClassName('copy-btn');
+        copyBtn[0].innerHTML = 'Copy 📄';
+      }
+    </script>
+  </body>
 </html>
