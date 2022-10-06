@@ -1,5 +1,10 @@
 const translations = {
   hide: "incognito",
+  hidden: "incognito",
+  screenshot: "start+prt sc",
+  input: "<input>",
+  into:"*",
+  emotion: "emoticon",
   repeat: "loop",
   style: "css",
   save: "ctrl+s",
@@ -108,6 +113,7 @@ const translations = {
   heart: "<3",
   love: "<3",
   smile: ":)",
+  sad: ":(",
   list: "ls",
   ok: "200",
   okay: "200",
