@@ -166,7 +166,7 @@ const translations = {
   input: "<input>",
   select: "<select>",
   leave: "alt+f4",
-  mistake: "ERROR"
+  mistake: "ERROR",
 };
 
 const translationsMap = new Map(Object.entries(translations));
@@ -256,19 +256,19 @@ function isNumeric(num) {
 
 function geeksay(text) {
   const input = Array.isArray(text) ? text : String(text).split(" ");
-  return input.map(geeksayPhrase).map(geeksayWord).join(" ");
+  return input.map(geeksayPhrase).join(" ");
 }
 
 function geeksayPhrase(word, index, words) {
-  const currentWord = removeSymbols(word);
-  if (!words[index + 1]) return currentWord;
-  const nextWord = removeSymbols(words[index + 1]);
+  const currentWord = removeSymbols(word).toLowerCase();
+  if (!words[index + 1]) return geeksayWord(currentWord);
+  const nextWord = removeSymbols(words[index + 1]).toLowerCase();
   const translatedPhrase = translationsMap.get(currentWord + " " + nextWord);
   if (translatedPhrase) {
     words.splice(index, 1);
     return translatedPhrase;
   }
-  return currentWord;
+  return geeksayWord(currentWord);
 }
 
 function containsSpecialChars(str) {
