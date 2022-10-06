@@ -158,7 +158,7 @@ const translations = {
   catastrophic: "hidenbug",
   useless: "reality 101 faliure",
   different: "nested",
-  calling: "recursion",
+  run: "ctrl+F5",
   comment: "//comment",
   table: "<table>",
   form: "<form>",
