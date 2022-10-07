@@ -175,6 +175,9 @@ const translations = {
   select: "<select>",
   leave: "alt+f4",
   mistake: "ERROR",
+  eject: "pop",
+  white: "#ffffff",
+  black: "#000000",
 };
 
 const translationsMap = new Map(Object.entries(translations));
