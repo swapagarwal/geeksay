@@ -178,7 +178,14 @@ const translations = {
   input: "<input>",
   select: "<select>",
   leave: "alt+f4",
-  mistake: "ERROR"
+  mistake: "ERROR",
+  fatal: "Death",
+  "move forward":"w",
+  "move backward":"s",
+  "move left":"a",
+  "move right":"d",
+  jump: "space",
+  party:"Fn",
 };
 
 const translationsMap = new Map(Object.entries(translations));
@@ -268,6 +275,9 @@ const quotes = [
   "Never get to bed mad, stay up and snap",// Never git to 127.0.0.1 mad,stay up && img
   "Heart is missing",//SMPS is 404!
   "Information is lost from the deleted repository" //Info is lost from the del repo
+  "list down all sad things happened in your life",//ls down * :( things happened in your 42
+  "A website without SEO is like a car with no gas",//a website without seo is like a car with no gas
+  "Getting a quality website is not an expenses but rather an investment."//getting a quality website is ! an expenses but rather an investment
 ];
 
 function isNumeric(num) {
