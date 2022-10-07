@@ -166,6 +166,10 @@ const translations = {
   useless: "reality 101 faliure",
   different: "nested",
   calling: "recursion",
+  heartbeat: "ping",
+  boobs: "80085",
+  error: "404",
+  top: "</head>,
   "not found": "404",
   run: "ctrl+F5",
   comment: "//comment",
@@ -174,7 +178,7 @@ const translations = {
   input: "<input>",
   select: "<select>",
   leave: "alt+f4",
-  mistake: "ERROR",
+  mistake: "ERROR"
 };
 
 const translationsMap = new Map(Object.entries(translations));
@@ -256,6 +260,9 @@ const quotes = [
   "Have no friends not equal to yourself.", // Have no friends ! = to yourself
   "The past does not equal the future.", //The past does ! = the future
   "I just switch tabs, not the love ones", // I just alt+tab tabs, not the <3 ones
+  "to be or not to be", // 2b || !2b
+  "programming joke", // My </code>
+  "home sweet home:, // 127.0.0.1 sweet 127.0.0.1
   "politics is bullshit", //politics is dump
   "I want the address of my love", // I want the url of my <3
   "Never get to bed mad, stay up and snap",// Never git to 127.0.0.1 mad,stay up && img
