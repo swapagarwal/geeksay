@@ -262,12 +262,13 @@ const quotes = [
   "I just switch tabs, not the love ones", // I just alt+tab tabs, not the <3 ones
   "to be or not to be", // 2b || !2b
   "programming joke", // My </code>
-  "home sweet home:, // 127.0.0.1 sweet 127.0.0.1
+  "home sweet home:", // 127.0.0.1 sweet 127.0.0.1
   "politics is bullshit", //politics is dump
   "I want the address of my love", // I want the url of my <3
   "Never get to bed mad, stay up and snap",// Never git to 127.0.0.1 mad,stay up && img
   "Heart is missing",//SMPS is 404!
-  "Information is lost from the deleted repository" //Info is lost from the del repo
+  "Information is lost from the deleted repository", //Info is lost from the del repo
+  "Love the life you live" //<3 the 42 you live
 ];
 
 function isNumeric(num) {
