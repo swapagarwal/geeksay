@@ -263,10 +263,10 @@ const quotes = [
   "I want the address of my love", // I want the url of my <3
   "Never get to bed mad, stay up and snap",// Never git to 127.0.0.1 mad,stay up && img
   "Heart is missing",//SMPS is 404!
-  "Information is lost from the deleted repository" //Info is lost from the del repo
-  "Grind it more" //Debug the code
-  "Just move on" //Me.pop()
-  "Something done, can we undone" //Ctrl+z it
+  "Information is lost from the deleted repository", //Info is lost from the del repo
+  "Grind it more", //Debug the code
+  "Just move on", //Me.pop()
+  "Something done, can we undone", //Ctrl+z it
 ];
 
 function isNumeric(num) {
