@@ -72,6 +72,7 @@
     resize: none;
     padding: 15px;
     border-radius: 5px;
+    box-sizing: border-box;
   }
 
   textarea:focus {
@@ -207,29 +208,16 @@
   opacity: 0;
 }
 
-  .twitter-tweet-button {
-    float: right;
-    margin: 7px 0 0 0;
-    background: #1d9bf0;
-    border: none;
-    border-radius: 5px;
-    font-family: "Lato", "Helvetica", Arial, sans-serif;
-    color: #fff;
+  .tweet-btn {
+    margin-top: 3px;
+    background-color: #1d9bf0;
+    border-radius: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
-    font-size: 17px;
-    outline: 0;
-    transition: all 0.25s ease;
-    width: 145px;
-    position: relative;
-    height: 33px !important;
-    padding-top: 3px !important;
-    margin: 5px 0px;
-    overflow: hidden;
-    box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
-      10px 10px rgba(255, 255, 255, 0.1), 15px 15px rgba(255, 255, 255, 0.05);
+  }
+
+  .tweet-btn:hover {
+    background-color: #0f76bb;
   }
 
   .random-quote-button {
@@ -237,7 +225,7 @@
   }
 
   #randomQuoteButton {
-    margin: 14px;
+    margin-top: 14px;
   }
   
   .rt-btns {
@@ -259,15 +247,6 @@
       align-items: flex-start;
     }
 
-    .twitter-tweet-button {
-      float: none;
-      margin-top: 20px;
-      width: 165px !important;
-      height: 35px !important;
-      padding-top: 7px !important;
-      transition: all 0.2s linear;
-    }
-
     .rt-btns {
       width: 100%;
       display: flex;
@@ -281,7 +260,7 @@
       padding: 0% !important;
     }
 
-    .copy-btn {
+    .copy-btn, .tweet-btn {
       margin: 15px 0px 0px 0px;
       width: 165px !important;
       height: 40px !important;
@@ -395,11 +374,16 @@ sometimes, i just need a break</textarea>
     <h1 id="geek-buttons">
       To geek 🤓&nbsp;&nbsp;&nbsp;
       <div class="rt-btns">
-        <a href="https://twitter.com/intent/tweet?button_hashtag=geeksay&ref_src=twsrc%5Etfw"
-          class="twitter-hashtag-button" data-size="large"
-          data-text="geeks will ctrl+s the world!&#010;There&#39;s no place like 127.0.0.1&#010;sometimes, i just need a &lt;br&gt;&#010;Can you guess the original text?"
-          data-url="http://geeksay.xyz" data-show-count="false">Tweet #geeksay</a>
-        <script defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <button class="tweet-btn random-quote-button" onclick="postTweet()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+            />
+          </svg>
+          &nbsp;Tweet #geeksay
+        </button>
         <button class="copy-btn random-quote-button" onclick="copyquote()" onmouseout="outFunc()">Copy 📄</button>
       </div>
     </h1>
@@ -447,15 +431,12 @@ sometimes, i just need a break</textarea>
       if (text.length !== 0) {
         var container = document.getElementById("output");
         var allLines = text.split("\n");
-        for (var line = 0; line < allLines.length; line++) {
+        for (const line in allLines) {
           if (allLines[line] == "") continue;
           var words = allLines[line].split(" ");
-          // Re-add the translated words.
-          for (var i = 0; i < words.length; i++) {
-            var node = document.createElement("span");
-            node.innerText = geeksay(words[i]) + " ";
-            if (node) container.appendChild(node);
-          }
+          var node = document.createElement("span");
+          node.innerText = geeksay(words) + " ";
+          if (node) container.appendChild(node);
           var newLine = document.createElement("br");
           container.appendChild(newLine);
         }
@@ -492,6 +473,16 @@ sometimes, i just need a break</textarea>
       );
       selection.removeAllRanges();
       return result;
+    }
+    function postTweet() {
+      const url = 'https://twitter.com/intent/tweet?hashtags=geeksay&text=';
+      const unformattedText = document.getElementById('output').innerText;
+      const words = unformattedText.split('\n');
+      for (const word in words) {
+        words[word] += '%0A';
+      }
+
+      window.open(url + words.join(''));
     }
     function getActualOutput() {
       var value = "";
