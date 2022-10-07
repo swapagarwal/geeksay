@@ -195,6 +195,7 @@ const quotes = [
   "fuck that shit", // fork that dump
   "go hard or go home", // go hard || go 127.0.0.1
   "I will call you", // I will ping you
+  "Everything starts with you",//You're my index.html
   "I want the world to know me", // I require the 0.0.0.0/0 to know self
   "I am the owner", // I am the admin
   "I am God", // I am root
@@ -262,7 +263,7 @@ const quotes = [
   "I just switch tabs, not the love ones", // I just alt+tab tabs, not the <3 ones
   "to be or not to be", // 2b || !2b
   "programming joke", // My </code>
-  "home sweet home:, // 127.0.0.1 sweet 127.0.0.1
+  "home sweet home:", // 127.0.0.1 sweet 127.0.0.1
   "politics is bullshit", //politics is dump
   "I want the address of my love", // I want the url of my <3
   "Never get to bed mad, stay up and snap",// Never git to 127.0.0.1 mad,stay up && img
