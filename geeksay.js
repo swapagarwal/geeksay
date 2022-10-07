@@ -258,7 +258,11 @@ const quotes = [
   "I just switch tabs, not the love ones", // I just alt+tab tabs, not the <3 ones
   "Never get to bed mad, stay up and snap",// Never git to 127.0.0.1 mad,stay up && img
   "Heart is missing",//SMPS is 404!
-  "Information is lost from the deleted repository" //Info is lost from the del repo
+  "Information is lost from the deleted repository",//Info is lost from the del repo
+  "The more you know who you are, and what you want, the less you let things upset you.",
+  "Getting a quality website is not an expenses but rather an investment.",
+  "A website without SEO is like a car with no gas",
+  "list down all sad things happened in your life" 
 ];
 
 function isNumeric(num) {
