@@ -267,7 +267,11 @@ const quotes = [
   "I want the address of my love", // I want the url of my <3
   "Never get to bed mad, stay up and snap",// Never git to 127.0.0.1 mad,stay up && img
   "Heart is missing",//SMPS is 404!
-  "Information is lost from the deleted repository" //Info is lost from the del repo
+  "Information is lost from the deleted repository",//Info is lost from the del repo
+  "The more you know who you are, and what you want, the less you let things upset you.",
+  "Getting a quality website is not an expenses but rather an investment.",
+  "A website without SEO is like a car with no gas",
+  "list down all sad things happened in your life" 
 ];
 
 function isNumeric(num) {
