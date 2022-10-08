@@ -21,6 +21,10 @@
     padding: 0;
   }
 
+  *::selection{
+    background-color: #ab12d6;
+  }
+
   body {
     height: 100%;
     font-family: "Poppins", sans-serif;
@@ -59,25 +63,99 @@
     font-family: "Lato", "Helvetica", Arial, sans-serif;
     font-weight: 300;
     margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 3px;
+    
   }
-
+  
+  p{
+    position: relative;
+    left:3%;
+  }
+  
   textarea {
     width: 100%;
     font-family: "Lato", "Helvetica", Arial, sans-serif;
     font-weight: 400;
     font-size: 18px;
-    background: #eee;
-    height: 150px;
+    /* background: #eee; */
     line-height: 24px;
     resize: none;
     padding: 15px;
     border-radius: 5px;
     box-sizing: border-box;
+    outline: none;
+    transition:400ms;
   }
 
-  textarea:focus {
-    outline: none;
+
+  #input{
+    background-color:#eee;
+    color:rgb(255, 71, 163);
+    border:none;
+    border-radius:10px;
+    height: 50px;
+
+
+    
   }
+  #input:hover{
+    background-color: white;
+    height: 150px;
+
+    box-shadow: 0px 4px rgb(255, 71, 163);
+    
+  }
+  #input:focus{
+    background-color: white;
+    box-shadow: 0px 3px rgb(255, 71, 163);
+    height: 100px;
+
+    
+  }
+
+  
+  
+  #output{
+    position: absolute;
+    top:80%;
+    right: 26%;
+    width: 48%;
+    height:50px;
+    display: inline-block;    
+    width: -webkit-fill-available;
+    padding: 15px;
+    background-color: #1f2224;
+    color: #2196f3;
+    border: 1px solid rgb(23, 23, 23);
+    border-radius: 5px;
+    font-weight: 500;
+    overflow: auto;
+    font-family: "Source Code Pro", monospace;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
+    10px 10px rgba(255, 255, 255, 0.1), 15px 15px rgba(255, 255, 255, 0.05);
+  }
+  
+  #output:hover{
+    background-color: white;
+    box-shadow: 0px 4px #2556ed;
+    top:65%;
+    height:150px;
+
+    
+  }
+  #output:focus{
+    background-color: white;
+    box-shadow: 0px 3px #2556ed;
+    top:68%;
+    height:120px;
+
+    
+  }
+
 
   select {
     -webkit-appearance: none;
@@ -115,6 +193,7 @@
     outline: 0;
     transition: all 0.25s ease;
     position: relative;
+    
     height: 35px;
     padding: 0px 12px;
     box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
@@ -133,11 +212,19 @@
     text-transform: uppercase;
   }
 
-  #footer>p {
+  #footer{
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 0.2em;
     padding-right: 6px;
+    position: absolute;
+    top: 85%;
+    left: 28.5%;
+  }
+  #help{
+    position: absolute;
+    top:133%;
+    right: 45%;
   }
 
   .note {
@@ -161,8 +248,8 @@
   }
 
   #randomTranslationButton {
-    margin: 30px;
-    margin-top: 30px !important;
+    margin: 40px;
+    margin-top: 320px !important;
   }
 
   /* Hide this somewhere */
@@ -174,20 +261,6 @@
     z-index: 0;
   }
 
-  #output {
-    display: inline-block;    
-    width: -webkit-fill-available;
-    padding: 15px;
-    background-color: #151718;
-    color: #2196f3;
-    border: 1px solid #000;
-    border-radius: 5px;
-    font-weight: 500;
-    overflow: auto;
-    font-family: "Source Code Pro", monospace;
-    box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
-      10px 10px rgba(255, 255, 255, 0.1), 15px 15px rgba(255, 255, 255, 0.05);
-  }
 
   ::-webkit-scrollbar {
     background: #555;
@@ -323,6 +396,7 @@
     display: inline-block;
     font-size: 35px;
     font-family: "Source Code Pro", monospace;
+    user-select: none;
 }
 
  @keyframes textclip {
@@ -330,6 +404,8 @@
     background-position: 200% center;
   }
 }
+
+
 
 </style>
 
@@ -370,6 +446,10 @@
 geeks will save the world!
 There's no place like home
 sometimes, i just need a break</textarea>
+    <textarea id="output">
+geeks will save the world!
+There's no place like home
+sometimes, i just need a break</textarea>
     <br /><br />
     <h1 id="geek-buttons">
       To geek 🤓&nbsp;&nbsp;&nbsp;
@@ -388,12 +468,14 @@ sometimes, i just need a break</textarea>
       </div>
     </h1>
     <br />
-    <div style="line-height: 24px" id="output"></div>
+    <!-- <div style="line-height: 24px" id="output"></div> -->
     <div id="footer">
       <p style="padding-bottom: 15px">
         made with <span class="red">❤︎</span> by <a href="https://swapnil.net/" target="_blank">swapnil</a> | designed
         by <a href="https://twitter.com/notwaldorf" target="_blank">monica</a> | maintained by <a
-          href="https://github.com/dk3775" target="_blank">dhyey</a></p>
+          href="https://github.com/dk3775" target="_blank">dhyey</a> & <a
+          href="https://github.com/sarmadhamdani02" target="_blank">Sarmad</a></p>
+          
       </p>
     </div>
     <br />
