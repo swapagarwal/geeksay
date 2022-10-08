@@ -178,7 +178,9 @@ const translations = {
   input: "<input>",
   select: "<select>",
   leave: "alt+f4",
-  mistake: "ERROR"
+  mistake: "ERROR",
+  infinity: "while(true)"
+
 };
 
 const translationsMap = new Map(Object.entries(translations));
