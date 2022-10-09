@@ -49,7 +49,8 @@
     #randomQuoteButton {
       margin: 20px 0 !important;
     }
-    textarea{
+
+    textarea {
       margin: 0vh -2vh;
       width: 98% !important;
     }
@@ -125,6 +126,10 @@
     background: #2196f3;
   }
 
+  button:active {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+
   #footer {
     margin-top: 100px;
     padding-top: 20px;
@@ -175,7 +180,7 @@
   }
 
   #output {
-    display: inline-block;    
+    display: inline-block;
     width: -webkit-fill-available;
     padding: 15px;
     background-color: #151718;
@@ -201,12 +206,12 @@
   }
 
   ::-webkit-scrollbar-corner {
-  background: none;
-}
+    background: none;
+  }
 
-::-webkit-scrollbar-track {
-  opacity: 0;
-}
+  ::-webkit-scrollbar-track {
+    opacity: 0;
+  }
 
   .tweet-btn {
     margin-top: 3px;
@@ -227,7 +232,7 @@
   #randomQuoteButton {
     margin-top: 14px;
   }
-  
+
   .rt-btns {
     float: right;
     margin-bottom: 10px;
@@ -239,7 +244,7 @@
   }
 
   @media (max-width:550px) {
-    #geek-buttons{
+    #geek-buttons {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -256,7 +261,7 @@
       gap: 30px;
     }
 
-    .btn{
+    .btn {
       padding: 0% !important;
     }
 
@@ -295,7 +300,7 @@
     40%,
     80% {
       transform: rotate(10deg);
-    }  
+    }
   }
 
   @media (max-width: 550px) {
@@ -309,8 +314,8 @@
   }
 
   .animate-geeksay {
-    
-    background-image: linear-gradient( 285deg, #231557 0%, #2556ed 29%, #a90ddb 67%, #fff800 100% );
+
+    background-image: linear-gradient(285deg, #231557 0%, #2556ed 29%, #a90ddb 67%, #fff800 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -323,14 +328,13 @@
     display: inline-block;
     font-size: 35px;
     font-family: "Source Code Pro", monospace;
-}
-
- @keyframes textclip {
-  to {
-    background-position: 200% center;
   }
-}
 
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
 </style>
 
 <body>
@@ -352,12 +356,12 @@
         fill="currentColor" class="octo-body"></path>
     </svg>
   </a>
-<br>
+  <br>
   <div class="container">
-      <div class="row">
-        <div align="left">
-          <h3 class="animate-geeksay"> Geeksay</h3>
-        </div>
+    <div class="row">
+      <div align="left">
+        <h3 class="animate-geeksay"> Geeksay</h3>
+      </div>
     </div>
     <h1>
       From layman 👶&nbsp;&nbsp;&nbsp;<button class="random-quote-button" onclick="randomQuote()"
