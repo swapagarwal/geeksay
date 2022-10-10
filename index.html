@@ -12,6 +12,7 @@
   <link rel="apple-touch-icon" sizes="128x128" href="logo.png" />
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css" />
   <script src="geeksay.js"></script>
+  <script defer src="https://kit.fontawesome.com/a85c3c542a.js" crossorigin="anonymous"></script>
 </head>
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
@@ -47,9 +48,6 @@
       padding: 20px;
     }
 
-    #randomQuoteButton {
-      margin: 20px 0 !important;
-    }
     textarea{
       margin: 0vh -2vh;
       width: 100% !important;
@@ -143,9 +141,21 @@
   }
 
   .note {
-    margin-top: 0;
-    margin-bottom: 20px;
     font-size: 12px;
+  }
+
+  #layman-heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #layman-heading .heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .red {
@@ -165,6 +175,7 @@
   #randomTranslationButton {
     margin: 30px;
     margin-top: 30px !important;
+    width: 140px;
   }
 
   /* Hide this somewhere */
@@ -214,13 +225,33 @@
   .tweet-btn {
     margin-top: 3px;
     background-color: #1d9bf0;
-    border-radius: 50px;
+    border-radius: 5px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    min-width: 140px;
+  }
+
+  .tweet-btn i{
+    color: #fff;
+    font-size: 17px;
+    padding-top: 3px;
   }
 
   .tweet-btn:hover {
     background-color: #0f76bb;
+  }
+
+  .fb-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fb-btn i{
+    font-size: 15px;
+
   }
 
   .random-quote-button {
@@ -228,54 +259,69 @@
   }
 
   #randomQuoteButton {
-    margin-top: 14px;
+    width: 140px;
+  }
+
+  .copy-btn{
+    width: 140px;
   }
   
   .rt-btns {
     float: right;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .copy-btn {
-    margin-top: 3px;
-    margin-right: 20px;
+  #geek-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  @media (max-width:570px) {
+  @media (max-width:460px) {
+    #layman-heading{
+      flex-direction: column !important;
+      justify-content: space-between !important;
+      align-items: flex-start !important;
+    }
+    #randomQuoteButton{
+      margin-left: auto;
+    }
+    .social-btns .share-buttons{
+      flex-direction: column !important;
+      gap: 2rem !important;
+    }
+    textarea{
+      width: 100% !important;
+    }
     #geek-buttons{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
+      justify-content: space-between !important;
+      align-items: flex-start !important;
+      flex-direction: column !important;
+      gap: 1rem !important;
     }
-
-    .rt-btns {
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .btn{
-      padding: 0% !important;
-    }
-
-    .copy-btn, .tweet-btn {
-      margin: 15px 0px 0px 0px;
-      width: 165px !important;
-      height: 40px !important;
-      transition: all 0.2s linear;
+    .rt-btns{
+      margin-left: auto !important;
     }
   }
 
-  @media (max-width:400px) {
-    .rt-btns {
-      flex-direction: column-reverse;
-      gap: 5px;
-    }
+  .social-btns{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .social-btns .share-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 </style>
 <style>
@@ -328,7 +374,7 @@
     font-family: "Source Code Pro", monospace;
 }
 
- @keyframes textclip {
+@keyframes textclip {
   to {
     background-position: 200% center;
   }
@@ -362,13 +408,17 @@
           <h3 class="animate-geeksay"> Geeksay</h3>
         </div>
     </div>
-    <h1>
-      From layman 👶&nbsp;&nbsp;&nbsp;<button class="random-quote-button" onclick="randomQuote()"
+    <h1 id="layman-heading">
+      <div class="heading">
+        From layman 👶
+        <p class="note">(just start typing!)</p>
+      </div>
+      <button class="random-quote-button" onclick="randomQuote()"
         id="randomQuoteButton">
         Random Quote
       </button>
     </h1>
-    <p class="note">(just start typing!)</p>
+    <br />
     <textarea id="input" aria-required="true">
 geeks will save the world!
 There's no place like home
@@ -377,21 +427,27 @@ sometimes, i just need a break</textarea>
     <h1 id="geek-buttons">
       To geek 🤓&nbsp;&nbsp;&nbsp;
       <div class="rt-btns">
-        <button class="tweet-btn random-quote-button" onclick="postTweet()">
-          <svg
-            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
-          >
-            <path
-              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-            />
-          </svg>
-          &nbsp;Tweet #geeksay
-        </button>
         <button class="copy-btn random-quote-button" onclick="copyquote()" onmouseout="outFunc()">Copy 📄</button>
       </div>
     </h1>
     <br />
     <div style="line-height: 24px" id="output"></div>
+    <br>
+    <br>
+    <div class="social-btns">
+      <h1>Share 🐦</h1>
+      <br>
+      <div class="share-buttons">
+        <button class="tweet-btn random-quote-button" onclick="postTweet()">
+          <i class="fa-brands fa-twitter"></i>
+          &emsp;Tweet
+        </button>
+        <button class="tweet-btn random-quote-button fb-btn share-popup" onclick="postFacebook()">
+          <i class="fa-brands fa-facebook-f"></i>
+          &emsp;Share
+        </button>
+      </div>
+    </div>
     <div id="footer">
       <p style="padding-bottom: 15px">
         made with <span class="red">❤︎</span> by <a href="https://swapnil.net/" target="_blank">swapnil</a> | designed
@@ -412,7 +468,7 @@ sometimes, i just need a break</textarea>
     </div>
   </div>
   <!-- Gigantor hack to get the copy-to-clipboard working. I don't think it
-         works with hidden divs, so uhhhh just hide this one real well -->
+        works with hidden divs, so uhhhh just hide this one real well -->
   <div id="clipboardContents"></div>
   <script type="text/javascript">
     console.log(geeksay("geeks will save the world"));
@@ -487,6 +543,10 @@ sometimes, i just need a break</textarea>
         words[word] += '%0A';
       }
       window.open(url + words.join(''));
+    }
+    function postFacebook() {
+      const url = 'https://www.facebook.com/sharer/sharer.php?u=https://www.geeksay.xyz';
+      window.open(url);
     }
     function getActualOutput() {
       var value = "";
