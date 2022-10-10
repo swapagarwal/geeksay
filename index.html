@@ -3,8 +3,9 @@
 
 <head>
   <title>geeksay</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <link rel="icon" type="image/png" href="logo.png" />
@@ -41,7 +42,7 @@
     z-index: 10;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 570px) {
     body {
       padding: 20px;
     }
@@ -51,7 +52,7 @@
     }
     textarea{
       margin: 0vh -2vh;
-      width: 98% !important;
+      width: 100% !important;
     }
   }
 
@@ -73,6 +74,7 @@
     padding: 15px;
     border-radius: 5px;
     box-sizing: border-box;
+    margin: auto;
   }
 
   textarea:focus {
@@ -184,6 +186,7 @@
     border-radius: 5px;
     font-weight: 500;
     overflow: auto;
+    min-height: 115px;
     font-family: "Source Code Pro", monospace;
     box-shadow: 5px 5px rgba(255, 255, 255, 0.2),
       10px 10px rgba(255, 255, 255, 0.1), 15px 15px rgba(255, 255, 255, 0.05);
@@ -238,7 +241,7 @@
     margin-right: 20px;
   }
 
-  @media (max-width:550px) {
+  @media (max-width:570px) {
     #geek-buttons{
       width: 100%;
       display: flex;
@@ -298,7 +301,7 @@
     }  
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 570px) {
     .github-corner:hover .octo-arm {
       animation: none;
     }
