@@ -482,9 +482,10 @@ sometimes, i just need a break</textarea>
       const unformattedText = document.getElementById('output').innerText;
       const words = unformattedText.split('\n');
       for (const word in words) {
+        words[word] = words[word].replace(/ /g, '%20');
+        words[word] = words[word].replace(/#/g, '%23');
         words[word] += '%0A';
       }
-
       window.open(url + words.join(''));
     }
     function getActualOutput() {
