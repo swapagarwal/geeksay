@@ -169,7 +169,7 @@ const translations = {
   heartbeat: "ping",
   boobs: "80085",
   error: "404",
-  top: "</head>,
+  top: "</head>",
   "not found": "404",
   run: "ctrl+F5",
   comment: "//comment",
