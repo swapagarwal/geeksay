@@ -179,6 +179,8 @@ const translations = {
   select: "<select>",
   leave: "alt+f4",
   mistake: "ERROR"
+  copy : "fork"
+  list: "ls"
 };
 
 const translationsMap = new Map(Object.entries(translations));
@@ -268,6 +270,7 @@ const quotes = [
   "Never get to bed mad, stay up and snap",// Never git to 127.0.0.1 mad,stay up && img
   "Heart is missing",//SMPS is 404!
   "Information is lost from the deleted repository" //Info is lost from the del repo
+  "hello everyone " //developers writing hello world in dozen of languages since the '80s
 ];
 
 function isNumeric(num) {
