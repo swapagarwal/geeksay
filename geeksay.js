@@ -1,5 +1,5 @@
 const translations = {
-hide: "incognito",
+  hide: "incognito",
 	hidden: "incognito",
 	screenshot: "start+prt sc",
 	input: "<input>",
