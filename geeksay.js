@@ -3,7 +3,7 @@ const translations = {
   hidden: "incognito",
   screenshot: "start+prt sc",
   input: "<input>",
-  into:"*",
+  into: "*",
   emotion: "emoticon",
   repeat: "loop",
   style: "css",
@@ -37,7 +37,7 @@ const translations = {
   get: "git",
   got: "git",
   home: "127.0.0.1",
-  bed:"127.0.0.1",
+  bed: "127.0.0.1",
   house: "127.0.0.1",
   local: "127.0.0.1",
   localhost: "127.0.0.1",
@@ -169,7 +169,7 @@ const translations = {
   heartbeat: "ping",
   boobs: "80085",
   error: "404",
-  top: "</head>,
+  top: "</head>",
   "not found": "404",
   run: "ctrl+F5",
   comment: "//comment",
@@ -178,7 +178,7 @@ const translations = {
   input: "<input>",
   select: "<select>",
   leave: "alt+f4",
-  mistake: "ERROR"
+  mistake: "ERROR",
 };
 
 const translationsMap = new Map(Object.entries(translations));
@@ -262,12 +262,12 @@ const quotes = [
   "I just switch tabs, not the love ones", // I just alt+tab tabs, not the <3 ones
   "to be or not to be", // 2b || !2b
   "programming joke", // My </code>
-  "home sweet home:, // 127.0.0.1 sweet 127.0.0.1
+  "home sweet home", // 127.0.0.1 sweet 127.0.0.1
   "politics is bullshit", //politics is dump
   "I want the address of my love", // I want the url of my <3
-  "Never get to bed mad, stay up and snap",// Never git to 127.0.0.1 mad,stay up && img
-  "Heart is missing",//SMPS is 404!
-  "Information is lost from the deleted repository" //Info is lost from the del repo
+  "Never get to bed mad, stay up and snap", // Never git to 127.0.0.1 mad,stay up && img
+  "Heart is missing", //SMPS is 404!
+  "Information is lost from the deleted repository", //Info is lost from the del repo
 ];
 
 function isNumeric(num) {
