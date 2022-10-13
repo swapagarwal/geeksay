@@ -179,6 +179,8 @@ const translations = {
   select: "<select>",
   leave: "alt+f4",
   mistake: "ERROR"
+  copy : "fork"
+  list: "ls"
 };
 
 const translationsMap = new Map(Object.entries(translations));
