@@ -3,7 +3,7 @@ const translations = {
   hidden: "incognito",
   screenshot: "start+prt sc",
   input: "<input>",
-  into:"*",
+  into: "*",
   emotion: "emoticon",
   repeat: "loop",
   style: "css",
@@ -37,7 +37,7 @@ const translations = {
   get: "git",
   got: "git",
   home: "127.0.0.1",
-  bed:"127.0.0.1",
+  bed: "127.0.0.1",
   house: "127.0.0.1",
   local: "127.0.0.1",
   localhost: "127.0.0.1",
@@ -178,7 +178,7 @@ const translations = {
   input: "<input>",
   select: "<select>",
   leave: "alt+f4",
-  mistake: "ERROR"
+  mistake: "ERROR",
 };
 
 const translationsMap = new Map(Object.entries(translations));
