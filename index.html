@@ -478,25 +478,25 @@ sometimes, i just need a break</textarea>
   <script>
     const copyText = document.querySelector(".copy-btn")
     updateOutput();
-    document.getElementById("input").addEventListener("input", function () {
+    document.getElementById("input").addEventListener("input", () => {
       updateOutput();
     });
-    function updateOutput() {
+    let updateOutput = () =>{
       // Rather than calling geekify, we want all the
       // possible options.
       document.getElementById("output").innerHTML = "";
       var inputField = document.getElementById("input");
       var text = inputField.value.trim();
       if (text.length !== 0) {
-        var container = document.getElementById("output");
-        var allLines = text.split("\n");
+        let container = document.getElementById("output");
+        let allLines = text.split("\n");
         for (const line in allLines) {
           if (allLines[line] == "") continue;
-          var words = allLines[line].split(" ");
-          var node = document.createElement("span");
+          let words = allLines[line].split(" ");
+          let node = document.createElement("span");
           node.innerText = geeksay(words) + " ";
           if (node) container.appendChild(node);
-          var newLine = document.createElement("br");
+          let newLine = document.createElement("br");
           container.appendChild(newLine);
         }
         return container;
@@ -505,16 +505,16 @@ sometimes, i just need a break</textarea>
           "Type something in the above area...";
       }
     }
-    function copy() {
-      var value = getActualOutput();
+    let copy = () => {
+      let value = getActualOutput();
       clipboardContents.textContent = value;
       // From https://github.com/google/material-design-lite/blob/master/docs/_assets/snippets.js
-      var snipRange = document.createRange();
+      let snipRange = document.createRange();
       snipRange.selectNodeContents(clipboardContents);
-      var selection = window.getSelection();
+      let selection = window.getSelection();
       selection.removeAllRanges();
       selection.addRange(snipRange);
-      var result = false;
+      let result = false;
       try {
         result = document.execCommand("copy");
         copyButton.innerHTML = "Done!";
@@ -533,7 +533,7 @@ sometimes, i just need a break</textarea>
       selection.removeAllRanges();
       return result;
     }
-    function postTweet() {
+    let postTweet = () => {
       const url = 'https://twitter.com/intent/tweet?hashtags=geeksay&text=';
       const unformattedText = document.getElementById('output').innerText;
       const words = unformattedText.split('\n');
@@ -549,8 +549,8 @@ sometimes, i just need a break</textarea>
       window.open(url);
     }
     function getActualOutput() {
-      var value = "";
-      var nodes = output.children;
+      let value = "";
+      let nodes = output.children;
       for (var i = 0; i < nodes.length; i++) {
         if (nodes[i].tagName === "SELECT") {
           // Do this instead of .value because we want to maintain whitespace.
@@ -563,23 +563,23 @@ sometimes, i just need a break</textarea>
       }
       return value;
     }
-    function randomTranslation() {
+    let randomTranslation = () => {
       document.getElementById("randomTranslation").innerText =
         getRandomTranslation();
     }
-    function randomQuote() {
+    let randomQuote = () => {
       document.getElementById("input").value = getRandomQuote();
       updateOutput();
     }
-    function copyquote() {
-      var copyText = document.getElementById("output").textContent;
+    let copyquote = () =>{
+      let copyText = document.getElementById("output").textContent;
       navigator.clipboard.writeText(copyText);
 
-      var copyBtn = document.getElementsByClassName("copy-btn");
+      let copyBtn = document.getElementsByClassName("copy-btn");
       copyBtn[0].innerHTML = "Copied ✔️";
     }
-    function outFunc() {
-      var copyBtn = document.getElementsByClassName("copy-btn");
+    let outFunc = () =>{
+      let copyBtn = document.getElementsByClassName("copy-btn");
       copyBtn[0].innerHTML = "Copy 📄";
     }
   </script>
