@@ -178,9 +178,8 @@ const translations = {
   input: "<input>",
   select: "<select>",
   leave: "alt+f4",
-  mistake: "ERROR"
-  copy: "fork"
-  list: "ls"
+  mistake: "ERROR",
+  list: "ls",
 };
 
 const translationsMap = new Map(Object.entries(translations));
