@@ -267,6 +267,8 @@ const quotes = [
   "Never get to bed mad, stay up and snap", // Never git to 127.0.0.1 mad,stay up && img
   "Heart is missing", //SMPS is 404!
   "Information is lost from the deleted repository", //Info is lost from the del repo
+  "Be different", // Be !=
+  "Don't leave blank space in your code!" // Don't alt+f4 blank ' ' in your code!
 ];
 
 function isNumeric(num) {
