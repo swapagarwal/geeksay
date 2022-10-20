@@ -172,7 +172,8 @@ a:hover {
 
 #output {
   display: inline-block;    
-  width: -webkit-fill-available;
+  width: 100%;
+  box-sizing: border-box;
   padding: 15px;
   background-color: #151718;
   color: #2196f3;
@@ -307,60 +308,57 @@ opacity: 0;
   gap: 20px;
 }
 
-/*
-code for the github profile*/
-
 .github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }  
+}
+
+@media (max-width: 570px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+
+  .github-corner .octo-arm {
     animation: octocat-wave 560ms ease-in-out;
   }
+}
 
-  @keyframes octocat-wave {
-
-    0%,
-    100% {
-      transform: rotate(0);
-    }
-
-    20%,
-    60% {
-      transform: rotate(-25deg);
-    }
-
-    40%,
-    80% {
-      transform: rotate(10deg);
-    }  
-  }
-
-  @media (max-width: 570px) {
-    .github-corner:hover .octo-arm {
-      animation: none;
-    }
-
-    .github-corner .octo-arm {
-      animation: octocat-wave 560ms ease-in-out;
-    }
-  }
-
-  .animate-geeksay {
-    
-    background-image: linear-gradient( 285deg, #231557 0%, #2556ed 29%, #a90ddb 67%, #fff800 100% );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 2s linear infinite;
-    display: inline-block;
-    font-size: 35px;
-    font-family: "Source Code Pro", monospace;
+.animate-geeksay {
+  
+  background-image: linear-gradient( 285deg, #231557 0%, #2556ed 29%, #a90ddb 67%, #fff800 100% );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 35px;
+  font-family: "Source Code Pro", monospace;
 }
 
 @keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
+to {
+  background-position: 200% center;
+}
 }
