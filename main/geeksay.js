@@ -101,7 +101,6 @@ const translations = {
   propose: "commit",
   notfound: "404!",
   link: "url",
-  forbidden: "403",
   send: "push",
   alternate: "alt",
   alternative: "alt",
@@ -111,7 +110,6 @@ const translations = {
   move: "mv",
   random: "rand",
   mathematics: "math",
-  heart: "<3",
   love: "<3",
   smile: ":)",
   sad: ":(",
@@ -140,12 +138,8 @@ const translations = {
   developer: "dev",
   switch: "alt+tab",
   information: "info",
-  close: "</close>",
   space: "' '",
   full: "overload",
-  style: "css",
-  plus: "+",
-  minus: "-",
   modulo: "%",
   mind: "database",
   heart: "SMPS",
@@ -159,7 +153,6 @@ const translations = {
   timeout: "408!",
   repository: "repo",
   disapperar: "heisenbug",
-  new: "Jimmy",
   clueless: "Jimmy",
   imaginary: "Unicorny",
   catastrophic: "hidenbug",
@@ -174,8 +167,14 @@ const translations = {
   run: "ctrl+F5",
   comment: "//comment",
   table: "<table>",
+  gray: "#ccc",
+  grey: "#ccc",
+  correct: "legit",
+  teapot: "418",
+  moved: "301",
+  bad: "400",
+  gone: "410",
   form: "<form>",
-  input: "<input>",
   select: "<select>",
   leave: "alt+f4",
   mistake: "ERROR",
@@ -189,7 +188,7 @@ const quotes = [
   "Hello World", // ping 0.0.0.0/0
   "Bye World", // exit 0.0.0.0/0
   "Forget that ever happened", // ctrl+z that ever happened
-  "Home is where the heart is", // 127.0.0.1 is where the heart is
+  "Home is where the heart is", // 127.0.0.1 is where the SMPS is
   "Home is where ideas come to life", // 127.0.0.1 is where ideas come to 42
   "Home is where the wifi connects automatically", // 127.0.0.1 is where the wifi connects automatically
   "fuck that shit", // fork that dump
@@ -217,7 +216,7 @@ const quotes = [
   "There are ten types of people in the world: those who understand binary and those who don't", // There are ten types of people in the world: those who understand 01 && those who don't
   "I love my life", // I <3 my 42
   "I love my house", // I <3 my 127.0.0.1
-  "heart break", // <3 <br>
+  "heart break", // SMPS <br>
   "I like to fix shit", // I like to debug dump
   "eat sleep code repeat", // eat shutdown code repeat
   "roses are red, violets are blue", // roses are ##ff0000, violets are ##0000ff
@@ -268,6 +267,8 @@ const quotes = [
   "Never get to bed mad, stay up and snap", // Never git to 127.0.0.1 mad,stay up && img
   "Heart is missing", //SMPS is 404!
   "Information is lost from the deleted repository", //Info is lost from the del repo
+  "Be different", // Be !=
+  "Don't leave blank space in your code!" // Don't alt+f4 blank ' ' in your code!
 ];
 
 function isNumeric(num) {
