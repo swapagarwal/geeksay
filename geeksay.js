@@ -269,6 +269,7 @@ const quotes = [
   "Information is lost from the deleted repository", //Info is lost from the del repo
   "Be different", // Be !=
   "Don't leave blank space in your code!" // Don't alt+f4 blank ' ' in your code!
+  "Keep Flirting with Flutter"
 ];
 
 function isNumeric(num) {
