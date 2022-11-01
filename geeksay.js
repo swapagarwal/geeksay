@@ -1,4 +1,5 @@
 const translations = {
+  cute: "Queue<T>",
   hide: "incognito",
   hidden: "incognito",
   screenshot: "start+prt sc",
@@ -183,6 +184,7 @@ const translations = {
 const translationsMap = new Map(Object.entries(translations));
 
 const quotes = [
+  "You are cute", // You are Queue<T>
   "Everything is under control", // Everything is under ctrl
   "Give me a break", // Give me a <br>
   "Hello World", // ping 0.0.0.0/0
