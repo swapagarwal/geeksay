@@ -15,6 +15,9 @@
 
 > sometimes, i just need a `<br>`
 
+This is a website to find geeky and cheesy phrases to send to your **Loved Ones**, and I am sure they will love em.
+
+
 You know how sometimes you find these really geeky quotes and wish the world had more of them? Yeah, geeksay fixes that. Try it out at [http://geeksay.xyz](http://geeksay.xyz)
 
 🤓 Featured on [npm weekly](https://medium.com/npm-inc/npm-weekly-221-npm-6-12-1-is-here-oss-sustainability-open-rfc-calls-more-eb6506c83311) 🤓
