@@ -178,6 +178,7 @@ const translations = {
   select: "<select>",
   leave: "alt+f4",
   mistake: "ERROR",
+  snake: "Python",
 };
 
 const translationsMap = new Map(Object.entries(translations));
