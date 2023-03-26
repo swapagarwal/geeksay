@@ -178,6 +178,7 @@ const translations = {
   select: "<select>",
   leave: "alt+f4",
   mistake: "ERROR",
+  divide: "/",
 };
 
 const translationsMap = new Map(Object.entries(translations));
@@ -269,7 +270,8 @@ const quotes = [
   "Information is lost from the deleted repository", //Info is lost from the del repo
   "Be different", // Be !=
   "Don't leave blank space in your code!", // Don't alt+f4 blank ' ' in your code!
-  "Sometimes it's okay to run" // Sometimes it's okay to ctrl+F5
+  "Sometimes it's okay to run", // Sometimes it's okay to ctrl+F5
+  "Divide and conquer", // / and conquer
 ];
 
 function isNumeric(num) {
