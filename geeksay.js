@@ -268,7 +268,8 @@ const quotes = [
   "Heart is missing", //SMPS is 404!
   "Information is lost from the deleted repository", //Info is lost from the del repo
   "Be different", // Be !=
-  "Don't leave blank space in your code!" // Don't alt+f4 blank ' ' in your code!
+  "Don't leave blank space in your code!", // Don't alt+f4 blank ' ' in your code!
+  "Sometimes it's okay to run" // Sometimes it's okay to ctrl+F5
 ];
 
 function isNumeric(num) {
