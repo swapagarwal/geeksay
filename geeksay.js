@@ -273,6 +273,9 @@ const quotes = [
     "Sometimes it's okay to run", // Sometimes it's okay to ctrl+F5
     "Divide and conquer", // / and conquer
     "I will find you and I will fix you!", // I will ctrl+f you && I will debug you!
+    "I need help", // I require f1
+    "geek alert", // g33k alert
+    "get out of home", // git out of
 ];
 
 function isNumeric(num) {
