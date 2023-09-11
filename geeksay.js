@@ -276,6 +276,9 @@ const quotes = [
     "I need help", // I require f1
     "geek alert", // g33k alert
     "get out of home", // git out of
+    "to be or not to be, that is the question", // to be || ! to be, that is the ?
+    "i was 5 and he was 6", // i was 101 && he was 110
+    "he wore black and i wore white", // he wore #000 && i wore #fff
 ];
 
 function isNumeric(num) {
