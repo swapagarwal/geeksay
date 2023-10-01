@@ -272,6 +272,8 @@ const quotes = [
   "Don't leave blank space in your code!", // Don't alt+f4 blank ' ' in your code!
   "Sometimes it's okay to run", // Sometimes it's okay to ctrl+F5
   "Divide and conquer", // / and conquer
+  "Innovation begins at home", // Innovation begins at 127.0.0.1
+  "Those who cannot remember the past are condemned to repeat it", // Those who cannot remember the past are condemned to loop it. 
 ];
 
 function isNumeric(num) {
