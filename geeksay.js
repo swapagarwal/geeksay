@@ -256,9 +256,7 @@ const quotes = [
   "The past does not equal the future.", //The past does ! = the future
   "I just switch tabs, not the love ones", // I just alt+tab tabs, not the <3 ones
   "I have not failed. I’ve just found 10,000 ways that won’t work", // I have ! failed. I’ve just found 0 ways that won’t work
-  "Life is a big question that even Google can't find answer.", //42 is a big ? that even Google can't ctrl+f answer
   "Have no friends not equal to yourself.", // Have no friends ! = to yourself
-  "The past does not equal the future.", //The past does ! = the future
   "I just switch tabs, not the love ones", // I just alt+tab tabs, not the <3 ones
   "to be or not to be", // 2b || !2b
   "programming joke", // My </code>
@@ -272,6 +270,20 @@ const quotes = [
   "Don't leave blank space in your code!", // Don't alt+f4 blank ' ' in your code!
   "Sometimes it's okay to run", // Sometimes it's okay to ctrl+F5
   "Divide and conquer", // / and conquer
+  "Life is just a series of if-else statements.", // if (life) { debug(); } else { continue(); }
+  "I need to restart my life.", // I require to ctrl+alt+del my 42.
+  "Paste my Code.", // ctrl+v my Code.
+  "I just switch tabs, not the love ones.", // I just alt+tab tabs, not the <3 ones.
+  "Life is like a nested loop, you never know when it will break.", // while (life) { nestedLoop(); }
+  "In binary, we trust.", // 01001001 01101110 00100000 01100010 01101001 01101110 01100001 01110010 01111001 00100000 01110111 01100101 00100000 01110100 01110010 01110101 01110011 01110100
+  "My code is like poetry, elegant and full of bugs.", // My code is like poetry, beautiful and unexpected errors.
+  "I'm not anti-social; I'm just async in a synchronous world.", // I'm not anti-social; I'm just async in a sync world.
+  "The universe is an infinite loop of cosmic code.", // The universe is an infinite loop of cosmic code.
+  "Love is like encryption, it can't be cracked by everyone.", // Love is like encryption, not everyone can decrypt it.
+  "Code is my canvas, and algorithms are my brushes.", // Code is my canvas, and algorithms are my brushes.
+  "Life is too short for bad code.", // Life is too short for bad code.
+  "I see dead pixels.", // I see dead pixels.
+  "I'm not a programmer; I'm a code poet.", // I'm not a programmer; I'm a code poet.
 ];
 
 function isNumeric(num) {
