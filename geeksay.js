@@ -179,6 +179,7 @@ const translations = {
   leave: "alt+f4",
   mistake: "ERROR",
   divide: "/",
+  happy: ":)",
 };
 
 const translationsMap = new Map(Object.entries(translations));
@@ -272,6 +273,7 @@ const quotes = [
   "Don't leave blank space in your code!", // Don't alt+f4 blank ' ' in your code!
   "Sometimes it's okay to run", // Sometimes it's okay to ctrl+F5
   "Divide and conquer", // / and conquer
+  "It's nice to find love, propose, send gifts, marry and live happy life", // It's nice to ctrl+f <3, commit, push gifts, merge && live :) 42
 ];
 
 function isNumeric(num) {
