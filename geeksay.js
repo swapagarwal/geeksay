@@ -274,6 +274,8 @@ const quotes = [
   "Sometimes it's okay to run", // Sometimes it's okay to ctrl+F5
   "Divide and conquer", // / and conquer
   "It's nice to find love, propose, send gifts, marry and live happy life", // It's nice to ctrl+f <3, commit, push gifts, merge && live :) 42
+  "He's so persistent", // He's so while(true)
+  "She's quite dynamic", //She's quite JavaScript. 
 ];
 
 function isNumeric(num) {
