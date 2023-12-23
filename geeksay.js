@@ -180,6 +180,8 @@ const translations = {
   mistake: "ERROR",
   divide: "/",
   happy: ":)",
+  bug: "&#x1F41E;",
+  bugs:"&#x1F41E;&#x1F41E;&#x1F41E;"
 };
 
 const translationsMap = new Map(Object.entries(translations));
