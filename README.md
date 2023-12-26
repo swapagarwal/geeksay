@@ -58,6 +58,12 @@ $ npx geeksay sometimes i just need a break // sometimes i just need a <br>
 ## Test
 ```
 $ npm test
+
+Windows users need to provide the path correctly to run the test file
+Edit the test column under the script section in package.json to the following code
+
+$ node --inspect-brk node_modules/.bin/mocha test/*
+
 ```
 
 ## Demo
