@@ -274,6 +274,11 @@ const quotes = [
   "Sometimes it's okay to run", // Sometimes it's okay to ctrl+F5
   "Divide and conquer", // / and conquer
   "It's nice to find love, propose, send gifts, marry and live happy life", // It's nice to ctrl+f <3, commit, push gifts, merge && live :) 42
+  "Error 404: Love not found", // Error 404: <3 not found
+  "Keep calm and debug on", // Keep calm && debug 1
+  "Geek by day, coder by night", // G33k by day, coder by night
+  "I speak fluent binary", // I speak fluent 01
+  "Geek is the new cool", // G33k is the new cool
 ];
 
 function isNumeric(num) {
