@@ -244,6 +244,15 @@ const quotes = [
   "caught red-handed", // caught #ff0000 handed
   "I love you", //I <3 you
   "He has a style", //He has a css
+  "It is lineartime"              
+  "you yourself are the anchor of your life" 
+  "you are the love of my life"    
+  "pink panther"                
+  "Get busy living or get busy dying" 
+  "out of the blue"               
+  "caught red-handed"          
+  "I love you"           
+  "He has a style
   "hide it!", //incognito it!
   "99 little bugs in the code. 99 little bugs in the code. Take one down, patch it around. 127 little bugs in the code", //cb - so many bugs
   "Hey Google! Find me the best repo.", //ping Google! ctrl+f self the best repo
