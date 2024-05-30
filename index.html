@@ -450,8 +450,13 @@ sometimes, i just need a break</textarea>
         </button>
         <button class="tweet-btn random-quote-button fb-btn share-popup" onclick="postFacebook()">
           <i class="fa-brands fa-facebook-f"></i>
-          &emsp;Share
+          &emsp;Facebook
         </button>
+        <button class="tweet-btn random-quote-button fb-btn share-popup" onclick="downloadImage()">
+            Download Image
+        </button>
+          <canvas id="canvas" style="display:none;"></canvas>
+
       </div>
     </div>
     <div id="footer">
@@ -554,6 +559,64 @@ sometimes, i just need a break</textarea>
       const url = 'https://www.facebook.com/sharer/sharer.php?u=https://www.geeksay.xyz';
       window.open(url);
     }
+
+    function wrapText(context, text, x, y, maxWidth, lineHeight) {
+        const lines = text.split('\n');
+        let totalHeight = lines.length * lineHeight;
+
+        y -= totalHeight / 2;
+
+        for (let i = 0; i < lines.length; i++) {
+            const words = lines[i].split(' ');
+            let line = '';
+
+            for (let n = 0; n < words.length; n++) {
+                let testLine = line + words[n] + ' ';
+                let metrics = context.measureText(testLine);
+                let testWidth = metrics.width;
+                if (testWidth > maxWidth && n > 0) {
+                    context.fillText(line, x, y);
+                    line = words[n] + ' ';
+                    y += lineHeight;
+                } else {
+                    line = testLine;
+                }
+            }
+            context.fillText(line, x, y);
+            y += lineHeight;
+        }
+    }
+
+    function downloadImage() {
+        const unformattedText = document.getElementById('output').innerText + '\n #geeksay';
+
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+
+        canvas.width = 1080;
+        canvas.height = 1920;
+
+        ctx.fillStyle = '#000';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.font = '48px Ubuntu';
+        ctx.fillStyle = '#FFFFFF';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'middle';
+
+        wrapText(ctx, unformattedText, 150, canvas.height / 2, canvas.width - 300, 80);
+
+        let imageURL = canvas.toDataURL('image/png');
+
+        // Trigger download
+        let downloadLink = document.createElement('a');
+        downloadLink.href = imageURL;
+        downloadLink.download = 'quote.png';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    }
+
     function getActualOutput() {
       var value = "";
       var nodes = output.children;
