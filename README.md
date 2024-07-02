@@ -15,8 +15,7 @@
 
 > sometimes, i just need a `<br>`
 
-This is a website to find geeky and cheesy phrases to send to your **Loved Ones**, and I am sure they will love em.
-
+Welcome to Geeksay, your go-to destination for the quirkiest and cheesiest phrases to make your loved ones smile!
 
 You know how sometimes you find these really geeky quotes and wish the world had more of them? Yeah, geeksay fixes that. Try it out at [http://geeksay.xyz](http://geeksay.xyz)
 
@@ -56,6 +55,7 @@ $ npx geeksay sometimes i just need a break // sometimes i just need a <br>
 ```
 
 ## Test
+
 ```
 $ npm test
 ```
