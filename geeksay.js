@@ -179,7 +179,9 @@ const translations = {
   leave: "alt+f4",
   mistake: "ERROR",
   divide: "/",
+  irony: "💀",
   happy: ":)",
+
 };
 
 const translationsMap = new Map(Object.entries(translations));
