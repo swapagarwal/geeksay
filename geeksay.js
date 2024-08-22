@@ -179,6 +179,7 @@ const translations = {
   leave: "alt+f4",
   mistake: "ERROR",
   divide: "/",
+  happy: ":)",
 };
 
 const translationsMap = new Map(Object.entries(translations));
@@ -284,6 +285,7 @@ const quotes = [
   "Life is too short for bad code.", // Life is too short for bad code.
   "I see dead pixels.", // I see dead pixels.
   "I'm not a programmer; I'm a code poet.", // I'm not a programmer; I'm a code poet.
+  "It's nice to find love, propose, send gifts, marry and live happy life", // It's nice to ctrl+f <3, commit, push gifts, merge && live :) 42
 ];
 
 function isNumeric(num) {
