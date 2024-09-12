@@ -180,11 +180,13 @@ const translations = {
   mistake: "ERROR",
   divide: "/",
   happy: ":)",
+  hell:  "java",
 };
 
 const translationsMap = new Map(Object.entries(translations));
 
 const quotes = [
+  "i hope to marry you my love you are my life i have baked you a pie",
   "Everything is under control", // Everything is under ctrl
   "Give me a break", // Give me a <br>
   "Hello World", // ping 0.0.0.0/0
