@@ -274,6 +274,12 @@ const quotes = [
   "Sometimes it's okay to run", // Sometimes it's okay to ctrl+F5
   "Divide and conquer", // / and conquer
   "It's nice to find love, propose, send gifts, marry and live happy life", // It's nice to ctrl+f <3, commit, push gifts, merge && live :) 42
+  "I need to save the code before I forget", //I require to ctrl+s the code before I ctrl+z
+  "Run fast, debug faster", //Ctrl+F5 O(1), debug O(1)
+  "Undo your past, redo your future.", //Ctrl+Z your past, Ctrl+Y your future.
+  "Fix it or forget it.", //Debug it or ctrl+z it.
+  "Restart and remove the negativity", //Ctrl+Alt+Del the negativity.
+  "Devote yourself to love, unite your heart with another." //Commit to love, merge the heart.
 ];
 
 function isNumeric(num) {
