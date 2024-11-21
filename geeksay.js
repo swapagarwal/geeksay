@@ -180,6 +180,12 @@ const translations = {
   mistake: "ERROR",
   divide: "/",
   happy: ":)",
+  bugs:"#404!s",
+  super:"ctrl+c+ctrl+v+ctrl+s+ctrl+f+ctrl+z",
+  poetry:"<code>",
+  playground:"0.0.0.0/0",
+  tomorrow:"runtime",
+  art:"<a>",
 };
 
 const translationsMap = new Map(Object.entries(translations));
