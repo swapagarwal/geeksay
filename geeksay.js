@@ -180,6 +180,7 @@ const translations = {
   mistake: "ERROR",
   divide: "/",
   happy: ":)",
+  sad: ":(",
 };
 
 const translationsMap = new Map(Object.entries(translations));
