@@ -26,8 +26,12 @@
   },
   "homepage": "https://github.com/swapagarwal/geeksay#readme",
   "devDependencies": {
-    "mocha": "^10.2.0",
+    "mocha": "^11.7.3",
     "percy": "^5.0.0",
     "should": "^13.2.3"
+  },
+  "dependencies": {
+    "esprima": "^4.0.1",
+    "npm-check-updates": "^19.0.0"
   }
 }
