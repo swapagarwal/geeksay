@@ -329,6 +329,55 @@
     flex-wrap: wrap;
     gap: 20px;
   }
+
+  /* shibams code */
+  div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 </style>
 <style>
   .github-corner:hover .octo-arm {
@@ -462,6 +511,48 @@ sometimes, i just need a break</textarea>
       </p>
     </div>
     <br />
+
+<!-- shibams code -->
+<div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="" href="pics/1.jpg">
+      <img src="pics/1.jpg" alt="1" width="600" height="600">
+    </a>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pics/4.jpg">
+      <img src="pics/4.jpg" alt="2" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pics/3.jpg">
+      <img src="pics/3.jpg" alt="3" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="pics/5.jpg">
+      <img src="pics/5.jpg" alt="4" width="600" height="400">
+    </a>
+  </div>
+</div>
+</div>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp
+
+
+<!--end -->
+
+
     <div align="center">
       <a id="help" href="https://github.com/swapagarwal/geeksay/issues/6" target="_blank">Need an API?</a>
     </div>
