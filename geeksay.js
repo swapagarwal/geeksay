@@ -47,6 +47,7 @@ const translations = {
   hey: "ping",
   command: "cmd",
   forget: "ctrl+z",
+  remember: "ctrl+y",
   world: "0.0.0.0/0",
   want: "require",
   need: "require",
