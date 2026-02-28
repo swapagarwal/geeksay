@@ -275,7 +275,7 @@ const quotes = [
   "Divide and conquer", // / and conquer
   "It's nice to find love, propose, send gifts, marry and live happy life", // It's nice to ctrl+f <3, commit, push gifts, merge && live :) 42
   "Thou shall not pass", // Thou shall ! pass
-  "I'm not lazy, I'm just on enrgy saving mode", // I'm not Lazy, I'm just on O(n) mode
+  "I'm not lazy, I'm just on energy saving mode", // I'm not Lazy, I'm just on O(n) mode
 ];
 
 function isNumeric(num) {
